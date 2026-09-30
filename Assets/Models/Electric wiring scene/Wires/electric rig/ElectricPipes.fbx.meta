@@ -3,7 +3,162 @@ guid: 7cebdecee9a6d2b47900688db0ed9fd3
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.001
+    second: {fileID: 2100000, guid: 7e2403978233fef45af3cc7484d181f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.002
+    second: {fileID: 2100000, guid: f4b7707b361a18c478ab8b31382a8d77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.003
+    second: {fileID: 2100000, guid: dcaa2b9155f92224da452fd69eaeed82, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.004
+    second: {fileID: 2100000, guid: 5708afc6afe4ae544877ec41ced8a3d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.005
+    second: {fileID: 2100000, guid: ec723fd24cf80ad4988068921ec4fdd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.006
+    second: {fileID: 2100000, guid: dd02e1a8b23f1a04193ff0183759d5c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.007
+    second: {fileID: 2100000, guid: 4ec2295de8b2cfd4cbf2dff84f9a8f98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.008
+    second: {fileID: 2100000, guid: 7c0846045acd84740a1d38089bded9b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.009
+    second: {fileID: 2100000, guid: 2ea5f1dd2bc3a8243899a49271c1e9b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.010
+    second: {fileID: 2100000, guid: 037a54c7a8050cb488598138521e5225, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_BasicMaterial.011
+    second: {fileID: 2100000, guid: 5336ff9954efe4e4abdcf1fbe15633c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.001
+    second: {fileID: 2100000, guid: d9c4ad6813ade5a41a9b9f510466caa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.002
+    second: {fileID: 2100000, guid: a75d97f598f13294f825c4068a7e29a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.003
+    second: {fileID: 2100000, guid: 9d61f47dbe53fc74cab8d39801604e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.004
+    second: {fileID: 2100000, guid: f4965a3daec19ec4cb35835493bc2dbb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.005
+    second: {fileID: 2100000, guid: 740af85b4f429cf45bad9b39989afb85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.006
+    second: {fileID: 2100000, guid: 380fc9c06d8618348af53236e28b590a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.007
+    second: {fileID: 2100000, guid: dbcc0f590e0745f41b6161554d8def66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.008
+    second: {fileID: 2100000, guid: 216a857dacc988943a6731424c535995, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.009
+    second: {fileID: 2100000, guid: c3d1d83ffd5a67547b140ccc7cdadb67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.010
+    second: {fileID: 2100000, guid: 5b543b399adc4b44aa4f4c5e769da165, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.011
+    second: {fileID: 2100000, guid: bb276f7a82a77fd4ea25bc75963cc10d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.012
+    second: {fileID: 2100000, guid: 71743d92cbdedcc49809c0504d702e0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.013
+    second: {fileID: 2100000, guid: 4b74f6e26ab9ceb4b9cf02aeb8e9da70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.014
+    second: {fileID: 2100000, guid: 9c4ecbc0a0b70f94c86a2c345e139384, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.015
+    second: {fileID: 2100000, guid: d86206bee09ba5243a77bd64cc642250, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.016
+    second: {fileID: 2100000, guid: cf85156df45f74c4b90d68d77c6e261b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.017
+    second: {fileID: 2100000, guid: 1b492185da6958f48a26b6a027c422cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.018
+    second: {fileID: 2100000, guid: cd6f378b246b2624980ab99c96bb5d31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.019
+    second: {fileID: 2100000, guid: 544dd07a4c24a7140986a400768e48c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MI_Electrical_Details.020
+    second: {fileID: 2100000, guid: e4eecad3c428b554ea76dc3a0d09543e, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
