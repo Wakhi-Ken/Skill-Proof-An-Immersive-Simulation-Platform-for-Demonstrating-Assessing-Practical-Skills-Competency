@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "259232226670",
+    "project_id": "skill-proof-vr",
+    "storage_bucket": "skill-proof-vr.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259232226670:android:e03d409ee68286cba0757f",
+        "android_client_info": {
+          "package_name": "com.ColdWorld.SkillProof"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALjjtag2iPE6h3cWhMC0OSfjBe63tbGCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
