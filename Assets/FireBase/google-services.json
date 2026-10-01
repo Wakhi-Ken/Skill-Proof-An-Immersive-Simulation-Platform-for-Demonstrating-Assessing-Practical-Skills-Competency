@@ -12,7 +12,12 @@
           "package_name": "com.ColdWorld.SkillProof"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "259232226670-7r8mev2eqp65j9pqdi1kr196c9ebd5vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyALjjtag2iPE6h3cWhMC0OSfjBe63tbGCI"
@@ -20,7 +25,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "259232226670-7r8mev2eqp65j9pqdi1kr196c9ebd5vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
