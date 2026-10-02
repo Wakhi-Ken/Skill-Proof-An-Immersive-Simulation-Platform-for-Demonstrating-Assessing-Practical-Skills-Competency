@@ -104,11 +104,9 @@ I --> J[Generate Feedback]
 J --> K[Generate Skill Evidence]
 K --> L[View Results]
 L --> C
-```
 
 ### System / Hardware Diagram
 
-<img width="864" height="620" alt="image" src="https://github.com/user-attachments/assets/05194017-6b19-41cb-943c-efb4eb283556" />
 
 
 ### App Screenshots
@@ -167,17 +165,53 @@ L --> C
 Skill-Proof/
 │
 ├── Assets/
-│   ├── Scenes/
-│   ├── Scripts/
-│   ├── Prefabs/
+│   ├── _Recovery
+│   ├── Animations
+│   ├── Audio
+│   ├── CompositionLayers
+│   ├── Editor Default Resources
+│   ├── ExternalDependencyManager/
+│   │   └── Editor
+│   ├── FireBase
+│   ├── Fonts
+│   ├── GeneratedLocalRepo
+│   ├── Materials/
+│   │   ├── Floor
+│   │   ├── Ground
+│   │   └── TV Stand
 │   ├── Models/
-│   └── Materials/
+│   │   ├── Electric wiring scene
+│   │   ├── HOuses
+│   │   ├── Player
+│   │   ├── Solar Scene
+│   │   └── Start Menu
+│   ├── Plugins
+│   ├── Prefebs
+│   ├── Resources
+│   ├── Samples
+│   ├── Scenes/
+│   │   ├── BasicScene
+│   │   └── SampleScene
+│   ├── Scripts/
+│   │   ├── Managers
+│   │   ├── Menu Navigation
+│   │   └── Player
+│   ├── Settings
+│   ├── Skybox
+│   ├── StreamingAssets
+│   ├── TextMesh Pro
+│   ├── Textures
+│   ├── UI
+│   ├── URPDefaultResources
+│   ├── VRTemplateAssets
+│   ├── XR
+│   └── XRI
+│
+├── Packages/
 │
 ├── docs/
 │   ├── designs/
 │   └── screenshots/
-│
-├── builds/
 │
 └── README.md
 ```
