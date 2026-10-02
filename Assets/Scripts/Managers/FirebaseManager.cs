@@ -9,6 +9,8 @@ public class FirebaseManager : MonoBehaviour
     private static FirebaseManager instance;
     public static FirebaseAuth Auth { get; private set; }
 
+    public static bool IsReady { get; private set; }
+
     private FirebaseApp app;
 
     private void Awake()

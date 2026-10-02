@@ -1,8 +1,8 @@
 using UnityEngine;
-using UnityEngine.UI;
 using Firebase.Auth;
 using Firebase.Extensions;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LoginManager : MonoBehaviour
 {
@@ -11,18 +11,19 @@ public class LoginManager : MonoBehaviour
 
     public TMP_Text messageText;
 
-    public string nextSceneName = "Start Menu";
-
-    FirebaseAuth auth;
-
-    //login manager
-    public void Start()
-    {
-        auth = FirebaseAuth.DefaultInstance;
-    }
+    public GameObject loginCanvas;
+    public GameObject SimulatorCanvas;
 
     public void Login()
     {
+        if (!FirebaseManager.IsReady)
+        {
+            messageText.text = "Please wait, Firebase is starting...";
+            return;
+        }
+
+        FirebaseAuth auth = FirebaseManager.Auth;
+
         string email = emailInput.text.Trim();
         string password = passwordInput.text;
 
@@ -38,29 +39,42 @@ public class LoginManager : MonoBehaviour
             return;
         }
 
-        messageText.text = "logining in...";
+        messageText.text = "Logging in...";
 
         auth.SignInWithEmailAndPasswordAsync(email, password)
             .ContinueWithOnMainThread(task =>
-        {
-            if (task.IsCanceled)
             {
-                messageText.text = "login canceled.";
-                return;
-            }
-            if (task.IsFaulted)
-            {
-                messageText.text = "Invalid email or password ";
-                Debug.LogError(task.Exception);
-                return;
-            }
+                if (task.IsCanceled)
+                {
+                    messageText.text = "Login canceled.";
+                    return;
+                }
 
-            FirebaseUser user = task.Result.User;
-            Debug.Log("Login successfull!");
-            Debug.Log("User ID: " + user.UserId);
-            Debug.Log("User Email: " + user.Email);
+                if (task.IsFaulted)
+                {
+                    messageText.text = "Invalid email or password.";
+                    Debug.LogError(task.Exception);
+                    return;
+                }
 
-            UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneName);
-        });
+                FirebaseUser user = task.Result.User;
+
+                Debug.Log("Login successful!");
+                Debug.Log("User ID: " + user.UserId);
+                Debug.Log("User Email: " + user.Email);
+
+                loginCanvas.SetActive(false);
+                SimulatorCanvas.SetActive(true);
+            });
     }
+    public void Logout()
+    {
+        if (!FirebaseManager.IsReady)
+        {
+            messageText.text = "Firebase is not ready.";
+            return;
+        } FirebaseAuth auth = FirebaseManager.Auth;
+        auth.SignOut(); Debug.Log("User logged out.");
+        SimulatorCanvas.SetActive(false); loginCanvas.SetActive(true);
+        emailInput.text = ""; passwordInput.text = ""; messageText.text = ""; }
 }

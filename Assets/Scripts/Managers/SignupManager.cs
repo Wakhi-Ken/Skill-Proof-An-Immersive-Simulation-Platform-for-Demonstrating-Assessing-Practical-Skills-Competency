@@ -13,7 +13,9 @@ public class SignupManager : MonoBehaviour
     public TMP_InputField confirmPassword;
 
     public TMP_Text messageText;
-    public string nextSceneName = "Start Menu";
+
+    public GameObject signUpCanvas;
+    public GameObject loginCanvas;
 
     private FirebaseAuth auth;
 
@@ -89,7 +91,9 @@ public class SignupManager : MonoBehaviour
                 }
 
                 Debug.Log("Profile updated successfully!");
-                SceneManager.LoadScene(nextSceneName);
+
+                signUpCanvas.SetActive(false);
+                loginCanvas.SetActive(true);
             });
         });
     }
