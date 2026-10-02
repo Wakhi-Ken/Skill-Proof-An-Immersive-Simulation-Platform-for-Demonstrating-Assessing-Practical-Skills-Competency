@@ -440,6 +440,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3421475964541531478, guid: 77d4015a3bca32f42bced93508f7ceb7, type: 3}
+      propertyPath: m_text
+      value: Instructions
+      objectReference: {fileID: 0}
     - target: {fileID: 7162551084036687485, guid: 77d4015a3bca32f42bced93508f7ceb7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 3
@@ -6431,7 +6435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677391114728958430, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.008
+      value: 9.906
       objectReference: {fileID: 0}
     - target: {fileID: 5677391114728958430, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6451,7 +6455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5677391114728958430, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -685.4023
+      value: -685.8223
       objectReference: {fileID: 0}
     - target: {fileID: 5677391114728958430, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_AnchoredPosition.y

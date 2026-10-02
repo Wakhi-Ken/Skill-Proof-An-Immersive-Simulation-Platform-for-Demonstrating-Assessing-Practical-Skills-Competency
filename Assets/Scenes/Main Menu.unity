@@ -23115,9 +23115,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1741239310}
     m_Modifications:
+    - target: {fileID: 399127869308706377, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.2
+      objectReference: {fileID: 0}
     - target: {fileID: 3699695642676214835, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_Name
       value: AboutMenuCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3699695642676214835, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5677391114728958430, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_Pivot.x
@@ -23242,6 +23250,26 @@ PrefabInstance:
     - target: {fileID: 6840433641795052383, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700019717394828382, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
+      propertyPath: m_text
+      value: "ABOUT SKILL PROOF VR\n\nSkill Proof VR is an immersive VR platform
+        for demonstrating and assessing practical skills through simulated activities.\n\nSimulations\nElectrical
+        Wiring Installation\nSolar Panel Installation\n\nAssessment\nThe system evaluates:\nAccuracy\nSafety\nErrors\nCompletion
+        time\nScore\n\nSkill Evidence\nUsers receive performance results and feedback
+        based on their completed activities.\n\nEmployer Purpose\nSkill Proof VR
+        provides practical performance evidence that can help employers understand
+        a user's demonstrated skills, performance, and competency in selected practical
+        activities.\n\nTechnology: Unity \u2022 C# \u2022 Meta Quest 2 \u2022 Firebase\nThis
+        is a  prototype and does not replace official certification."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700019717394828382, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
+      propertyPath: m_fontSize
+      value: 12.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700019717394828382, guid: 5499c30066df8784bb3b23411d9fa09b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12.82
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
