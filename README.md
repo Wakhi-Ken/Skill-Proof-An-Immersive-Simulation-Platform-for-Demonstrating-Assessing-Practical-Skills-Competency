@@ -91,9 +91,6 @@ Full prototype:
 The Figma prototype covers the main user interface, application flow, simulation selection, practical activities, performance results, and skill evidence.
 
 ### Interaction Flow
-
-```mermaid
-
 A[Launch Application] --> B[Sign Up / Login]
 B --> C[Simulator Menu]
 C --> D[Select Simulation]
