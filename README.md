@@ -91,6 +91,7 @@ Full prototype:
 The Figma prototype covers the main user interface, application flow, simulation selection, practical activities, performance results, and skill evidence.
 
 ### Interaction Flow
+
 A[Launch Application] --> B[Sign Up / Login]
 B --> C[Simulator Menu]
 C --> D[Select Simulation]
@@ -107,23 +108,22 @@ L --> C
 
 ### System / Hardware Diagram
 
-<img width="690" height="550" alt="image" src="https://github.com/user-attachments/assets/83439e1a-be2d-456c-96bc-0ed8f4bbbf94" />
+<img width="864" height="620" alt="image" src="https://github.com/user-attachments/assets/05194017-6b19-41cb-943c-efb4eb283556" />
+
 
 ### App Screenshots
 
-| Screenshot                                         | Description                   |
-| --------------------------------------------------- | ------------------------------ |
-| `![Screenshot 1](<img width="1128" height="645" alt="Screenshot 2026-10-02 230042" src="https://github.com/user-attachments/assets/83cf3296-5391-4bab-b8d2-ba3864fffad5" />
-)`      | Login interface               |
-| `![Screenshot 2](<img width="1107" height="610" alt="Screenshot 2026-10-02 225534" src="https://github.com/user-attachments/assets/d08d1539-ba58-4d0e-8fe4-08962457ede2" />
-)`  | Simulator selection interface |
-| `![Screenshot 3](<img width="1142" height="647" alt="Screenshot 2026-10-02 225710" src="https://github.com/user-attachments/assets/0ac0eb80-bf8d-439c-88c8-abe4ca68339e" />
-)` | VR practical simulation       |
-| `![Screenshot 4](<img width="1027" height="635" alt="Screenshot 2026-10-03 001122" src="https://github.com/user-attachments/assets/2a2165da-adcd-4b0f-9957-95d095aea4fb" />
+| Screenshot
 
-)`    | Performance results           |
-| `![Screenshot 5](<img width="1003" height="488" alt="Screenshot 2026-10-03 000939" src="https://github.com/user-attachments/assets/27bd2968-5eda-489f-972b-4884fcb71dce" />
-)`   | Skill evidence                |
+<img width="1142" height="647" alt="Screenshot 2026-10-02 225710" src="https://github.com/user-attachments/assets/f5c996a0-7b09-4c79-9913-61d2ae5a99ef" />
+<img width="1113" height="655" alt="Screenshot 2026-10-02 225655" src="https://github.com/user-attachments/assets/f51de153-877e-4d40-bcf9-2b194fb42b3f" />
+<img width="1107" height="610" alt="Screenshot 2026-10-02 225534" src="https://github.com/user-attachments/assets/0d1ad96d-cd78-4185-a798-f0157ccf8e74" />
+<img width="1705" height="795" alt="Screenshot 2026-10-02 225453" src="https://github.com/user-attachments/assets/5aaca9db-6910-42a5-95d4-5bc567801eb9" />
+<img width="1027" height="635" alt="Screenshot 2026-10-03 001122" src="https://github.com/user-attachments/assets/1eae4198-c355-4410-ad30-1f8df5db5292" />
+<img width="1003" height="488" alt="Screenshot 2026-10-03 000939" src="https://github.com/user-attachments/assets/9a04aab3-e1b4-4551-8a2e-2f598c7957d0" />
+<img width="1128" height="645" alt="Screenshot 2026-10-02 230042" src="https://github.com/user-attachments/assets/290010fc-8991-4b60-b40e-47adf039cd9e" />
+
+
 
 ##  Assets
 
