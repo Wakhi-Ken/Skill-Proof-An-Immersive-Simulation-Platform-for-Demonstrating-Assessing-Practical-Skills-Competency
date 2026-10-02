@@ -1,4 +1,4 @@
-<img width="436" height="1682" alt="FLow drawio" src="https://github.com/user-attachments/assets/b48590bd-0618-4a9b-9f65-3d891f8ef965" /><img width="436" height="1682" alt="FLow drawio" src="https://github.com/user-attachments/assets/023c8fc9-dc74-4672-9497-de69b4a72a2a" /># Skill-Proof
+# Skill-Proof
 
 > An immersive VR platform for demonstrating and assessing practical skills and providing performance evidence.
 
@@ -93,9 +93,6 @@ The Figma prototype covers the main user interface, application flow, simulation
 ### Interaction Flow
 
 ```mermaid
-flowchart
-
-<img width="436" height="1682" alt="FLowCHAT" src="https://github.com/user-attachments/assets/4e00fa3d-1af0-4523-871a-0ff99ddedecd" />
 
 A[Launch Application] --> B[Sign Up / Login]
 B --> C[Simulator Menu]
