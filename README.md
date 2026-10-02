@@ -1,4 +1,4 @@
-# Skill-Proof
+<img width="436" height="1682" alt="FLow drawio" src="https://github.com/user-attachments/assets/b48590bd-0618-4a9b-9f65-3d891f8ef965" /><img width="436" height="1682" alt="FLow drawio" src="https://github.com/user-attachments/assets/023c8fc9-dc74-4672-9497-de69b4a72a2a" /># Skill-Proof
 
 > An immersive VR platform for demonstrating and assessing practical skills and providing performance evidence.
 
@@ -80,7 +80,7 @@ Press **Play** to test the application.
 3. Select **File → Build Profiles** and configure an Android build.
 4. Build and install the application on the Meta Quest 2.
 
-## 🎨 Designs
+##  Designs
 
 ### Figma mockups and prototype
 
@@ -90,19 +90,12 @@ Full prototype:
 
 The Figma prototype covers the main user interface, application flow, simulation selection, practical activities, performance results, and skill evidence.
 
-| Screen                | Preview                                          |
-| --------------------- | ------------------------------------------------ |
-| Start Menu            | `![Start Menu](docs/designs/start-menu.png)`     |
-| Login                 | `![Login](docs/designs/login.png)`               |
-| Simulator Menu        | `![Simulator](docs/designs/simulator.png)`       |
-| Activity Instructions | `![Instructions](docs/designs/instructions.png)` |
-| Results               | `![Results](docs/designs/results.png)`           |
-| Skill Evidence        | `![Evidence](docs/designs/evidence.png)`         |
-
 ### Interaction Flow
 
 ```mermaid
-flowchart TD
+flowchart
+
+<img width="436" height="1682" alt="FLowCHAT" src="https://github.com/user-attachments/assets/4e00fa3d-1af0-4523-871a-0ff99ddedecd" />
 
 A[Launch Application] --> B[Sign Up / Login]
 B --> C[Simulator Menu]
@@ -120,33 +113,7 @@ L --> C
 
 ### System / Hardware Diagram
 
-Because Skill-Proof is a VR software application, a **system/hardware block diagram** is used instead of a traditional electrical circuit diagram.
-
-```mermaid
-flowchart LR
-
-U[User] -->|Head movement| HMD[Meta Quest 2]
-U -->|Controller input| CTRL[Quest Controllers]
-
-HMD -->|Head tracking| APP[Skill-Proof VR App<br/>Unity + C#]
-CTRL -->|Interaction input| APP
-
-APP -->|3D visuals + audio| HMD
-APP -->|Haptic feedback| CTRL
-
-APP --> AS[Assessment System]
-
-AS --> TRACK[Performance Tracking]
-AS --> SCORE[Scoring]
-AS --> FEEDBACK[Feedback]
-AS --> EVIDENCE[Skill Evidence]
-
-APP <-->|Authentication and data| FB[Firebase]
-
-FB --> AUTH[Firebase Authentication]
-FB --> FS[Cloud Firestore]
-FB --> STORAGE[Cloud Storage]
-```
+<img width="690" height="550" alt="image" src="https://github.com/user-attachments/assets/83439e1a-be2d-456c-96bc-0ed8f4bbbf94" />
 
 ### App Screenshots
 
