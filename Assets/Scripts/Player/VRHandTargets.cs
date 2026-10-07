@@ -3,15 +3,19 @@ using UnityEngine;
 public class VRHandTargets : MonoBehaviour
 {
 
-    public Transform controller;
-    public Transform HandTarget;
+    public Transform head;
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        if (controller != null || HandTarget == null)
+        if (head == null)
             return;
-        HandTarget.position = controller.position;
-        HandTarget.rotation = controller.rotation;
+
+        // Follow the VR head's X and Z position
+        transform.position = new Vector3(
+            head.position.x,
+            transform.position.y,
+            head.position.z
+        );
+
     }
 }
