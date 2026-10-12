@@ -26,7 +26,7 @@ public class LoginManager : MonoBehaviour
 
     public void Login()
     {
-        if (isBusy) return; // stops double-taps sending two requests
+        if (isBusy) return; // stops double taps sending two requests
 
         if (!FirebaseManager.IsReady)
         {
@@ -39,7 +39,7 @@ public class LoginManager : MonoBehaviour
         string email = emailInput.text.Trim();
         string password = passwordInput.text;
 
-        // ---------- Validation ----------
+        //  Validation 
         if (string.IsNullOrEmpty(email))
         {
             messageText.text = "Please enter your email.";
@@ -52,7 +52,7 @@ public class LoginManager : MonoBehaviour
             return;
         }
 
-        // ---------- Sign in ----------
+        // Sign in=
         isBusy = true;
         messageText.text = "Logging in...";
 
@@ -107,8 +107,7 @@ public class LoginManager : MonoBehaviour
         messageText.text = "";
     }
 
-    // ---------- Helpers ----------
-
+    // Helpers 
     private string GetErrorMessage(System.AggregateException exception)
     {
         FirebaseException firebaseEx = exception?.GetBaseException() as FirebaseException;

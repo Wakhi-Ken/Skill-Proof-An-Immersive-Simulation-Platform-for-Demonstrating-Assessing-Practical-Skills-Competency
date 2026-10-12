@@ -20,7 +20,7 @@ public class SignupManager : MonoBehaviour
     private FirebaseAuth auth;
     private bool isBusy = false;
 
-    private const int MinPasswordLength = 8;
+    private const int MinPasswordLength = 6;
 
     public void Start()
     {
@@ -42,7 +42,7 @@ public class SignupManager : MonoBehaviour
         string password = passwordInput.text;
         string confirmPasswordText = confirmPassword.text;
 
-        // ---------- Validation ----------
+        // Validation
         if (string.IsNullOrEmpty(name))
         {
             messageText.text = "Please enter your name.";
@@ -73,7 +73,7 @@ public class SignupManager : MonoBehaviour
             return;
         }
 
-        // ---------- Create account ----------
+        // Create account
         isBusy = true;
         messageText.text = "Creating account...";
 
@@ -121,8 +121,7 @@ public class SignupManager : MonoBehaviour
                             Debug.Log("Profile updated successfully!");
                         }
 
-                        // Optional: sign out so the user logs in manually.
-                        // Remove this line to keep them signed in after signup.
+                        // Sign out the user after account creation to force them to log in
                         auth.SignOut();
 
                         messageText.text = "Account created! Please log in.";
@@ -132,7 +131,7 @@ public class SignupManager : MonoBehaviour
             });
     }
 
-    // ---------- Helpers ----------
+    // Helpers
 
     private void ClearPasswordFields()
     {
