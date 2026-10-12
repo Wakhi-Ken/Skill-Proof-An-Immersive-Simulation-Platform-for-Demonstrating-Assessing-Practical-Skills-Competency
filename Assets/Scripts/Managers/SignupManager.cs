@@ -109,8 +109,6 @@ public class SignupManager : MonoBehaviour
                 user.UpdateUserProfileAsync(profile)
                     .ContinueWithOnMainThread(profileTask =>
                     {
-                        isBusy = false;
-
                         if (profileTask.IsFaulted)
                         {
                             Debug.LogError(profileTask.Exception);
@@ -121,14 +119,46 @@ public class SignupManager : MonoBehaviour
                             Debug.Log("Profile updated successfully!");
                         }
 
-                        // Sign out the user after account creation to force them to log in
-                        auth.SignOut();
-
-                        messageText.text = "Account created! Please log in.";
-                        signUpCanvas.SetActive(false);
-                        loginCanvas.SetActive(true);
+                        // Save the user to Firestore BEFORE signing out
+                        SaveProfileToDatabase(user.UserId, name, email);
                     });
             });
+    }
+
+    // Database step
+
+    private void SaveProfileToDatabase(string uid, string name, string email)
+    {
+        if (DatabaseManager.Instance == null)
+        {
+            Debug.LogError("DatabaseManager is missing from the scene.");
+            FinishSignUp(false);
+            return;
+        }
+
+        messageText.text = "Setting up your profile...";
+
+        DatabaseManager.Instance.CreateUserProfileAsync(uid, name, email)
+            .ContinueWithOnMainThread(dbTask =>
+            {
+                bool saved = !dbTask.IsFaulted && !dbTask.IsCanceled && dbTask.Result;
+                FinishSignUp(saved);
+            });
+    }
+
+    private void FinishSignUp(bool profileSaved)
+    {
+        isBusy = false;
+
+        // Sign out the user after account creation to force them to log in
+        auth.SignOut();
+
+        messageText.text = profileSaved
+            ? "Account created! Please log in."
+            : "Account created! Please log in. Your profile will finish setting up when you log in.";
+
+        signUpCanvas.SetActive(false);
+        loginCanvas.SetActive(true);
     }
 
     // Helpers

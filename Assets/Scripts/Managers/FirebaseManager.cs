@@ -5,7 +5,6 @@ using Firebase.Extensions;
 
 public class FirebaseManager : MonoBehaviour
 {
-
     private static FirebaseManager instance;
     public static FirebaseAuth Auth { get; private set; }
 
@@ -25,6 +24,7 @@ public class FirebaseManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         CheckFirebaseDependencies();
     }
 
@@ -38,14 +38,15 @@ public class FirebaseManager : MonoBehaviour
             {
                 app = FirebaseApp.DefaultInstance;
                 Auth = FirebaseAuth.DefaultInstance;
+                IsReady = true;
 
                 Debug.Log("Firebase is ready to use.");
             }
             else
             {
+                IsReady = false;
                 Debug.LogError($"Could not resolve all Firebase dependencies: {dependencyStatus}");
             }
         });
     }
-
 }
