@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ladder
+  - small panel
+  - light wire
+  - light wire 2
+  - light wire 3
+  - light wire 4
   - 
   - 
   - 

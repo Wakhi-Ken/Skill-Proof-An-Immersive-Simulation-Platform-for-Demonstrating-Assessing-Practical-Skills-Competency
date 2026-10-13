@@ -12,7 +12,15 @@ public class TaskProgressUI : MonoBehaviour
     [SerializeField] private TMP_Text errorsText;
     [SerializeField] private TMP_Text safetyScoreText;
     [SerializeField] private TMP_Text progressText;
-    [SerializeField] private TMP_Text timerText;
+
+    [Header("Safety score colors")]
+    [Tooltip("At or above this score the text uses the Good color")]
+    [SerializeField] private float goodThreshold = 80f;
+    [Tooltip("At or above this score (but below Good) the text uses the Warning color")]
+    [SerializeField] private float warningThreshold = 50f;
+    [SerializeField] private Color goodColor = new Color(0.20f, 0.80f, 0.30f);     // green
+    [SerializeField] private Color warningColor = new Color(1.00f, 0.75f, 0.10f);  // amber
+    [SerializeField] private Color poorColor = new Color(0.90f, 0.20f, 0.20f);     // red
 
     private bool subscribed;
 
@@ -46,16 +54,6 @@ public class TaskProgressUI : MonoBehaviour
         subscribed = true;
     }
 
-    private void Update()
-    {
-        SessionTracker t = SessionTracker.Instance;
-        if (t != null && t.IsRunning && timerText != null)
-        {
-            int seconds = Mathf.FloorToInt(t.ElapsedTime);
-            timerText.text = $"Time: {seconds / 60:00}:{seconds % 60:00}";
-        }
-    }
-
     private void Refresh()
     {
         SessionTracker t = SessionTracker.Instance;
@@ -75,8 +73,24 @@ public class TaskProgressUI : MonoBehaviour
                 activityLabels[i].text = t.Results[i].name;
         }
 
-        if (errorsText != null) errorsText.text = "Errors: " + t.TotalErrors;
-        if (safetyScoreText != null) safetyScoreText.text = "Safety: " + Mathf.RoundToInt(t.SafetyScore) + "%";
-        if (progressText != null) progressText.text = t.CompletedCount + " / " + t.Results.Count + " tasks";
+        if (errorsText != null)
+            errorsText.text = "Errors: " + t.TotalErrors;
+
+        if (safetyScoreText != null)
+        {
+            float score = t.SafetyScore;
+            safetyScoreText.text = "Safety: " + Mathf.RoundToInt(score) + "%";
+            safetyScoreText.color = GetSafetyColor(score);
+        }
+
+        if (progressText != null)
+            progressText.text = t.CompletedCount + " / " + t.Results.Count + " tasks";
+    }
+
+    private Color GetSafetyColor(float score)
+    {
+        if (score >= goodThreshold) return goodColor;
+        if (score >= warningThreshold) return warningColor;
+        return poorColor;
     }
 }

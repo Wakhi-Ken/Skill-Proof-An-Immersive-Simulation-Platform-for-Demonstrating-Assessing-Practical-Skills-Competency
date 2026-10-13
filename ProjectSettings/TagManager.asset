@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - Anchor
+  - SolarLight
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -12,12 +14,12 @@ TagManager:
   - ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - ladder
+  - small panel
+  - light wire
+  - light wire 2
+  - light wire 3
+  - light wire 4
   - 
   - 
   - 

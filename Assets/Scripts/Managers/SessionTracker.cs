@@ -11,6 +11,10 @@ public class SessionTracker : MonoBehaviour
     [Header("Simulation (must match a document ID in Firestore)")]
     public string simulationId = "electrical_wiring";
 
+    [Header("Timer")]
+    [Tooltip("0 = no time limit. Otherwise the session ends automatically after this many minutes.")]
+    public float timeLimitMinutes = 0f;
+
     [Header("Scoring (change these as you like)")]
     public float safetyPenalty = 10f;      // lost from safety score per safety violation
     public float accuracyPenalty = 5f;     // lost from accuracy per error
@@ -22,6 +26,7 @@ public class SessionTracker : MonoBehaviour
     // Events the UI listens to
     public event Action OnSessionStarted;
     public event Action OnProgressChanged;
+    public event Action OnTimeUp;
     public event Action<PerformanceData> OnSessionFinished;
 
     // Live state
@@ -34,6 +39,11 @@ public class SessionTracker : MonoBehaviour
 
     public float SafetyScore => Mathf.Max(0f, 100f - SafetyViolations * safetyPenalty);
     public float ElapsedTime => IsRunning ? Time.time - startTime : lastElapsed;
+
+    public bool HasTimeLimit => timeLimitMinutes > 0f;
+    public float TimeRemaining => HasTimeLimit
+        ? Mathf.Max(0f, timeLimitMinutes * 60f - ElapsedTime)
+        : 0f;
 
     public int CompletedCount
     {
@@ -58,6 +68,17 @@ public class SessionTracker : MonoBehaviour
             return;
         }
         Instance = this;
+    }
+
+    private void Update()
+    {
+        // Ends the session when the time limit is reached
+        if (IsRunning && HasTimeLimit && ElapsedTime >= timeLimitMinutes * 60f)
+        {
+            Debug.Log("Time is up.");
+            OnTimeUp?.Invoke();
+            FinishSession();
+        }
     }
 
     // Hook this to your "Start Simulation" button
@@ -98,6 +119,7 @@ public class SessionTracker : MonoBehaviour
         TotalErrors = 0;
         SafetyViolations = 0;
         inOrderCount = 0;
+        lastElapsed = 0f;
         startTime = Time.time;
         startedAtUtc = DateTime.UtcNow;
         IsRunning = true;
@@ -167,7 +189,10 @@ public class SessionTracker : MonoBehaviour
         PerformanceData p = BuildPerformance();
         LastPerformance = p;
 
-        bool saved = await DatabaseManager.Instance.SavePerformanceAsync(p);
+        bool saved = false;
+        if (DatabaseManager.Instance != null)
+            saved = await DatabaseManager.Instance.SavePerformanceAsync(p);
+
         Debug.Log(saved ? "Performance saved." : "Performance could not be saved.");
 
         OnSessionFinished?.Invoke(p);
@@ -197,8 +222,9 @@ public class SessionTracker : MonoBehaviour
 
         string feedback = competent
             ? "Well done. You completed every task safely and demonstrated competence."
-            : "Not yet competent. Review the steps you missed or did out of order, "
-              + "reduce your errors and safety violations, then try again.";
+            : allDone
+                ? "Not yet competent. Reduce your errors and safety violations, then try again."
+                : "Not yet competent. Some tasks were not completed. Review the steps you missed, then try again.";
 
         return new PerformanceData
         {
@@ -237,4 +263,7 @@ public class SessionTracker : MonoBehaviour
 
     [ContextMenu("Debug: Add Safety Violation")]
     private void DebugAddViolation() { RegisterError("", true); }
+
+    [ContextMenu("Debug: Finish Now")]
+    private void DebugFinishNow() { FinishSession(); }
 }
