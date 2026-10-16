@@ -3,9 +3,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Put this on an object that is ALWAYS active (for example an empty object called
-// CompleteSimulationManager), not on the results canvas itself. A script on an
-// inactive canvas never runs, so it could not make the canvas appear.
 public class CompleteSimulationUI : MonoBehaviour
 {
     [Header("Results canvas (leave inactive in the Hierarchy)")]
@@ -83,7 +80,7 @@ public class CompleteSimulationUI : MonoBehaviour
         Debug.Log("CompleteSimulationUI: listening for the end of the session.");
     }
 
-    // Hook this to the "Complete" button the player presses in the scene
+    // This is called by a "Finish" button in the simulation, or by the SessionTracker when the last task is completed
     public void CompleteSimulation()
     {
         if (SessionTracker.Instance == null) return;

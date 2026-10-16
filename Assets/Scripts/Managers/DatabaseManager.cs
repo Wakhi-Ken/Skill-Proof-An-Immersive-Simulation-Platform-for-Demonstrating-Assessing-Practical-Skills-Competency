@@ -23,7 +23,7 @@ public class DatabaseManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    // Users
+    
 
     // Call right after Firebase Auth creates the account
     public async Task<bool> CreateUserProfileAsync(string uid, string name, string email)
@@ -96,7 +96,7 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
-    // ---------- Performances ----------
+    //Performances
 
     // Saves one finished simulation AND updates the profile averages together
     public async Task<bool> SavePerformanceAsync(PerformanceData p)

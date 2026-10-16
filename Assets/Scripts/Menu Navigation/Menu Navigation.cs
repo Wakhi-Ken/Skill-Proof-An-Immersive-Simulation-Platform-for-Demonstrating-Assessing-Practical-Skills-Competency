@@ -26,7 +26,7 @@ public class MenuNavigation : MonoBehaviour
             loadingCanvas.SetActive(false);
     }
 
-    // ---------- Scene buttons (same method names as before) ----------
+    //  Scene buttons
 
     public void StartMenu()
     {
@@ -58,7 +58,7 @@ public class MenuNavigation : MonoBehaviour
         Application.Quit();
     }
 
-    // ---------- Pause ----------
+    // Pause 
 
     public void PauseGame()
     {
@@ -76,7 +76,7 @@ public class MenuNavigation : MonoBehaviour
             pauseCanvas.SetActive(false);
     }
 
-    // ---------- Loading ----------
+    //  Loading
 
     private void LoadScene(string sceneName)
     {
