@@ -14,6 +14,7 @@ public class LoginManager : MonoBehaviour
     public TMP_Text messageText;
     public GameObject loginCanvas;
     public GameObject SimulatorCanvas;
+    public GameObject loadingCanvas;   // shown while the login is in progress
 
     private bool isBusy = false;
 
@@ -22,6 +23,9 @@ public class LoginManager : MonoBehaviour
         // Show dots instead of the password text
         passwordInput.contentType = TMP_InputField.ContentType.Password;
         passwordInput.ForceLabelUpdate();
+
+        // Loading canvas stays hidden until a login starts
+        SetLoading(false);
     }
 
     public void Login()
@@ -39,7 +43,7 @@ public class LoginManager : MonoBehaviour
         string email = emailInput.text.Trim();
         string password = passwordInput.text;
 
-        //  Validation 
+        // Validation
         if (string.IsNullOrEmpty(email))
         {
             messageText.text = "Please enter your email.";
@@ -52,9 +56,10 @@ public class LoginManager : MonoBehaviour
             return;
         }
 
-        // Sign in=
+        // Sign in
         isBusy = true;
         messageText.text = "Logging in...";
+        SetLoading(true);
 
         auth.SignInWithEmailAndPasswordAsync(email, password)
             .ContinueWithOnMainThread(task =>
@@ -66,12 +71,14 @@ public class LoginManager : MonoBehaviour
 
                 if (task.IsCanceled)
                 {
+                    SetLoading(false);
                     messageText.text = "Login canceled.";
                     return;
                 }
 
                 if (task.IsFaulted)
                 {
+                    SetLoading(false);
                     messageText.text = GetErrorMessage(task.Exception);
                     Debug.LogError(task.Exception);
                     return;
@@ -83,8 +90,10 @@ public class LoginManager : MonoBehaviour
                 messageText.text = "";
                 emailInput.text = "";
 
+                // Switch screens first, then hide the loading canvas
                 loginCanvas.SetActive(false);
                 SimulatorCanvas.SetActive(true);
+                SetLoading(false);
             });
     }
 
@@ -99,6 +108,7 @@ public class LoginManager : MonoBehaviour
         FirebaseManager.Auth.SignOut();
         Debug.Log("User logged out.");
 
+        SetLoading(false);
         SimulatorCanvas.SetActive(false);
         loginCanvas.SetActive(true);
 
@@ -107,7 +117,13 @@ public class LoginManager : MonoBehaviour
         messageText.text = "";
     }
 
-    // Helpers 
+    // Helpers
+    private void SetLoading(bool show)
+    {
+        if (loadingCanvas != null)
+            loadingCanvas.SetActive(show);
+    }
+
     private string GetErrorMessage(System.AggregateException exception)
     {
         FirebaseException firebaseEx = exception?.GetBaseException() as FirebaseException;

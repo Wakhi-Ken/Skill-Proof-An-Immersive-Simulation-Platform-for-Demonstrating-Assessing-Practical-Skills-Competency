@@ -23,11 +23,16 @@ public class SessionTracker : MonoBehaviour
     public bool countOutOfOrderAsError = true;
     public bool autoFinishWhenAllDone = true;
 
+    [Header("Testing")]
+    [Tooltip("0 = use every activity from Firestore. Set to 1 while only one activity exists in the scene.")]
+    public int useFirstActivities = 0;
+
     // Events the UI listens to
     public event Action OnSessionStarted;
     public event Action OnProgressChanged;
     public event Action OnTimeUp;
-    public event Action<PerformanceData> OnSessionFinished;
+    public event Action<PerformanceData> OnSessionFinished;   // fires straight away
+    public event Action<bool> OnPerformanceSaved;             // fires when the save finishes
 
     // Live state
     public bool IsRunning { get; private set; }
@@ -107,6 +112,8 @@ public class SessionTracker : MonoBehaviour
         Results.Clear();
         foreach (ActivityInfo info in Simulation.activities)
         {
+            if (useFirstActivities > 0 && Results.Count >= useFirstActivities) break;
+
             Results.Add(new ActivityResult
             {
                 activityID = info.activityID,
@@ -124,7 +131,7 @@ public class SessionTracker : MonoBehaviour
         startedAtUtc = DateTime.UtcNow;
         IsRunning = true;
 
-        Debug.Log("Session started: " + Simulation.name);
+        Debug.Log("Session started: " + Simulation.name + " (" + Results.Count + " activities)");
         OnSessionStarted?.Invoke();
         OnProgressChanged?.Invoke();
         return true;
@@ -133,10 +140,20 @@ public class SessionTracker : MonoBehaviour
     // Called by ActivityTrigger
     public void CompleteActivity(string activityID)
     {
-        if (!IsRunning) return;
+        if (!IsRunning)
+        {
+            Debug.LogWarning("SessionTracker: '" + activityID + "' ignored because no session is running. Press Start Simulation first.");
+            return;
+        }
 
         int index = Results.FindIndex(r => r.activityID == activityID);
-        if (index < 0 || Results[index].completed) return;
+        if (index < 0)
+        {
+            Debug.LogWarning("SessionTracker: no activity with the ID '" + activityID + "' in this session.");
+            return;
+        }
+
+        if (Results[index].completed) return;
 
         bool previousDone = true;
         for (int i = 0; i < index; i++)
@@ -153,7 +170,7 @@ public class SessionTracker : MonoBehaviour
             RegisterError(activityID, false);   // also fires the progress event
         }
 
-        Debug.Log("Activity completed: " + activityID);
+        Debug.Log("Activity completed: " + activityID + " (" + CompletedCount + "/" + Results.Count + ")");
         OnProgressChanged?.Invoke();
 
         if (autoFinishWhenAllDone && CompletedCount == Results.Count)
@@ -178,10 +195,14 @@ public class SessionTracker : MonoBehaviour
         OnProgressChanged?.Invoke();
     }
 
-    // Hook this to a "Finish / Quit" button too
+    // Hook this to a "Finish / Complete" button too
     public async void FinishSession()
     {
-        if (!IsRunning) return;
+        if (!IsRunning)
+        {
+            Debug.LogWarning("SessionTracker: FinishSession ignored because no session is running. Press Start Simulation first.");
+            return;
+        }
 
         IsRunning = false;
         lastElapsed = Time.time - startTime;
@@ -189,13 +210,15 @@ public class SessionTracker : MonoBehaviour
         PerformanceData p = BuildPerformance();
         LastPerformance = p;
 
+        // Show the results straight away, without waiting for the network
+        OnSessionFinished?.Invoke(p);
+
         bool saved = false;
         if (DatabaseManager.Instance != null)
             saved = await DatabaseManager.Instance.SavePerformanceAsync(p);
 
         Debug.Log(saved ? "Performance saved." : "Performance could not be saved.");
-
-        OnSessionFinished?.Invoke(p);
+        OnPerformanceSaved?.Invoke(saved);
     }
 
     private PerformanceData BuildPerformance()
