@@ -21024,7 +21024,7 @@ static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[5] =
 {
 	{ 0x06000D1B, 211,  (void**)&ProfilerUIToolkit_SetActiveCaptureMode_mE7B4423DBA5AB6337C7DBFB7EC5EFD7987FD968A_RuntimeMethod_var, 0 },
 	{ 0x06000D2B, 210,  (void**)&ProfilerUIToolkit_RecordProfilerPanelMetadataForCapture_mE5CAD20F636FFCBBA850BCE4BF82DC528AC72C9F_RuntimeMethod_var, 0 },
-	{ 0x06000DE4, 357,  (void**)&Manager_ContainsPoint_mCDF2CB75AD1A3EC33CBED210AA73DAF4076DD255_RuntimeMethod_var, 0 },
+	{ 0x06000DE4, 359,  (void**)&Manager_ContainsPoint_mCDF2CB75AD1A3EC33CBED210AA73DAF4076DD255_RuntimeMethod_var, 0 },
 	{ 0x06002897, 179,  (void**)&LayoutDelegates_InvokeMeasureFunction_m2116A3480F9DB31C9E890DD1DF19C206966B76DB_RuntimeMethod_var, 0 },
 	{ 0x06002898, 178,  (void**)&LayoutDelegates_InvokeBaselineFunction_m964C07F9F04D50B3D709ED835CAE6E5557FA9833_RuntimeMethod_var, 0 },
 };

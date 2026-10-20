@@ -9,6 +9,12 @@ TagManager:
   - Ladder
   - Geyzer
   - Garden Panels
+  - inverter
+  - male
+  - female
+  - box
+  - isoletor
+  - StealCover
   layers:
   - Default
   - TransparentFX

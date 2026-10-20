@@ -711,8 +711,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.69589233, y: 0.18796808, z: 0.65551805}
-  m_Center: {x: 3.146201, y: 0.09414506, z: -0.18009399}
+  m_Size: {x: 0.1968274, y: 0.18796812, z: 0.72804785}
+  m_Center: {x: 3.39572, y: 0.09412165, z: -0.14384261}
 --- !u!1 &41582250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 454d35e155ff3304e8447e307dabfb25, type: 3}
@@ -1079,6 +1079,7 @@ GameObject:
   - component: {fileID: 86741882}
   - component: {fileID: 86741884}
   - component: {fileID: 86741883}
+  - component: {fileID: 86741885}
   m_Layer: 0
   m_Name: socket p2
   m_TagString: Untagged
@@ -1095,7 +1096,7 @@ Transform:
   m_GameObject: {fileID: 86741881}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 4.3145504, y: -0.12900001, z: -11.361942}
+  m_LocalPosition: {x: 4.3145504, y: 0.048999973, z: -11.361942}
   m_LocalScale: {x: 0.54038, y: 0.54038, z: 0.54038}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1120,7 +1121,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.14, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &86741884
 MonoBehaviour:
@@ -1153,10 +1154,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 86741885}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 86741885}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 86741885}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -1170,6 +1207,22 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &86741885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86741881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: Garden Panels
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1001 &88697267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1753,6 +1806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127502001}
   - component: {fileID: 127502003}
+  - component: {fileID: 127502004}
   - component: {fileID: 127502002}
   m_Layer: 0
   m_Name: socket p1
@@ -1770,7 +1824,7 @@ Transform:
   m_GameObject: {fileID: 127502000}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 7.5645504, y: -0.12900001, z: -11.361942}
+  m_LocalPosition: {x: 7.5645504, y: 0.049, z: -11.361942}
   m_LocalScale: {x: 0.54038, y: 0.54038, z: 0.54038}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1807,10 +1861,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 127502004}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 127502004}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 127502004}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -1843,8 +1933,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.14, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &127502004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127502000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: Garden Panels
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!114 &132491641 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2826718342874941972, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
@@ -1966,8 +2072,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3700006, y: 0.14000012, z: 1.2838693}
-  m_Center: {x: 2.7851825, y: 0.09414504, z: 0.15806554}
+  m_Size: {x: 0.7197774, y: 0.10852009, z: 0.26041308}
+  m_Center: {x: 3.1102753, y: 0.07837192, z: -0.35368115}
 --- !u!1001 &159712932
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2161,6 +2267,7 @@ GameObject:
   - component: {fileID: 164935249}
   - component: {fileID: 164935251}
   - component: {fileID: 164935250}
+  - component: {fileID: 164935252}
   m_Layer: 0
   m_Name: socket p2 (1)
   m_TagString: Untagged
@@ -2252,6 +2359,22 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &164935252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164935248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01276d3ae599ef549a19517983f94e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ErrorTrigger
+  relatedActivityID: activity_3
+  isSafetyViolation: 1
+  requiredTag: Garden Panels
+  cooldown: 2
 --- !u!1001 &173663688
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3036,7 +3159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 5.040001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3069,6 +3192,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3585,11 +3712,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.872
+      value: 0.12199998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 10.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3622,6 +3749,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3925,7 +4056,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.22634013, y: 0.4315292, z: 0.34232566}
+  m_Size: {x: 0.32, y: 0.37, z: 0.18}
   m_Center: {x: -0.6488084, y: -0.28423667, z: 0.040407106}
 --- !u!1 &227812000
 GameObject:
@@ -4532,8 +4663,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3700001, y: 0.13999999, z: 1.283869}
-  m_Center: {x: 2.7851777, y: 0.094145, z: 0.15806928}
+  m_Size: {x: 0.17944111, y: 0.13999999, z: 0.62840706}
+  m_Center: {x: 3.3804405, y: 0.09414501, z: -0.16966517}
 --- !u!1 &286513655
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,7 +4744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 5.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4646,6 +4777,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4849,6 +4984,76 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0113866, y: 0.051089056, z: 1.0000002}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &313175171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313175172}
+  - component: {fileID: 313175174}
+  - component: {fileID: 313175173}
+  m_Layer: 0
+  m_Name: socket male correct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313175172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313175171}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.70003104, y: -0.7000306, z: 0.09978396, w: 0.09978393}
+  m_LocalPosition: {x: 3.7895012, y: 1.3903999, z: -0.16699982}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 455862471}
+  m_LocalEulerAnglesHint: {x: 163.775, y: 0, z: 90}
+--- !u!114 &313175173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313175171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredTag: male
+  undoOnRemove: 1
+  disableDelay: 5
+--- !u!65 &313175174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313175171}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05037503, y: 0.079925455, z: 0.07392479}
+  m_Center: {x: 0.0223971, y: 0.0583379, z: -0.03703341}
 --- !u!1 &315156513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,7 +5319,7 @@ Transform:
   m_GameObject: {fileID: 357382005}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.91, y: 0.34, z: 0}
+  m_LocalPosition: {x: -1.91, y: 0.120000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5349,10 +5554,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 741373751}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 741373751}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 741373751}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -5477,6 +5718,7 @@ GameObject:
   - component: {fileID: 439459731}
   - component: {fileID: 439459733}
   - component: {fileID: 439459732}
+  - component: {fileID: 439459734}
   m_Layer: 0
   m_Name: socket g3
   m_TagString: Untagged
@@ -5531,13 +5773,25 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 439459734}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 439459734}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5545,7 +5799,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 439459734}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -5580,6 +5846,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &439459734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439459730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_2
+  requiredTag: Geyzer
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &454251330
 GameObject:
   m_ObjectHideFlags: 0
@@ -5590,6 +5872,7 @@ GameObject:
   m_Component:
   - component: {fileID: 454251331}
   - component: {fileID: 454251332}
+  - component: {fileID: 454251334}
   - component: {fileID: 454251333}
   m_Layer: 0
   m_Name: socket s3
@@ -5644,10 +5927,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 454251334}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 454251334}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 454251334}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -5680,8 +5999,129 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &454251334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454251330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
+--- !u!1 &455862470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455862471}
+  m_Layer: 0
+  m_Name: Correct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455862471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455862470}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 881703102}
+  - {fileID: 313175172}
+  - {fileID: 457611839}
+  - {fileID: 741373750}
+  m_Father: {fileID: 1520572779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &457611838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457611839}
+  - component: {fileID: 457611841}
+  - component: {fileID: 457611840}
+  m_Layer: 0
+  m_Name: socket box Correct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &457611839
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457611838}
+  serializedVersion: 2
+  m_LocalRotation: {x: -8.881784e-16, y: 1, z: -0.000000021855698, w: -0.000000059604645}
+  m_LocalPosition: {x: 3.508234, y: 1.5202103, z: -0.06641388}
+  m_LocalScale: {x: 1.3660516, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 455862471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &457611840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457611838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredTag: box
+  undoOnRemove: 1
+  disableDelay: 5
+--- !u!65 &457611841
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457611838}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.08664476, y: 0.13748562, z: 0.07104857}
+  m_Center: {x: 0.0000019073486, y: 0.0014655963, z: 0.035119623}
 --- !u!1 &463372764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5994,6 +6434,7 @@ GameObject:
   - component: {fileID: 529803932}
   - component: {fileID: 529803934}
   - component: {fileID: 529803933}
+  - component: {fileID: 529803935}
   m_Layer: 9
   m_Name: socket wire 2
   m_TagString: Untagged
@@ -6047,10 +6488,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529803935}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 529803935}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 529803935}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -6083,8 +6560,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.58163434, z: 0.59708714}
+  m_Center: {x: 0.0000000038170316, y: -0.20918289, z: -0.20145647}
+--- !u!114 &529803935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529803931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_1
+  requiredTag: SolarLight
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &554489290
 GameObject:
   m_ObjectHideFlags: 0
@@ -7185,6 +7678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 684317979}
   - component: {fileID: 684317980}
+  - component: {fileID: 684317982}
   - component: {fileID: 684317981}
   m_Layer: 0
   m_Name: socket s9
@@ -7202,7 +7696,7 @@ Transform:
   m_GameObject: {fileID: 684317978}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 16}
+  m_LocalPosition: {x: 0, y: 0, z: 16.25}
   m_LocalScale: {x: 1, y: 1, z: 0.52928}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7239,10 +7733,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684317982}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 684317982}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684317982}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -7275,8 +7805,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &684317982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684317978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &714423543
 GameObject:
   m_ObjectHideFlags: 0
@@ -7290,7 +7836,7 @@ GameObject:
   - component: {fileID: 714423545}
   m_Layer: 0
   m_Name: Curve long (1)
-  m_TagString: Untagged
+  m_TagString: SolarLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7591,6 +8137,110 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 360ae8b94cf61424bbbecd83d683c905, type: 3}
   m_PrefabInstance: {fileID: 1371465327}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &741373749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741373750}
+  - component: {fileID: 741373752}
+  - component: {fileID: 741373751}
+  - component: {fileID: 741373754}
+  - component: {fileID: 741373753}
+  m_Layer: 0
+  m_Name: socket isolator Correct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741373750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741373749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.034384776, y: -0.98270184, z: -0.09706544, w: 0.15392557}
+  m_LocalPosition: {x: 3.8770561, y: 1.5304041, z: -0.07036972}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 455862471}
+  m_LocalEulerAnglesHint: {x: 190.381, y: 18.321, z: 174.314}
+--- !u!114 &741373751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741373749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredTag: isoletor
+  undoOnRemove: 1
+  disableDelay: 5
+--- !u!65 &741373752
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741373749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09822361, y: 0.14715259, z: 0.026726916}
+  m_Center: {x: -0.2346444, y: -0.124157324, z: -0.06063257}
+--- !u!114 &741373753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741373749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01276d3ae599ef549a19517983f94e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ErrorTrigger
+  relatedActivityID: activity_5
+  isSafetyViolation: 1
+  requiredTag: female
+  cooldown: 2
+--- !u!114 &741373754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741373749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01276d3ae599ef549a19517983f94e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ErrorTrigger
+  relatedActivityID: activity_5
+  isSafetyViolation: 1
+  requiredTag: male
+  cooldown: 2
 --- !u!1 &748778634
 GameObject:
   m_ObjectHideFlags: 0
@@ -8944,11 +9594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.148
+      value: 0.398
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 10.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8981,6 +9631,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9342,6 +9996,76 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 454d35e155ff3304e8447e307dabfb25, type: 3}
   m_PrefabInstance: {fileID: 877558840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &881703101
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881703102}
+  - component: {fileID: 881703104}
+  - component: {fileID: 881703103}
+  m_Layer: 0
+  m_Name: socket female correct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &881703102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881703101}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.69026953, y: -0.6902694, z: 0.1533887, w: 0.1533887}
+  m_LocalPosition: {x: 3.8394318, y: 1.3672848, z: -0.19700241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 455862471}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881703103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881703101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredTag: female
+  undoOnRemove: 1
+  disableDelay: 5
+--- !u!65 &881703104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881703101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.05037503, y: 0.07708359, z: 0.0755297}
+  m_Center: {x: 0.022397086, y: 0.2775751, z: -0.036230918}
 --- !u!4 &891869370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 688758197324552756, guid: e85c7e3cf2d90204fbd4cf1fa45c65bd, type: 3}
@@ -9357,6 +10081,7 @@ GameObject:
   m_Component:
   - component: {fileID: 893180417}
   - component: {fileID: 893180418}
+  - component: {fileID: 893180420}
   - component: {fileID: 893180419}
   m_Layer: 0
   m_Name: socket s6
@@ -9411,10 +10136,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 893180420}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 893180420}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 893180420}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -9447,8 +10208,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &893180420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893180416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1001 &898770508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10577,7 +11354,7 @@ GameObject:
   - component: {fileID: 997790396}
   m_Layer: 0
   m_Name: Curve long
-  m_TagString: Untagged
+  m_TagString: SolarLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11093,11 +11870,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 10.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11130,6 +11907,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12094,10 +12875,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 313175173}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 313175173}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 313175173}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -12154,6 +12971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1155428672}
   - component: {fileID: 1155428673}
+  - component: {fileID: 1155428675}
   - component: {fileID: 1155428674}
   m_Layer: 0
   m_Name: socket s
@@ -12208,10 +13026,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1155428675}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1155428675}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1155428675}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -12244,8 +13098,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1155428675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155428671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1159885120
 GameObject:
   m_ObjectHideFlags: 0
@@ -12348,6 +13218,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1167190387}
   - component: {fileID: 1167190388}
+  - component: {fileID: 1167190390}
   - component: {fileID: 1167190389}
   m_Layer: 0
   m_Name: socket s7
@@ -12402,10 +13273,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167190390}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1167190390}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167190390}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -12438,8 +13345,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1167190390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167190386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!4 &1188935468 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -5477749408508380018, guid: 454d35e155ff3304e8447e307dabfb25, type: 3}
@@ -13005,6 +13928,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1219258107}
   - component: {fileID: 1219258108}
+  - component: {fileID: 1219258110}
   - component: {fileID: 1219258109}
   m_Layer: 0
   m_Name: socket s1
@@ -13059,10 +13983,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1219258110}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1219258110}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1219258110}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -13095,8 +14055,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1219258110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219258106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1222840933
 GameObject:
   m_ObjectHideFlags: 0
@@ -13175,8 +14151,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240443483}
-  - component: {fileID: 1240443485}
   - component: {fileID: 1240443484}
+  - component: {fileID: 1240443486}
+  - component: {fileID: 1240443485}
   m_Layer: 0
   m_Name: socket g1
   m_TagString: Untagged
@@ -13231,13 +14208,25 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1240443486}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1240443486}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -13245,7 +14234,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1240443486}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -13280,6 +14281,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1240443486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240443482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_2
+  requiredTag: Geyzer
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1251823674
 GameObject:
   m_ObjectHideFlags: 0
@@ -13564,6 +14581,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fluorecent light solar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d47f12136c04f384792fd29cf9f0e58e, type: 3}
+      propertyPath: m_TagString
+      value: SolarLight
+      objectReference: {fileID: 0}
     - target: {fileID: 5570216905711501561, guid: d47f12136c04f384792fd29cf9f0e58e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.046
@@ -13702,8 +14723,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1288317080}
-  - component: {fileID: 1288317082}
   - component: {fileID: 1288317081}
+  - component: {fileID: 1288317082}
+  - component: {fileID: 1288317083}
   m_Layer: 0
   m_Name: lightsockets
   m_TagString: Untagged
@@ -13745,7 +14767,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.15, y: 0.19, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1288317082
 MonoBehaviour:
@@ -13778,10 +14800,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288317083}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1288317083}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1288317083}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -13795,6 +14853,22 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1288317083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288317079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_1
+  requiredTag: SolarLight
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1292607177
 GameObject:
   m_ObjectHideFlags: 0
@@ -13808,7 +14882,7 @@ GameObject:
   - component: {fileID: 1292607179}
   m_Layer: 0
   m_Name: Curve long (2)
-  m_TagString: Untagged
+  m_TagString: SolarLight
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14190,6 +15264,7 @@ GameObject:
   - component: {fileID: 1335385664}
   - component: {fileID: 1335385665}
   - component: {fileID: 1335385666}
+  - component: {fileID: 1335385667}
   m_Layer: 0
   m_Name: socket g2
   m_TagString: Untagged
@@ -14265,13 +15340,25 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1335385667}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1335385667}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14279,7 +15366,19 @@ MonoBehaviour:
         m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1335385667}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -14293,6 +15392,22 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1335385667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335385663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_2
+  requiredTag: Geyzer
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1348229801
 GameObject:
   m_ObjectHideFlags: 0
@@ -14303,6 +15418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1348229802}
   - component: {fileID: 1348229804}
+  - component: {fileID: 1348229805}
   - component: {fileID: 1348229803}
   m_Layer: 10
   m_Name: socket wire 3
@@ -14345,8 +15461,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.69452655, y: 1, z: 1}
+  m_Center: {x: -0.1527369, y: -0.0000000016857051, z: -2.1898625e-10}
 --- !u!114 &1348229804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14378,10 +15494,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348229805}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1348229805}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1348229805}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -14395,6 +15547,22 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1348229805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348229801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_1
+  requiredTag: SolarLight
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1001 &1356900432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14413,11 +15581,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7
+      value: -0.050000012
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 10.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -14450,6 +15618,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14697,6 +15869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1367603834}
   - component: {fileID: 1367603835}
+  - component: {fileID: 1367603837}
   - component: {fileID: 1367603836}
   m_Layer: 0
   m_Name: socket s4
@@ -14751,10 +15924,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1367603837}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1367603837}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1367603837}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -14787,8 +15996,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1367603837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367603833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1001 &1371465327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15041,6 +16266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1400627377}
   - component: {fileID: 1400627378}
+  - component: {fileID: 1400627380}
   - component: {fileID: 1400627379}
   m_Layer: 0
   m_Name: socket s5
@@ -15095,10 +16321,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1400627380}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1400627380}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1400627380}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -15131,81 +16393,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &1404623625 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d47f12136c04f384792fd29cf9f0e58e, type: 3}
-  m_PrefabInstance: {fileID: 1775546722}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1407537975
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1407537976}
-  - component: {fileID: 1407537978}
-  - component: {fileID: 1407537977}
-  m_Layer: 7
-  m_Name: ActivityLogic_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1407537976
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407537975}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1767197998}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1407537977
+--- !u!114 &1400627380
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407537975}
+  m_GameObject: {fileID: 1400627376}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
-  activityID: activity_1
-  requiredTag: SolarLight
---- !u!65 &1407537978
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
+--- !u!4 &1404623625 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d47f12136c04f384792fd29cf9f0e58e, type: 3}
+  m_PrefabInstance: {fileID: 1775546722}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407537975}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1415151532
 GameObject:
   m_ObjectHideFlags: 0
@@ -15599,8 +16809,8 @@ Transform:
   m_GameObject: {fileID: 1470946895}
   serializedVersion: 2
   m_LocalRotation: {x: -0.02219845, y: -0.7814151, z: -0.017708562, w: 0.62336516}
-  m_LocalPosition: {x: -4.303, y: -4.778, z: -0.578}
-  m_LocalScale: {x: 0.75569963, y: 0.5227, z: 0.5227}
+  m_LocalPosition: {x: -4.4159, y: -4.7716, z: -0.081952}
+  m_LocalScale: {x: 0.6479293, y: 0.5227, z: 0.5227}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1604620492}
@@ -16299,6 +17509,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1564344894}
+  - {fileID: 455862471}
   - {fileID: 1146700018}
   - {fileID: 2079567541}
   - {fileID: 407619090}
@@ -16330,13 +17541,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1531419913}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.019534199, y: 0.68763, z: -0.020610176, w: 0.7255058}
-  m_LocalPosition: {x: 1.0725555, y: 3.6562953, z: -2.2056503}
+  m_LocalRotation: {x: 0.17266306, y: 0.67641115, z: 0.12541103, w: 0.70493084}
+  m_LocalPosition: {x: 0.67700195, y: 3.756, z: -2.2056503}
   m_LocalScale: {x: 0.52279514, y: 0.5227, z: 0.7556045}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 942230948}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.231, y: 88.546, z: 24.3}
 --- !u!114 &1531419915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16404,7 +17615,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.47, y: 0.26, z: 0.64}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1533570689
 GameObject:
@@ -16591,7 +17802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 5.040001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16624,6 +17835,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16991,10 +18206,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 881703103}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 881703103}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 881703103}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -18429,6 +19680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1722587869}
   - component: {fileID: 1722587870}
+  - component: {fileID: 1722587872}
   - component: {fileID: 1722587871}
   m_Layer: 0
   m_Name: socket s8
@@ -18446,7 +19698,7 @@ Transform:
   m_GameObject: {fileID: 1722587868}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 14}
+  m_LocalPosition: {x: 0, y: 0, z: 14.25}
   m_LocalScale: {x: 1, y: 1, z: 0.52928}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18483,10 +19735,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1722587872}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1722587872}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1722587872}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -18519,8 +19807,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.33, y: 0.11, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1722587872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722587868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_3
+  requiredTag: StealCover
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1001 &1723142633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18539,11 +19843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 10.354
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18576,6 +19880,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19133,8 +20441,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1753507048}
-  - component: {fileID: 1753507049}
   - component: {fileID: 1753507050}
+  - component: {fileID: 1753507051}
+  - component: {fileID: 1753507049}
   m_Layer: 0
   m_Name: socket g4
   m_TagString: Untagged
@@ -19154,8 +20463,7 @@ Transform:
   m_LocalPosition: {x: 0, y: -0.17389965, z: -0.20899963}
   m_LocalScale: {x: 0.14523795, y: 0.14523795, z: 0.14523795}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1943659042}
+  m_Children: []
   m_Father: {fileID: 381195491}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1753507049
@@ -19211,7 +20519,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1943659043}
+      - m_Target: {fileID: 1753507051}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: Complete
         m_Mode: 1
@@ -19223,9 +20531,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1753507051}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1753507051}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -19239,6 +20571,22 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1753507051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753507047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_2
+  requiredTag: Geyzer
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!4 &1757686533 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 675ddfbf0d1aa0a4cbb533567b790ec8, type: 3}
@@ -19596,6 +20944,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1767197998}
   - component: {fileID: 1767197999}
+  - component: {fileID: 1767198001}
   - component: {fileID: 1767198000}
   m_Layer: 7
   m_Name: SocketSolar_SolarLIght
@@ -19612,14 +20961,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767197997}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21228972, y: -0.6744873, z: 0.21228972, w: 0.6744873}
+  m_LocalRotation: {x: 0.19939515, y: -0.67841107, z: 0.19939515, w: 0.67841107}
   m_LocalPosition: {x: -1.2844505, y: 3.862, z: 4.368061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1407537976}
+  m_Children: []
   m_Father: {fileID: 1280731114}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 32.758, y: -90, z: 0}
 --- !u!114 &1767197999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19652,7 +21000,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1407537977}
+      - m_Target: {fileID: 1767198001}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: Complete
         m_Mode: 1
@@ -19664,9 +21012,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1767198001}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1767198001}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -19699,8 +21071,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 0.09, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1767198001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1767197997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_1
+  requiredTag: SolarLight
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1774431513
 GameObject:
   m_ObjectHideFlags: 0
@@ -21931,13 +23319,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881433780}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.30131584, y: -0.9503605, z: 0.07453583, w: 0.021636037}
-  m_LocalPosition: {x: -1.2844505, y: 3.862, z: 3.11}
+  m_LocalRotation: {x: 0.29093418, y: -0.9563006, z: 0.02836895, w: 0.00645514}
+  m_LocalPosition: {x: -1.2844505, y: 3.862, z: 3.1100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1280731114}
-  m_LocalEulerAnglesHint: {x: 8.9, y: -180.22, z: -35.2}
+  m_LocalEulerAnglesHint: {x: 3.326, y: -180.239, z: -33.85}
 --- !u!65 &1881433782
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21957,7 +23345,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.74, y: 0.06, z: 0.65}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1881433783
 MonoBehaviour:
@@ -22296,6 +23684,200 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1908078460
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.6276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.6276
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -26.207966
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.081507
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -46.441
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      propertyPath: m_Name
+      value: Cardboard
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908078466}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908078465}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908078464}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908078463}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1908078462}
+  m_SourcePrefab: {fileID: 100100000, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+--- !u!1 &1908078461 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 58dae14c9891e1849813c18878817f96, type: 3}
+  m_PrefabInstance: {fileID: 1908078460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1908078462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908078461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.00014179724, y: 0.30433017, z: 0.388372}
+  m_Center: {x: 0.30157286, y: 0.15216503, z: -0.012394991}
+--- !u!65 &1908078463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908078461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0, y: 0.30433017, z: 0.3868861}
+  m_Center: {x: -0.31802997, y: 0.15216503, z: -0.003648093}
+--- !u!65 &1908078464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908078461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6210227, y: 0.30433017, z: 0}
+  m_Center: {x: -0.0065918136, y: 0.15216503, z: 0.18844736}
+--- !u!65 &1908078465
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908078461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6288167, y: 0.30433017, z: 0.005362587}
+  m_Center: {x: -0.005014979, y: 0.15216503, z: -0.19829813}
+--- !u!65 &1908078466
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908078461}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.62274534, y: 0.046576723, z: 0.3931016}
+  m_Center: {x: -0.010044167, y: 0.023288297, z: -0.00867534}
 --- !u!1001 &1929190512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22403,74 +23985,6 @@ BoxCollider:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1943659041
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1943659042}
-  - component: {fileID: 1943659044}
-  - component: {fileID: 1943659043}
-  m_Layer: 0
-  m_Name: 'ActivityLogic2 '
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1943659042
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1943659041}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1753507048}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1943659043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1943659041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
-  activityID: activity_2
-  requiredTag: Geyzer
---- !u!65 &1943659044
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1943659041}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -23511,6 +25025,7 @@ GameObject:
   - component: {fileID: 2033817840}
   - component: {fileID: 2033817842}
   - component: {fileID: 2033817841}
+  - component: {fileID: 2033817843}
   m_Layer: 0
   m_Name: socket p1 (1)
   m_TagString: Untagged
@@ -23602,6 +25117,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2033817843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033817839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01276d3ae599ef549a19517983f94e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ErrorTrigger
+  relatedActivityID: activity_3
+  isSafetyViolation: 1
+  requiredTag: Garden Panels
+  cooldown: 2
 --- !u!1 &2035864892
 GameObject:
   m_ObjectHideFlags: 0
@@ -23712,8 +25243,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6958921, y: 0.18796799, z: 0.65551794}
-  m_Center: {x: 3.146196, y: 0.094145, z: -0.18009022}
+  m_Size: {x: 0.69589216, y: 0.18796799, z: 0.14964882}
+  m_Center: {x: 3.146187, y: 0.09414501, z: -0.43302473}
 --- !u!1 &2037590565 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 454d35e155ff3304e8447e307dabfb25, type: 3}
@@ -24028,7 +25559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 5.040001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24061,6 +25592,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
       propertyPath: m_Name
       value: FB SP ManholeCover (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: df64bfa929a58224d81e1372727cfc5d, type: 3}
+      propertyPath: m_TagString
+      value: StealCover
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -24328,10 +25863,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 457611840}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 457611840}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 457611840}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -24704,6 +26275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2118423695}
   - component: {fileID: 2118423696}
+  - component: {fileID: 2118423698}
   - component: {fileID: 2118423697}
   m_Layer: 8
   m_Name: socket pipe/wire
@@ -24758,10 +26330,46 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2118423698}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: Complete
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2118423698}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketEntered
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2118423698}
+        m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
+        m_MethodName: OnSocketExited
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_StartingHoverFilters: []
   m_StartingSelectFilters: []
   m_ShowInteractableHoverMeshes: 1
@@ -24794,8 +26402,24 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.41572052, y: 0.5814605, z: 0.6753429}
+  m_Center: {x: 0.2921381, y: -0.20927018, z: -0.16232851}
+--- !u!114 &2118423698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118423694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_1
+  requiredTag: SolarLight
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &2122941465
 GameObject:
   m_ObjectHideFlags: 0
@@ -25617,7 +27241,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8766967043769681797, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8795944881310371832, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26309,7 +27933,7 @@ Transform:
   m_GameObject: {fileID: 9120258876919602665}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6902696, y: 0.69026935, z: -0.1533886, w: -0.15338872}
-  m_LocalPosition: {x: 3.7945213, y: 1.48, z: -1.401}
+  m_LocalPosition: {x: 3.7945213, y: 0.42299992, z: -0.8929968}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26463,7 +28087,7 @@ GameObject:
   - component: {fileID: 8119945985075423249}
   m_Layer: 0
   m_Name: DC switch isolator
-  m_TagString: Untagged
+  m_TagString: box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26503,7 +28127,7 @@ Transform:
   m_GameObject: {fileID: 1150053231037870467}
   serializedVersion: 2
   m_LocalRotation: {x: -8.881784e-16, y: 1, z: -0.000000021855698, w: -0.000000059604645}
-  m_LocalPosition: {x: 3.508234, y: 1.5202103, z: -1.0723457}
+  m_LocalPosition: {x: 3.508234, y: 0.341, z: -0.667}
   m_LocalScale: {x: 1.3660516, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26929,7 +28553,7 @@ Transform:
   m_GameObject: {fileID: 2700757384708927944}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000029802326, y: 1, z: -0.0000000218557, w: -0.000000059604645}
-  m_LocalPosition: {x: 3.8792267, y: 1.4881959, z: -1.2088318}
+  m_LocalPosition: {x: 3.802, y: 0.734, z: -0.739}
   m_LocalScale: {x: 1, y: 1, z: 0.73955035}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27017,7 +28641,7 @@ GameObject:
   - component: {fileID: 2700757384708927947}
   m_Layer: 0
   m_Name: Cable - AC
-  m_TagString: Untagged
+  m_TagString: isoletor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29300,8 +30924,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6958923, y: 0.18796799, z: 0.6555181}
-  m_Center: {x: 3.1462004, y: 0.094145, z: -0.18009408}
+  m_Size: {x: 0.15246834, y: 0.09057198, z: 1.0281075}
+  m_Center: {x: 3.4178681, y: 0.14284301, z: 0.0062020114}
 --- !u!4 &7343073546521140483
 Transform:
   m_ObjectHideFlags: 0
@@ -29311,7 +30935,7 @@ Transform:
   m_GameObject: {fileID: 8180690777472311106}
   serializedVersion: 2
   m_LocalRotation: {x: 0.69026953, y: -0.6902694, z: 0.1533887, w: 0.1533887}
-  m_LocalPosition: {x: 3.8394318, y: 1.616, z: -1.006}
+  m_LocalPosition: {x: 3.8394318, y: 0.559, z: -0.498}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -30006,7 +31630,7 @@ GameObject:
   - component: {fileID: 8180690777472311107}
   m_Layer: 0
   m_Name: DC Cable Female
-  m_TagString: Untagged
+  m_TagString: female
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30452,7 +32076,7 @@ GameObject:
   - component: {fileID: 9120976055852414113}
   m_Layer: 0
   m_Name: DC Cable Male
-  m_TagString: Untagged
+  m_TagString: male
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30662,8 +32286,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.3700005, y: 0.13999999, z: 1.2838694}
-  m_Center: {x: 2.7851822, y: 0.094145, z: 0.15806551}
+  m_Size: {x: 0.6688962, y: 0.13999999, z: 0.13742808}
+  m_Center: {x: 3.1356826, y: 0.09414501, z: -0.41515347}
 --- !u!4 &9181987270248119587
 Transform:
   m_ObjectHideFlags: 0
@@ -30741,3 +32365,4 @@ SceneRoots:
   - {fileID: 1424042684}
   - {fileID: 1846764568}
   - {fileID: 1120690307}
+  - {fileID: 1908078460}
