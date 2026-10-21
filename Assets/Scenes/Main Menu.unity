@@ -930,7 +930,11 @@ MonoBehaviour:
   safetySlider: {fileID: 7035333185862713381}
   competencySlider: {fileID: 2484752414180226941}
   proceduralSlider: {fileID: 91406893375610044}
+  refreshButton: {fileID: 0}
+  statusText: {fileID: 0}
+  loadOnEnable: 1
   maxWaitSeconds: 5
+  maxAttempts: 3
 --- !u!4 &27262243
 Transform:
   m_ObjectHideFlags: 0
@@ -5005,6 +5009,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1795034064}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 27262242}
+        m_TargetAssemblyTypeName: UserProfileUI, Assembly-CSharp
+        m_MethodName: Refresh
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17390,6 +17406,18 @@ PrefabInstance:
     - target: {fileID: 123894856706043521, guid: 1f64920635312bd4c94aa26ef8bc8238, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209507046337101566, guid: 1f64920635312bd4c94aa26ef8bc8238, type: 3}
+      propertyPath: m_Color.b
+      value: 0.25882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209507046337101566, guid: 1f64920635312bd4c94aa26ef8bc8238, type: 3}
+      propertyPath: m_Color.g
+      value: 0.10980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209507046337101566, guid: 1f64920635312bd4c94aa26ef8bc8238, type: 3}
+      propertyPath: m_Color.r
+      value: 0.08627451
       objectReference: {fileID: 0}
     - target: {fileID: 1294570724310880079, guid: 1f64920635312bd4c94aa26ef8bc8238, type: 3}
       propertyPath: m_AnchoredPosition.x

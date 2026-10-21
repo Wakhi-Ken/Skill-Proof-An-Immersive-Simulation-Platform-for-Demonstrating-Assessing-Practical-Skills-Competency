@@ -1,17 +1,30 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
 {
     /// <summary>
     /// Utility class to help facilitate input field relationship with <see cref="XRKeyboard"/>.
     /// This version supports several input fields on one display. Whichever field is selected
-    /// receives the typing, and the other fields are left untouched.
+    /// or touched receives the typing, and the other fields are left untouched.
     /// </summary>
     public class MultiFieldKeyboardDisplay : MonoBehaviour
     {
-        [SerializeField, Tooltip("Input fields linked to this display. The one you select receives the typing.")]
+        [SerializeField, Tooltip("If true, every TMP_InputField under this object is picked up automatically (including inactive ones), so the keyboard opens for any field you touch. No need to assign them by hand.")]
+        bool m_AutoFindFields = true;
+
+        /// <summary>
+        /// If true, every input field under this object is found automatically.
+        /// </summary>
+        public bool autoFindFields
+        {
+            get => m_AutoFindFields;
+            set => m_AutoFindFields = value;
+        }
+
+        [SerializeField, Tooltip("Extra input fields linked to this display (optional when Auto Find Fields is on). The one you select receives the typing.")]
         TMP_InputField[] m_InputFields;
 
         // Old single-field slot. Hidden, but kept so scenes that used the previous
@@ -192,7 +205,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
 
         bool m_IsActivelyObservingKeyboard;
 
-        // Working list of fields (array + legacy single field, no nulls, no duplicates)
+        // Working list of fields (auto-found + array + legacy single field, no nulls, no duplicates)
         readonly List<TMP_InputField> m_Fields = new List<TMP_InputField>();
 
         // One select listener per field, stored so each can be removed later
@@ -265,7 +278,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
                 m_ActiveKeyboard = GlobalNonNativeKeyboard.instance.keyboard;
 
             // Observe keyboard if always observe is true
-            var observeOnStart = m_AlwaysObserveKeyboard && m_ActiveKeyboard != null & !m_IsActivelyObservingKeyboard;
+            var observeOnStart = m_AlwaysObserveKeyboard && m_ActiveKeyboard != null && !m_IsActivelyObservingKeyboard;
             if (observeOnStart)
                 StartObservingKeyboard(m_ActiveKeyboard);
         }
@@ -275,6 +288,16 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
         void BuildFieldList()
         {
             m_Fields.Clear();
+
+            // Every input field under this object, including inactive ones
+            if (m_AutoFindFields)
+            {
+                foreach (TMP_InputField field in GetComponentsInChildren<TMP_InputField>(true))
+                {
+                    if (field != null && !m_Fields.Contains(field))
+                        m_Fields.Add(field);
+                }
+            }
 
             if (m_InputFields != null)
             {
@@ -298,13 +321,21 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
                     continue;
 
                 field.resetOnDeActivation = false;
+                field.shouldHideSoftKeyboard = true;
 
                 // Each field gets its own listener that remembers which field it belongs to
                 TMP_InputField captured = field;
-                UnityAction<string> handler = _ => OnInputFieldGainedFocus(captured);
 
+                // Opens the keyboard when the field becomes selected
+                UnityAction<string> handler = _ => OnInputFieldGainedFocus(captured);
                 m_SelectHandlers[field] = handler;
                 field.onSelect.AddListener(handler);
+
+                // Opens the keyboard when the field is touched again after the keyboard was closed
+                var relay = field.GetComponent<InputFieldTouchRelay>();
+                if (relay == null)
+                    relay = field.gameObject.AddComponent<InputFieldTouchRelay>();
+                relay.onTouched = () => OnFieldTouched(captured);
             }
         }
 
@@ -312,11 +343,29 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
         {
             foreach (KeyValuePair<TMP_InputField, UnityAction<string>> pair in m_SelectHandlers)
             {
-                if (pair.Key != null)
-                    pair.Key.onSelect.RemoveListener(pair.Value);
+                if (pair.Key == null)
+                    continue;
+
+                pair.Key.onSelect.RemoveListener(pair.Value);
+
+                var relay = pair.Key.GetComponent<InputFieldTouchRelay>();
+                if (relay != null)
+                    relay.onTouched = null;
             }
 
             m_SelectHandlers.Clear();
+        }
+
+        void OnFieldTouched(TMP_InputField field)
+        {
+            if (field == null)
+                return;
+
+            // Keyboard is already open for this field, nothing to do
+            if (m_ActiveKeyboard != null && m_ActiveKeyboard.isOpen && m_CurrentField == field)
+                return;
+
+            OnInputFieldGainedFocus(field);
         }
 
         bool IsAnyFieldFocused()
@@ -501,6 +550,20 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
             // The keyboard changed focus and none of this display's fields are in focus
             if (!IsAnyFieldFocused())
                 m_OnKeyboardFocusChanged.Invoke();
+        }
+    }
+
+    /// <summary>
+    /// Added automatically to each input field by <see cref="MultiFieldKeyboardDisplay"/>.
+    /// Reports touches/clicks, even when the field is already selected and onSelect would not fire again.
+    /// </summary>
+    public class InputFieldTouchRelay : MonoBehaviour, IPointerClickHandler
+    {
+        public System.Action onTouched;
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            onTouched?.Invoke();
         }
     }
 }

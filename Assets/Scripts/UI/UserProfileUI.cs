@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UserProfileUI : MonoBehaviour
 {
+    [Header("Profile fields")]
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text idText;
     [SerializeField] private TMP_Text emailText;
@@ -15,46 +16,126 @@ public class UserProfileUI : MonoBehaviour
     [SerializeField] private Slider competencySlider;
     [SerializeField] private Slider proceduralSlider;
 
-    [Tooltip("How long to wait for Firebase and the database manager to be ready")]
+    [Header("Refresh")]
+    [Tooltip("Optional. Assign the menu button here, or hook UserProfileUI.Refresh in the button's OnClick instead.")]
+    [SerializeField] private Button refreshButton;
+
+    [Tooltip("Optional. Shows 'Loading...' or an error message.")]
+    [SerializeField] private TMP_Text statusText;
+
+    [Tooltip("Also load automatically when this canvas is switched on.")]
+    [SerializeField] private bool loadOnEnable = true;
+
+    [Tooltip("How long to wait for Firebase, the database manager and the logged-in user")]
     [SerializeField] private float maxWaitSeconds = 5f;
 
-    private async void OnEnable()
+    [Tooltip("How many times to look for the profile document if it is not there yet")]
+    [SerializeField] private int maxAttempts = 3;
+
+    private bool isLoading;
+
+    private void Awake()
     {
-        // Wait until Firebase and DatabaseManager exist, instead of crashing if this
-        // canvas is switched on a moment before they are ready
-        float waited = 0f;
-        while ((!FirebaseManager.IsReady || DatabaseManager.Instance == null) && waited < maxWaitSeconds)
+        if (refreshButton != null)
+            refreshButton.onClick.AddListener(Refresh);
+    }
+
+    private void OnDestroy()
+    {
+        if (refreshButton != null)
+            refreshButton.onClick.RemoveListener(Refresh);
+    }
+
+    private void OnEnable()
+    {
+        if (loadOnEnable) Refresh();
+    }
+
+    /// <summary>
+    /// Hook this to a Button's OnClick. Fetches the profile and updates the display.
+    /// </summary>
+    public async void Refresh()
+    {
+        await LoadProfileAsync();
+    }
+
+    private async Task LoadProfileAsync()
+    {
+        if (isLoading) return;          // ignore presses while a load is already running
+        isLoading = true;
+        SetButtonInteractable(false);
+        SetStatus("Loading...");
+
+        try
         {
-            await Task.Yield();
-            waited += Time.unscaledDeltaTime;
+            // Wait for Firebase, the database manager and the logged-in user
+            float waited = 0f;
+            while (!ServicesReady() && waited < maxWaitSeconds)
+            {
+                await Task.Yield();
+                waited += Time.unscaledDeltaTime;
+                if (this == null) return;
+            }
 
-            if (this == null || !isActiveAndEnabled) return;   // closed while waiting
+            if (DatabaseManager.Instance == null)
+            {
+                SetStatus("Database not ready.");
+                Debug.LogError("UserProfileUI: DatabaseManager was not found. Start from the first scene, "
+                               + "or check that it is a root object in the scene.");
+                return;
+            }
+
+            if (!FirebaseManager.IsReady || FirebaseAuth.DefaultInstance.CurrentUser == null)
+            {
+                SetStatus("Not logged in.");
+                Debug.LogWarning("UserProfileUI: no logged-in user.");
+                return;
+            }
+
+            string userId = FirebaseAuth.DefaultInstance.CurrentUser.UserId;
+
+            // The profile document can lag a moment behind a new login, so try a few times
+            UserData user = null;
+            for (int attempt = 0; attempt < Mathf.Max(1, maxAttempts); attempt++)
+            {
+                user = await DatabaseManager.Instance.GetUserAsync(userId);
+                if (this == null) return;
+                if (user != null) break;
+                await Task.Delay(500);
+                if (this == null) return;
+            }
+
+            if (user == null)
+            {
+                SetStatus("Profile not found.");
+                Debug.LogWarning("UserProfileUI: no profile document found for this user.");
+                return;
+            }
+
+            Apply(user);
+            SetStatus(string.Empty);
         }
-
-        if (DatabaseManager.Instance == null)
+        catch (System.Exception e)
         {
-            Debug.LogError("UserProfileUI: DatabaseManager was not found. Start from the first scene, "
-                           + "or check that it is a root object in the scene.");
-            return;
+            Debug.LogException(e);
+            SetStatus("Could not load profile.");
         }
-
-        FirebaseUser authUser = FirebaseAuth.DefaultInstance.CurrentUser;
-        if (authUser == null)
+        finally
         {
-            Debug.LogWarning("UserProfileUI: no logged-in user.");
-            return;
+            isLoading = false;
+            SetButtonInteractable(true);
         }
+    }
 
-        UserData user = await DatabaseManager.Instance.GetUserAsync(authUser.UserId);
+    private bool ServicesReady()
+    {
+        return FirebaseManager.IsReady
+            && DatabaseManager.Instance != null
+            && FirebaseAuth.DefaultInstance.CurrentUser != null;
+    }
 
-        if (this == null || !isActiveAndEnabled) return;       // closed while loading
-
-        if (user == null)
-        {
-            Debug.LogWarning("UserProfileUI: no profile document found for this user.");
-            return;
-        }
-
+    private void Apply(UserData user)
+    {
         SetText(nameText, user.name);
         SetText(idText, user.userID);
         SetText(emailText, user.email);
@@ -73,5 +154,15 @@ public class UserProfileUI : MonoBehaviour
     private void SetSlider(Slider slider, float value)
     {
         if (slider != null) slider.value = value;
+    }
+
+    private void SetStatus(string message)
+    {
+        if (statusText != null) statusText.text = message;
+    }
+
+    private void SetButtonInteractable(bool value)
+    {
+        if (refreshButton != null) refreshButton.interactable = value;
     }
 }

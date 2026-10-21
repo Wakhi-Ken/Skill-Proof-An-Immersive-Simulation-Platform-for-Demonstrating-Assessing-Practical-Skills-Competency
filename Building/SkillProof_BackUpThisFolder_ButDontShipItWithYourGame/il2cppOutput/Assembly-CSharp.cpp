@@ -387,6 +387,7 @@ struct IXRSelectInteractable_t647A7E3382497396EA1A9546574AEC0FBC9BC4AF;
 struct IXRSelectInteractor_tF89F25345282BDE348CC5A11BBACE44810BD29CC;
 struct IXRTargetFilter_t51750E0C671ECA90F38CC75BCD395285E61D2778;
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
+struct InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3;
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
 struct KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D;
 struct KeyboardEvent_t3EC42C4C5064BFABAC7774FB38C270936A2D8F8E;
@@ -519,7 +520,7 @@ struct SnapshotsInSyncDelegate_t7F6A47A5BFE9899DFB8CDE75F4D22B37C32A2056;
 struct U3CHidePickupU3Ed__12_tE9210F79F55F5D7196448BCBC3F77F12D26AC171;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct U3CLoadSceneRoutineU3Ed__16_t4956D601F77DABCE5C2D4B78C288D3AFE9025F49;
-struct U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0;
+struct U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949;
 struct ListenerDelegate_t1356B82E581961C85180D5C385F7BD6653926F17;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
 struct U3CU3Ec__DisplayClass70_0_t997009D0B5481B7F80E080C140C684701D9DB097;
@@ -633,8 +634,8 @@ IL2CPP_EXTERN_C RuntimeClass* U3CLoadSceneRoutineU3Ed__16_t4956D601F77DABCE5C2D4
 IL2CPP_EXTERN_C RuntimeClass* U3CStartDelayU3Ed__11_t30E319CCBE7D23E7026D92241D11DD660006B052_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass11_0_t00FA73EE0EF3E147983C36C05E45818F5204F52E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass11_1_t6199FD8EFFB38735EA3A24128ED1C9F646965055_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass70_0_t997009D0B5481B7F80E080C140C684701D9DB097_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CU3Ec__DisplayClass71_0_t89E407D13128837DA5794BD8B29E9BC41E16C7B1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityAction_1_t6D7C8D94300AACA6B0CFB2228AA5572CFBF0531B_il2cpp_TypeInfo_var;
@@ -843,8 +844,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* CompleteSimulationUI_ShowSaveStatus_m3EBB2F
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisIPokeStateDataProvider_t14F2B731F2979D1138EB70A11E36F274A23DC91C_m56533D22EBBEEE60BD440ECE3B5EF450D8F5DE62_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m820398EDBF1D3766C3166A0C323A127662A29A14_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisIXRSelectInteractable_t647A7E3382497396EA1A9546574AEC0FBC9BC4AF_mFC3F13E793001E7A507EA16C6EF20FBABAF56E46_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisLineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D_m4F17B3CA1E7FFB03C7682312A59B9185E0F67C49_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisVideoPlayer_t48EA4A8117B822BC59590150DED9AD46C62F65D3_m19D8A3EC4A0BF3BDAFCF718B25FC119EFE6F6BBA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentsInChildren_TisTMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F_mE5AE22441D30BBF9D2D3471D492068C3007D20C0_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m5875DF2ACE933D734119C088B2E7C9C63F49B443_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_Add_m7A78CB71D1913DE3DD2B3058804A6A2174FFB6E3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Dictionary_2_ContainsKey_m6FEB616C5E5283DDBB745509C94ED2859D99A966_RuntimeMethod_var;
@@ -859,6 +862,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* DocumentSnapshot_ConvertTo_TisPerformanceDa
 IL2CPP_EXTERN_C const RuntimeMethod* DocumentSnapshot_ConvertTo_TisSimulationData_t99AFEBF986E6221CC7DB34E08850F1277C6FAC2E_m3F76C7D22DA527FB771C4E863931C27FE6EEEA0B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DocumentSnapshot_ConvertTo_TisUserData_tDFEC70DF1A749DA400CDBE27B7E6DD2E480376AA_mFF5C268B1F9EE8C4B5E8392DBA9D51B8901AEEE6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* FirebaseManager_U3CCheckFirebaseDependenciesU3Eb__11_0_m6903BE564C49034DF21877DEB3AE8FD19CF0984C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_AddComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_mD6BD19441ABA94B9815E9C3623407B3607AD8AD1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisToggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F_m4EE154BD6B3D051BADD8CC7F7C28CF20349ABD17_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_TryGetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_mCA867A56E93C824FB9C272E0DBB67655CB275941_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* HashSet_1_Add_mF3D4CF6D0150392127D5561A87DCDEDA9A81BE5D_RuntimeMethod_var;
@@ -905,8 +909,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CLoadSceneRoutineU3Ed__16_System_Collecti
 IL2CPP_EXTERN_C const RuntimeMethod* U3CStartDelayU3Ed__11_System_Collections_IEnumerator_Reset_mBBF8CBD341002CA190DE75AC4864E0CC1D55D2BD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass11_0_U3CSignUpU3Eb__0_mBD3FA54E0BDCC0CEEE133766CE7796C25557CDBB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass11_1_U3CSignUpU3Eb__1_mA6B0EBC072B71E534047090F5D8AC153205A46D0_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass66_0_U3CRegisterFieldsU3Eb__0_m6D31198C36057A023B26F9EDDF031FA23F7EC718_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass70_0_U3CCompleteActivityU3Eb__0_mA1DB75D2E686E8B7E84850D6D9C78C73E73C8BC3_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__0_m98A948DEF9098D7EE9B00AC0FD83754E8D672638_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__1_mA6C502575576291D32BAB93A275D9DC517EECE0E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec__DisplayClass71_0_U3CRegisterErrorU3Eb__0_m95EFEC8930552BE91A19849D4C079CF6DAF0810B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_m44E396BC4484BD75427FDD8CBE0B533CCAD8C1EC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1_AddListener_mA8E3AB4CD6B739F1C4775071630913AA30A881C8_RuntimeMethod_var;
@@ -1253,7 +1258,7 @@ struct U3CLoadSceneRoutineU3Ed__16_t4956D601F77DABCE5C2D4B78C288D3AFE9025F49  : 
 	AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* ___U3CoperationU3E5__2;
 	float ___U3CstartTimeU3E5__3;
 };
-struct U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0  : public RuntimeObject
+struct U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949  : public RuntimeObject
 {
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___captured;
 	MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* ___U3CU3E4__this;
@@ -3566,6 +3571,10 @@ struct HandSubsystemManager_t49F75CB70A01BCBADEDBC3812D825D7EA7315C66  : public 
 {
 	XRHandSubsystem_t0EB20D332ADF52A334449A240A3FDD6844EEA92C* ___m_HandSubsystem;
 };
+struct InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___onTouched;
+};
 struct LaunchProjectile_t61F2C2CE3B019230747AB6448CD41927505B8901  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___m_ProjectilePrefab;
@@ -3593,6 +3602,7 @@ struct MenuNavigation_tC6FE02A16DC62119272B3EF24718B6689CC53FBB  : public MonoBe
 };
 struct MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	bool ___m_AutoFindFields;
 	TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* ___m_InputFields;
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___m_InputField;
 	XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___m_Keyboard;
@@ -5348,7 +5358,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_HandleTween_m28E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_set_target_m353B619618455D8C59D23B5D02D69EFB492AAA59 (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D* __this, float ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_HandleTween_m46B71286EECBE0E3F279B742875CE8EF4D068791 (TweenableVariableBase_1_tE056BE2293DB2624363EEADF82A5A9439C26C35D* __this, float ___0_tweenTarget, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenableVariableBase_1_set_target_m3A29BD545B9F68B11BF2D5EDAD2BFD72758704D8 (TweenableVariableBase_1_t559E6D69FB65AF8FBCF6044D84C6466C849D826E* __this, float3_t7600B73F092B37F484B12910A5269F30C778D31E ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR __CanonU5BU5D_tFF96AE6C231BB36A6CEE54CEEB72ED8E90201979* Component_GetComponentsInChildren_TisIl2CppSharedGenericObject_mCC1F519F84777BE0CFF3FBFDD18B8BB45E45079C_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m2719AC789D5D25B4A08674C479D2F2FA27319C77_gshared (Dictionary_2_tB3BF685342B8A1AB5995EE46B7014CBC0B281D5C* __this, Il2CppSharedGenericObject* ___0_key, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* GameObject_AddComponent_TisIl2CppSharedGenericObject_mEC1C0E045A5A771DA12CB28C8523DB16596946AD_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_mD50959A3F077BAA6CD7EC7D87192D201D3864E2B_gshared (UnityEvent_1_tC6196DDE24D9A39BC1ED29012593D39A209721E9* __this, Il2CppSharedGenericObject* ___0_arg0, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_mCC24A812DFC30C3DE2230E3C8EE705871C1DFF81_gshared (List_1_t6959D78D53022948E65A4FDA6291D7F38FEFA02E* __this, Il2CppSharedGenericObject* ___0_item, const RuntimeMethod* method) ;
 
@@ -6418,6 +6430,10 @@ inline void List_1_Clear_m9F29F4E1F434970954FE7D4589AE68A22F629E98_inline (List_
 {
 	((  void (*) (List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB*, const RuntimeMethod*))List_1_Clear_mCCC05B98943E8F4E0F6FBF47063A269048AE71E5_gshared_inline)(__this, method);
 }
+inline TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* Component_GetComponentsInChildren_TisTMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F_mE5AE22441D30BBF9D2D3471D492068C3007D20C0 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, bool ___0_includeInactive, const RuntimeMethod* method)
+{
+	return ((  TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, bool, const RuntimeMethod*))Component_GetComponentsInChildren_TisIl2CppSharedGenericObject_mCC1F519F84777BE0CFF3FBFDD18B8BB45E45079C_gshared)(__this, ___0_includeInactive, method);
+}
 inline bool List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A (List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_item, const RuntimeMethod* method)
 {
 	return ((  bool (*) (List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB*, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F*, const RuntimeMethod*))List_1_Contains_m63E643DC9A821297E2EBF9085D93B39BFC2F9DCE_gshared)(__this, ___0_item, method);
@@ -6426,7 +6442,7 @@ inline void List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_inline (List_1_
 {
 	((  void (*) (List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB*, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F*, const RuntimeMethod*))List_1_Add_m0CE6E39234ED33F5195AABC8029D06D4756C75C1_gshared_inline)(__this, ___0_item, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0__ctor_m4AD1A05CA619D08F314AEC8E01B2AF58B5C72808 (U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0__ctor_m9A15346E6F40729A95EB51E43C730FBA1CBACAF8 (U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* __this, const RuntimeMethod* method) ;
 inline bool Dictionary_2_ContainsKey_m6FEB616C5E5283DDBB745509C94ED2859D99A966 (Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_key, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103*, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F*, const RuntimeMethod*))Dictionary_2_ContainsKey_m2719AC789D5D25B4A08674C479D2F2FA27319C77_gshared)(__this, ___0_key, method);
@@ -6443,6 +6459,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SelectionEvent_t8FC75B869F70C9F0B
 inline void UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F (UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* __this, UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* ___0_call, const RuntimeMethod* method)
 {
 	((  void (*) (UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257*, UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B*, const RuntimeMethod*))UnityEvent_1_AddListener_m669A92B582632D0225377543130A3340FE6BAF69_gshared)(__this, ___0_call, method);
+}
+inline InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisIl2CppSharedGenericObject_mB7566A31421DEE164644EC1F96FB5EE487B96CC2_gshared)(__this, method);
+}
+inline InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* GameObject_AddComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_mD6BD19441ABA94B9815E9C3623407B3607AD8AD1 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisIl2CppSharedGenericObject_mEC1C0E045A5A771DA12CB28C8523DB16596946AD_gshared)(__this, method);
 }
 inline Enumerator_t73090B20FD3BFBB051457171BD8D50E405108DEE Dictionary_2_GetEnumerator_m65E5F6F93F327C89089899EABA68AE4444AADE23 (Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* __this, const RuntimeMethod* method)
 {
@@ -6476,6 +6500,7 @@ inline void Dictionary_2_Clear_m21C2701A668FCED02263F861DFBE50ACB446249D (Dictio
 {
 	((  void (*) (Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103*, const RuntimeMethod*))Dictionary_2_Clear_m935B3F117860376DC854C9E0C80CBD99BE77EEA4_fshared)(__this, method);
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnInputFieldGainedFocus_mC1B15127C8187A6766D55DC3B2678BF3C2800EEC (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_field, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_InputField_get_isFocused_m7FD1AA3B92404C30596FF6EE5F644757A2F060DE_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextUpdated_mD40DAD40D8F99815281AD6B5A8C0D1F50A445E74_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) ;
 inline void UnityAction_1__ctor_mA71659D9476D567F616DF640A65120E609FD2830 (UnityAction_1_tC1A02BC7CA6B54F2EF4627651B6066CD9EB35B03* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
@@ -6522,7 +6547,7 @@ inline void Dictionary_2__ctor_mF70264031095E8063CDAA36899D18E463C8BA9D1 (Dictio
 {
 	((  void (*) (Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103*, const RuntimeMethod*))Dictionary_2__ctor_mE9A1CF09D5006AC41488691817533288065B42FF_gshared)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnInputFieldGainedFocus_mC1B15127C8187A6766D55DC3B2678BF3C2800EEC (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_field, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnFieldTouched_m050F8C59773BC3C0E9965F07EAE11AE046DC533A (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_field, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ColorUtility_ToHtmlStringRGB_m71F205AB043ADF2F702D4493780372A1B94C7D3D (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* ___0_color, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
@@ -25126,6 +25151,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRPokeFollowAffordanceFill__ctor_mAED174
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 72477
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_autoFindFields_m7F99789F39492CFA28B20E087935C8FACB08B74B (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		bool L_0 = __this->___m_AutoFindFields;
+		return L_0;
+	}
+}
+// Method Definition Index: 72478
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_autoFindFields_m3C9CFAB0A96EC42D84D712B234C05B7D2EE6B742 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		bool L_0 = ___0_value;
+		__this->___m_AutoFindFields = L_0;
+		return;
+	}
+}
+// Method Definition Index: 72479
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* MultiFieldKeyboardDisplay_get_inputFields_m7BF66ABECB0E8CFC4836C71142ED4CC4F32CC71A (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25134,7 +25178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C
 		return L_0;
 	}
 }
-// Method Definition Index: 72478
+// Method Definition Index: 72480
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_inputFields_m7A14453A70DB393AE447A37F83382AB1C587C33F (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25148,7 +25192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_inputField
 		return;
 	}
 }
-// Method Definition Index: 72479
+// Method Definition Index: 72481
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* MultiFieldKeyboardDisplay_get_currentInputField_mC12D7E216AB3155D12DE8477879394AA34A4A4ED (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25157,7 +25201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BE
 		return L_0;
 	}
 }
-// Method Definition Index: 72480
+// Method Definition Index: 72482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* MultiFieldKeyboardDisplay_get_keyboard_m4047B8A66A92ED1FAF31750B1726D0087631EAF5 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25166,7 +25210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D9
 		return L_0;
 	}
 }
-// Method Definition Index: 72481
+// Method Definition Index: 72483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_keyboard_mF89439837D1D976A70E5E84DE8A1CDA06A143AAF (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25176,7 +25220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_keyboard_m
 		return;
 	}
 }
-// Method Definition Index: 72482
+// Method Definition Index: 72484
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_useSceneKeyboard_m1ED31DBF80E317CBE8C761D0F49F19436698E22E (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25185,7 +25229,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_useSceneKe
 		return L_0;
 	}
 }
-// Method Definition Index: 72483
+// Method Definition Index: 72485
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_useSceneKeyboard_m98977183F39BE2A8253575E0C1F25CC0DBC872D0 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25195,7 +25239,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_useSceneKe
 		return;
 	}
 }
-// Method Definition Index: 72484
+// Method Definition Index: 72486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_updateOnKeyPress_m1CCD0173A314FFEBE4FD6BF06A9F3420DFB67996 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25204,7 +25248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_updateOnKe
 		return L_0;
 	}
 }
-// Method Definition Index: 72485
+// Method Definition Index: 72487
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_updateOnKeyPress_mD55E1185421E683F98790C4A7D05648E36665B56 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25214,7 +25258,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_updateOnKe
 		return;
 	}
 }
-// Method Definition Index: 72486
+// Method Definition Index: 72488
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_alwaysObserveKeyboard_m29DEAFA0406102BFFF5099C84413A169DCF4BBDD (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25223,7 +25267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_alwaysObse
 		return L_0;
 	}
 }
-// Method Definition Index: 72487
+// Method Definition Index: 72489
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_alwaysObserveKeyboard_mB0EDCF0BB86ADB31BEB4381E1D412AED87326D43 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25233,7 +25277,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_alwaysObse
 		return;
 	}
 }
-// Method Definition Index: 72488
+// Method Definition Index: 72490
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_monitorInputFieldCharacterLimit_m4045A9D81E05F44BA004CD33987109637A72F362 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25242,7 +25286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_monitorInp
 		return L_0;
 	}
 }
-// Method Definition Index: 72489
+// Method Definition Index: 72491
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_monitorInputFieldCharacterLimit_mCD849A53012D3873DCBA767E237A5CF364850669 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25252,7 +25296,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_monitorInp
 		return;
 	}
 }
-// Method Definition Index: 72490
+// Method Definition Index: 72492
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_clearTextOnSubmit_mD08A66BC6FA1801BCF2FB2D554A2667DCDFC4F00 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25261,7 +25305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_clearTextO
 		return L_0;
 	}
 }
-// Method Definition Index: 72491
+// Method Definition Index: 72493
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_clearTextOnSubmit_mFE5DC4D416E299A50464DD1D237C3C6F332C4F03 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25271,7 +25315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_clearTextO
 		return;
 	}
 }
-// Method Definition Index: 72492
+// Method Definition Index: 72494
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_clearTextOnOpen_m379E2F9B3EB0A3833062F8AE0D24CFBF1C1A7717 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25280,7 +25324,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_clearTextO
 		return L_0;
 	}
 }
-// Method Definition Index: 72493
+// Method Definition Index: 72495
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_clearTextOnOpen_m1F45BC5F969189168BF84F0653FEFD51874987C8 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25290,7 +25334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_clearTextO
 		return;
 	}
 }
-// Method Definition Index: 72494
+// Method Definition Index: 72496
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_hideKeyboardOnDisable_m41E85B601668915A5A1DD9135CBD3FD040DB5660 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25299,7 +25343,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_hideKeyboa
 		return L_0;
 	}
 }
-// Method Definition Index: 72495
+// Method Definition Index: 72497
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_hideKeyboardOnDisable_m3BA69119A262210820C6A6CF0B7BBC03E4216B44 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25309,7 +25353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_hideKeyboa
 		return;
 	}
 }
-// Method Definition Index: 72496
+// Method Definition Index: 72498
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* MultiFieldKeyboardDisplay_get_onTextSubmitted_mF7A3F5BA3766D42E734D1B3A94DCB8BA55C744FC (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25318,7 +25362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D9
 		return L_0;
 	}
 }
-// Method Definition Index: 72497
+// Method Definition Index: 72499
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onTextSubmitted_m48D80C64B150B7C06E9D3EFC6C357FD0A5B57C13 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25329,7 +25373,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onTextSubm
 		return;
 	}
 }
-// Method Definition Index: 72498
+// Method Definition Index: 72500
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* MultiFieldKeyboardDisplay_get_onKeyboardOpened_m73E11726F8181FDE5784030ADB3C92D12EF13752 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25338,7 +25382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F
 		return L_0;
 	}
 }
-// Method Definition Index: 72499
+// Method Definition Index: 72501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onKeyboardOpened_mB6F343C3798568AFBF9CAFF916538D037B13CA29 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25349,7 +25393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onKeyboard
 		return;
 	}
 }
-// Method Definition Index: 72500
+// Method Definition Index: 72502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* MultiFieldKeyboardDisplay_get_onKeyboardClosed_mE79634C81BAB1C38AD0EEA3D5E29DD86E2CDFFE0 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25358,7 +25402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F
 		return L_0;
 	}
 }
-// Method Definition Index: 72501
+// Method Definition Index: 72503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onKeyboardClosed_mA0CFEDE87EA79D4B9EE0D034FFB82AA8B4C340EB (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25369,7 +25413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onKeyboard
 		return;
 	}
 }
-// Method Definition Index: 72502
+// Method Definition Index: 72504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* MultiFieldKeyboardDisplay_get_onKeyboardFocusChanged_m8435E6C2E3E797F424892DA3D318C7B6B58C913B (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25378,7 +25422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F
 		return L_0;
 	}
 }
-// Method Definition Index: 72503
+// Method Definition Index: 72505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onKeyboardFocusChanged_m2AF5A1D8390770A6146F7397BF630CFB00E1D2A3 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25389,7 +25433,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_set_onKeyboard
 		return;
 	}
 }
-// Method Definition Index: 72504
+// Method Definition Index: 72506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_Awake_mF0B3A56224EC0089E8D70CF442560715397E54DE (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25491,7 +25535,7 @@ IL_006f:
 		return;
 	}
 }
-// Method Definition Index: 72505
+// Method Definition Index: 72507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnEnable_m494FB702361DE156ADA21933E84DB7C9CE1AD2B7 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25501,7 +25545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnEnable_m494F
 		return;
 	}
 }
-// Method Definition Index: 72506
+// Method Definition Index: 72508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnDisable_mF33E47F9FD73F57FD1D0E2685495576CD1E057ED (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25580,7 +25624,7 @@ IL_0052:
 		return;
 	}
 }
-// Method Definition Index: 72507
+// Method Definition Index: 72509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnDestroy_m0101B25D42BB59A759D083E671E2AE04FED03987 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -25590,7 +25634,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnDestroy_m010
 		return;
 	}
 }
-// Method Definition Index: 72508
+// Method Definition Index: 72510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_Start_m20CCD7A533748C191204AFE7E6716A4C413F1A1E (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -25601,7 +25645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_Start_m20CCD7A
 	}
 	CHECKED_LOCAL(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit);
 	//<source_info:<no-source>:1>
-	int32_t G_B6_0 = 0;
+	int32_t G_B7_0 = 0;
 	{
 		XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* L_0 = __this->___m_ActiveKeyboard;
 		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
@@ -25636,7 +25680,7 @@ IL_0026:
 		bool L_5 = __this->___m_AlwaysObserveKeyboard;
 		if (!L_5)
 		{
-			goto IL_0046;
+			goto IL_0047;
 		}
 	}
 	{
@@ -25644,21 +25688,27 @@ IL_0026:
 		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
 		bool L_7;
 		L_7 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_6, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		bool L_8 = __this->___m_IsActivelyObservingKeyboard;
-		G_B6_0 = ((int32_t)((int32_t)L_7&((((int32_t)L_8) == ((int32_t)0))? 1 : 0)));
-		goto IL_0047;
+		if (!L_7)
+		{
+			goto IL_0047;
+		}
 	}
-
-IL_0046:
 	{
-		G_B6_0 = 0;
+		bool L_8 = __this->___m_IsActivelyObservingKeyboard;
+		G_B7_0 = ((((int32_t)L_8) == ((int32_t)0))? 1 : 0);
+		goto IL_0048;
 	}
 
 IL_0047:
 	{
-		if (!G_B6_0)
+		G_B7_0 = 0;
+	}
+
+IL_0048:
+	{
+		if (!G_B7_0)
 		{
-			goto IL_0055;
+			goto IL_0056;
 		}
 	}
 	{
@@ -25666,17 +25716,18 @@ IL_0047:
 		MultiFieldKeyboardDisplay_StartObservingKeyboard_mCE7F8727C190AC278BD2E87C494FB73EB6F91D4D(__this, L_9, NULL);
 	}
 
-IL_0055:
+IL_0056:
 	{
 		return;
 	}
 }
-// Method Definition Index: 72509
+// Method Definition Index: 72511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_BuildFieldList_m7E0002A39ED6C4DF3E9A050CC055481226E07DE0 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentsInChildren_TisTMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F_mE5AE22441D30BBF9D2D3471D492068C3007D20C0_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
@@ -25687,24 +25738,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_BuildFieldList
 	TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* V_0 = NULL;
 	int32_t V_1 = 0;
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* V_2 = NULL;
+	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* V_3 = NULL;
 	{
 		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_0 = __this->___m_Fields;
 		NullCheck(L_0);
 		List_1_Clear_m9F29F4E1F434970954FE7D4589AE68A22F629E98_inline(L_0, NULL);
-		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_1 = __this->___m_InputFields;
+		bool L_1 = __this->___m_AutoFindFields;
 		if (!L_1)
 		{
-			goto IL_004f;
+			goto IL_0050;
 		}
 	}
 	{
-		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_2 = __this->___m_InputFields;
+		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_2;
+		L_2 = Component_GetComponentsInChildren_TisTMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F_mE5AE22441D30BBF9D2D3471D492068C3007D20C0(__this, (bool)1, Component_GetComponentsInChildren_TisTMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F_mE5AE22441D30BBF9D2D3471D492068C3007D20C0_RuntimeMethod_var);
 		V_0 = L_2;
 		V_1 = 0;
-		goto IL_0049;
+		goto IL_004a;
 	}
 
-IL_001e:
+IL_001f:
 	{
 		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_3 = V_0;
 		int32_t L_4 = V_1;
@@ -25718,7 +25771,7 @@ IL_001e:
 		L_8 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_7, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
 		if (!L_8)
 		{
-			goto IL_0045;
+			goto IL_0046;
 		}
 	}
 	{
@@ -25729,7 +25782,7 @@ IL_001e:
 		L_11 = List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A(L_9, L_10, List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A_RuntimeMethod_var);
 		if (L_11)
 		{
-			goto IL_0045;
+			goto IL_0046;
 		}
 	}
 	{
@@ -25739,13 +25792,13 @@ IL_001e:
 		List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_inline(L_12, L_13, List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_RuntimeMethod_var);
 	}
 
-IL_0045:
+IL_0046:
 	{
 		int32_t L_14 = V_1;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_14, 1));
 	}
 
-IL_0049:
+IL_004a:
 	{
 		int32_t L_15 = V_1;
 		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_16 = V_0;
@@ -25753,64 +25806,139 @@ IL_0049:
 		int32_t L_17 = (il2cpp_codegen_conv<int32_t,int64_t,int64_t,false,false>((((RuntimeArray*)L_16)->max_length),NULL));
 		if ((((int32_t)L_15) < ((int32_t)L_17)))
 		{
-			goto IL_001e;
+			goto IL_001f;
 		}
 	}
 
-IL_004f:
+IL_0050:
 	{
-		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_18 = __this->___m_InputField;
-		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
-		bool L_19;
-		L_19 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_19)
+		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_18 = __this->___m_InputFields;
+		if (!L_18)
 		{
-			goto IL_0081;
+			goto IL_0094;
 		}
 	}
 	{
-		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_20 = __this->___m_Fields;
-		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_21 = __this->___m_InputField;
+		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_19 = __this->___m_InputFields;
+		V_0 = L_19;
+		V_1 = 0;
+		goto IL_008e;
+	}
+
+IL_0063:
+	{
+		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_20 = V_0;
+		int32_t L_21 = V_1;
 		NullCheck(L_20);
-		bool L_22;
-		L_22 = List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A(L_20, L_21, List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A_RuntimeMethod_var);
-		if (L_22)
+		int32_t L_22 = L_21;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_23 = (L_20)->GetAt(static_cast<il2cpp_array_size_t>(L_22));
+		V_3 = L_23;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_24 = V_3;
+		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+		bool L_25;
+		L_25 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_24, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_25)
 		{
-			goto IL_0081;
+			goto IL_008a;
 		}
 	}
 	{
-		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_23 = __this->___m_Fields;
-		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_24 = __this->___m_InputField;
-		NullCheck(L_23);
-		List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_inline(L_23, L_24, List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_RuntimeMethod_var);
+		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_26 = __this->___m_Fields;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_27 = V_3;
+		NullCheck(L_26);
+		bool L_28;
+		L_28 = List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A(L_26, L_27, List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A_RuntimeMethod_var);
+		if (L_28)
+		{
+			goto IL_008a;
+		}
+	}
+	{
+		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_29 = __this->___m_Fields;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_30 = V_3;
+		NullCheck(L_29);
+		List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_inline(L_29, L_30, List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_RuntimeMethod_var);
 	}
 
-IL_0081:
+IL_008a:
+	{
+		int32_t L_31 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_31, 1));
+	}
+
+IL_008e:
+	{
+		int32_t L_32 = V_1;
+		TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* L_33 = V_0;
+		NullCheck(L_33);
+		int32_t L_34 = (il2cpp_codegen_conv<int32_t,int64_t,int64_t,false,false>((((RuntimeArray*)L_33)->max_length),NULL));
+		if ((((int32_t)L_32) < ((int32_t)L_34)))
+		{
+			goto IL_0063;
+		}
+	}
+
+IL_0094:
+	{
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_35 = __this->___m_InputField;
+		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+		bool L_36;
+		L_36 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_35, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_36)
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_37 = __this->___m_Fields;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_38 = __this->___m_InputField;
+		NullCheck(L_37);
+		bool L_39;
+		L_39 = List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A(L_37, L_38, List_1_Contains_m69B4C635B65F615B764B4EE015CF942CF075263A_RuntimeMethod_var);
+		if (L_39)
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_40 = __this->___m_Fields;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_41 = __this->___m_InputField;
+		NullCheck(L_40);
+		List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_inline(L_40, L_41, List_1_Add_mF5A4E0798C0FCBDFA3F9C5B46621419533BDBCA7_RuntimeMethod_var);
+	}
+
+IL_00c6:
 	{
 		return;
 	}
 }
-// Method Definition Index: 72510
+// Method Definition Index: 72512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_RegisterFields_m9ECB7581316A00582808DAB48E8B796B95FBE180 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_ContainsKey_m6FEB616C5E5283DDBB745509C94ED2859D99A966_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_set_Item_m0C5DD009D5B3FF82FC7F6A1FD2980535500FDE4B_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass66_0_U3CRegisterFieldsU3Eb__0_m6D31198C36057A023B26F9EDDF031FA23F7EC718_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_AddComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_mD6BD19441ABA94B9815E9C3623407B3607AD8AD1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__0_m98A948DEF9098D7EE9B00AC0FD83754E8D672638_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__1_mA6C502575576291D32BAB93A275D9DC517EECE0E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
+	CHECKED_LOCAL(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit);
 	//<source_info:<no-source>:1>
 	Enumerator_t14BE74325B09AE84A0D336D1F380EEC3D2B9F76B V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* V_1 = NULL;
-	U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* V_2 = NULL;
+	U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* V_2 = NULL;
 	UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* V_3 = NULL;
+	InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* V_4 = NULL;
 	{
 		List_1_t1682D2749D2F6A71F6FAA259113A9B8AF4134DDB* L_0 = __this->___m_Fields;
 		NullCheck(L_0);
@@ -25822,7 +25950,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_RegisterFields
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0070:
+FINALLY_00af:
 			{
 				Enumerator_Dispose_m359AAEB5ADF9AC3B9174ED54D4589BCCA5960E9E((&V_0), NULL);
 				return;
@@ -25831,18 +25959,18 @@ FINALLY_0070:
 		try
 		{
 			{
-				goto IL_0065_1;
+				goto IL_00a1_1;
 			}
 
-IL_000e_1:
+IL_0011_1:
 			{
 				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_2;
 				L_2 = Enumerator_get_Current_m928C6807C353993740DC477B588276B03688C830_inline((&V_0), NULL);
 				V_1 = L_2;
-				U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* L_3 = (U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0_il2cpp_TypeInfo_var);
-				U3CU3Ec__DisplayClass66_0__ctor_m4AD1A05CA619D08F314AEC8E01B2AF58B5C72808(L_3, NULL);
+				U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* L_3 = (U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949*)il2cpp_codegen_object_new(U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949_il2cpp_TypeInfo_var);
+				U3CU3Ec__DisplayClass70_0__ctor_m9A15346E6F40729A95EB51E43C730FBA1CBACAF8(L_3, NULL);
 				V_2 = L_3;
-				U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* L_4 = V_2;
+				U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* L_4 = V_2;
 				NullCheck(L_4);
 				L_4->___U3CU3E4__this = __this;
 				Il2CppCodeGenWriteBarrier((void**)(&L_4->___U3CU3E4__this), (void*)__this);
@@ -25853,47 +25981,84 @@ IL_000e_1:
 				L_7 = Dictionary_2_ContainsKey_m6FEB616C5E5283DDBB745509C94ED2859D99A966(L_5, L_6, Dictionary_2_ContainsKey_m6FEB616C5E5283DDBB745509C94ED2859D99A966_RuntimeMethod_var);
 				if (L_7)
 				{
-					goto IL_0065_1;
+					goto IL_00a1_1;
 				}
 			}
 			{
 				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_8 = V_1;
 				NullCheck(L_8);
 				TMP_InputField_set_resetOnDeActivation_mCB035C9EADE4A6896C42DDCEC996D00D4A7F6CB2_inline(L_8, (bool)0, NULL);
-				U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* L_9 = V_2;
-				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_10 = V_1;
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_9 = V_1;
 				NullCheck(L_9);
-				L_9->___captured = L_10;
-				Il2CppCodeGenWriteBarrier((void**)(&L_9->___captured), (void*)L_10);
-				U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* L_11 = V_2;
-				UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* L_12 = (UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B*)il2cpp_codegen_object_new(UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B_il2cpp_TypeInfo_var);
-				UnityAction_1__ctor_mE6251CCFD943EB114960F556A546E2777B18AC71(L_12, L_11, (intptr_t)((void*)U3CU3Ec__DisplayClass66_0_U3CRegisterFieldsU3Eb__0_m6D31198C36057A023B26F9EDDF031FA23F7EC718_RuntimeMethod_var), NULL);
-				V_3 = L_12;
-				Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* L_13 = __this->___m_SelectHandlers;
-				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_14 = V_1;
-				UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* L_15 = V_3;
-				NullCheck(L_13);
-				Dictionary_2_set_Item_m0C5DD009D5B3FF82FC7F6A1FD2980535500FDE4B(L_13, L_14, L_15, Dictionary_2_set_Item_m0C5DD009D5B3FF82FC7F6A1FD2980535500FDE4B_RuntimeMethod_var);
-				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_16 = V_1;
-				NullCheck(L_16);
-				SelectionEvent_t8FC75B869F70C9F0BF13390AD0237AD310511119* L_17;
-				L_17 = TMP_InputField_get_onSelect_m6762226148A4B3265EE5FD70ED894BBE8DE86AF0_inline(L_16, NULL);
-				UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* L_18 = V_3;
+				TMP_InputField_set_shouldHideSoftKeyboard_m0414B5C0C3B07F0371671963D699EEA303D8A13E(L_9, (bool)1, NULL);
+				U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* L_10 = V_2;
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_11 = V_1;
+				NullCheck(L_10);
+				L_10->___captured = L_11;
+				Il2CppCodeGenWriteBarrier((void**)(&L_10->___captured), (void*)L_11);
+				U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* L_12 = V_2;
+				UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* L_13 = (UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B*)il2cpp_codegen_object_new(UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B_il2cpp_TypeInfo_var);
+				UnityAction_1__ctor_mE6251CCFD943EB114960F556A546E2777B18AC71(L_13, L_12, (intptr_t)((void*)U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__0_m98A948DEF9098D7EE9B00AC0FD83754E8D672638_RuntimeMethod_var), NULL);
+				V_3 = L_13;
+				Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* L_14 = __this->___m_SelectHandlers;
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_15 = V_1;
+				UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* L_16 = V_3;
+				NullCheck(L_14);
+				Dictionary_2_set_Item_m0C5DD009D5B3FF82FC7F6A1FD2980535500FDE4B(L_14, L_15, L_16, Dictionary_2_set_Item_m0C5DD009D5B3FF82FC7F6A1FD2980535500FDE4B_RuntimeMethod_var);
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_17 = V_1;
 				NullCheck(L_17);
-				UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F(L_17, L_18, UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F_RuntimeMethod_var);
-			}
-
-IL_0065_1:
-			{
-				bool L_19;
-				L_19 = Enumerator_MoveNext_mF28828F36D81230D98AF191DCFBE1B1113C89A82((&V_0), NULL);
-				if (L_19)
+				SelectionEvent_t8FC75B869F70C9F0BF13390AD0237AD310511119* L_18;
+				L_18 = TMP_InputField_get_onSelect_m6762226148A4B3265EE5FD70ED894BBE8DE86AF0_inline(L_17, NULL);
+				UnityAction_1_t690494F0E492A2098660E28B8EB7D71B2C69BE1B* L_19 = V_3;
+				NullCheck(L_18);
+				UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F(L_18, L_19, UnityEvent_1_AddListener_mEC384A8CFC5D4D41B62B08248A738CF61B82172F_RuntimeMethod_var);
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_20 = V_1;
+				NullCheck(L_20);
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_21;
+				L_21 = Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF(L_20, Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF_RuntimeMethod_var);
+				V_4 = L_21;
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_22 = V_4;
+				CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+				bool L_23;
+				L_23 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_22, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_23)
 				{
-					goto IL_000e_1;
+					goto IL_008e_1;
 				}
 			}
 			{
-				goto IL_007e;
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_24 = V_1;
+				NullCheck(L_24);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_25;
+				L_25 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_24, NULL);
+				NullCheck(L_25);
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_26;
+				L_26 = GameObject_AddComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_mD6BD19441ABA94B9815E9C3623407B3607AD8AD1(L_25, GameObject_AddComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_mD6BD19441ABA94B9815E9C3623407B3607AD8AD1_RuntimeMethod_var);
+				V_4 = L_26;
+			}
+
+IL_008e_1:
+			{
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_27 = V_4;
+				U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* L_28 = V_2;
+				Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_29 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+				Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_29, L_28, (intptr_t)((void*)U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__1_mA6C502575576291D32BAB93A275D9DC517EECE0E_RuntimeMethod_var), NULL);
+				NullCheck(L_27);
+				L_27->___onTouched = L_29;
+				Il2CppCodeGenWriteBarrier((void**)(&L_27->___onTouched), (void*)L_29);
+			}
+
+IL_00a1_1:
+			{
+				bool L_30;
+				L_30 = Enumerator_MoveNext_mF28828F36D81230D98AF191DCFBE1B1113C89A82((&V_0), NULL);
+				if (L_30)
+				{
+					goto IL_0011_1;
+				}
+			}
+			{
+				goto IL_00bd;
 			}
 		}
 		catch(Il2CppNativeThreadAbortException&)
@@ -25906,17 +26071,18 @@ IL_0065_1:
 		}
 	}
 
-IL_007e:
+IL_00bd:
 	{
 		return;
 	}
 }
-// Method Definition Index: 72511
+// Method Definition Index: 72513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_UnregisterFields_m484642995BF86999FCAA6C586AA42C75DA5B5BAB (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -25926,6 +26092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_UnregisterFiel
 	memset((&V_0), 0, sizeof(V_0));
 	KeyValuePair_2_tA3FC0DD8378A7B333026130E60B97AB1BEF4D61D V_1;
 	memset((&V_1), 0, sizeof(V_1));
+	InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* V_2 = NULL;
 	{
 		Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* L_0 = __this->___m_SelectHandlers;
 		NullCheck(L_0);
@@ -25937,7 +26104,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_UnregisterFiel
 		auto __finallyBlock = il2cpp::utils::Finally([&]
 		{
 
-FINALLY_0048:
+FINALLY_0065:
 			{
 				Enumerator_Dispose_m7EBD05D84CE4972F0BB7A75BC21FF4D050D5B98C((&V_0), NULL);
 				return;
@@ -25946,7 +26113,7 @@ FINALLY_0048:
 		try
 		{
 			{
-				goto IL_003d_1;
+				goto IL_005a_1;
 			}
 
 IL_000e_1:
@@ -25958,10 +26125,10 @@ IL_000e_1:
 				L_3 = KeyValuePair_2_get_Key_mE18BB04A438E53966C32065D283339307B51BCF1_inline((&V_1), NULL);
 				CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
 				bool L_4;
-				L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-				if (!L_4)
+				L_4 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (L_4)
 				{
-					goto IL_003d_1;
+					goto IL_005a_1;
 				}
 			}
 			{
@@ -25974,19 +26141,39 @@ IL_000e_1:
 				L_7 = KeyValuePair_2_get_Value_mC94B75BCACC4B44254C48B595BC4254076E6AF45_inline((&V_1), NULL);
 				NullCheck(L_6);
 				UnityEvent_1_RemoveListener_m580353A1B030A82D1205B9BA94CF3484866C027F(L_6, L_7, NULL);
+				TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_8;
+				L_8 = KeyValuePair_2_get_Key_mE18BB04A438E53966C32065D283339307B51BCF1_inline((&V_1), NULL);
+				NullCheck(L_8);
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_9;
+				L_9 = Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF(L_8, Component_GetComponent_TisInputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3_m834761CF77BE4DC2A4B0A683478F1D50DD3D35BF_RuntimeMethod_var);
+				V_2 = L_9;
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_10 = V_2;
+				CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+				bool L_11;
+				L_11 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_10, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+				if (!L_11)
+				{
+					goto IL_005a_1;
+				}
+			}
+			{
+				InputFieldTouchRelay_tE8B4656ECD5C1851D9F13DF42A39FADB884527B3* L_12 = V_2;
+				NullCheck(L_12);
+				L_12->___onTouched = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)NULL;
+				Il2CppCodeGenWriteBarrier((void**)(&L_12->___onTouched), (void*)(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)NULL);
 			}
 
-IL_003d_1:
+IL_005a_1:
 			{
-				bool L_8;
-				L_8 = Enumerator_MoveNext_m155B7963543348C2FEFF22B4D73FF9EFDAE2FFF8((&V_0), NULL);
-				if (L_8)
+				bool L_13;
+				L_13 = Enumerator_MoveNext_m155B7963543348C2FEFF22B4D73FF9EFDAE2FFF8((&V_0), NULL);
+				if (L_13)
 				{
 					goto IL_000e_1;
 				}
 			}
 			{
-				goto IL_0056;
+				goto IL_0073;
 			}
 		}
 		catch(Il2CppNativeThreadAbortException&)
@@ -25999,15 +26186,83 @@ IL_003d_1:
 		}
 	}
 
-IL_0056:
+IL_0073:
 	{
-		Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* L_9 = __this->___m_SelectHandlers;
-		NullCheck(L_9);
-		Dictionary_2_Clear_m21C2701A668FCED02263F861DFBE50ACB446249D(L_9, NULL);
+		Dictionary_2_t33E013462B8F44A8EB54796437A31BD2920EF103* L_14 = __this->___m_SelectHandlers;
+		NullCheck(L_14);
+		Dictionary_2_Clear_m21C2701A668FCED02263F861DFBE50ACB446249D(L_14, NULL);
 		return;
 	}
 }
-// Method Definition Index: 72512
+// Method Definition Index: 72514
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnFieldTouched_m050F8C59773BC3C0E9965F07EAE11AE046DC533A (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_field, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	CHECKED_LOCAL(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit);
+	//<source_info:<no-source>:1>
+	{
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_0 = ___0_field;
+		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+		bool L_1;
+		L_1 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_000a;
+		}
+	}
+	{
+		return;
+	}
+
+IL_000a:
+	{
+		XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* L_2 = __this->___m_ActiveKeyboard;
+		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* L_4 = __this->___m_ActiveKeyboard;
+		NullCheck(L_4);
+		bool L_5;
+		L_5 = XRKeyboard_get_isOpen_m32CE50816C623D95B54A021692FB338DAC8885A0(L_4, NULL);
+		if (!L_5)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_6 = __this->___m_CurrentField;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_7 = ___0_field;
+		CHECKED_LOCAL_INIT(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticInit,(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var),il2cpp_codegen_runtime_class_init_inline);
+		bool L_8;
+		L_8 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_6, L_7, NULL);
+		if (!L_8)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0034:
+	{
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_9 = ___0_field;
+		MultiFieldKeyboardDisplay_OnInputFieldGainedFocus_mC1B15127C8187A6766D55DC3B2678BF3C2800EEC(__this, L_9, NULL);
+		return;
+	}
+}
+// Method Definition Index: 72515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_IsAnyFieldFocused_m6754B870E8A6D29B32B4767DD306F6CC48485784 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26108,7 +26363,7 @@ IL_0046:
 		return L_8;
 	}
 }
-// Method Definition Index: 72513
+// Method Definition Index: 72516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_SetKeyboard_m71FB798CA6E64BECC3F374B4C30B0800BB8ABB56 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_updateKeyboard, bool ___1_observeKeyboard, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26176,7 +26431,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 72514
+// Method Definition Index: 72517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_StartObservingKeyboard_mCE7F8727C190AC278BD2E87C494FB73EB6F91D4D (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_activeKeyboard, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26263,7 +26518,7 @@ IL_0012:
 		return;
 	}
 }
-// Method Definition Index: 72515
+// Method Definition Index: 72518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_StopObservingKeyboard_m275E28DE37874E5CFAA471D9998B0DEB4B912C61 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_activeKeyboard, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26340,7 +26595,7 @@ IL_000a:
 		return;
 	}
 }
-// Method Definition Index: 72516
+// Method Definition Index: 72519
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnInputFieldGainedFocus_mC1B15127C8187A6766D55DC3B2678BF3C2800EEC (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_field, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26555,7 +26810,7 @@ IL_00f6:
 		return;
 	}
 }
-// Method Definition Index: 72517
+// Method Definition Index: 72520
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnTextSubmit_m0AA258024F1ED2BE9D6F8D4980EF82483F89F64A (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26628,7 +26883,7 @@ IL_0049:
 		return;
 	}
 }
-// Method Definition Index: 72518
+// Method Definition Index: 72521
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_OnTextUpdate_mFC358229EF190601A13541EF98F3ED55C00CA5FF (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -26653,7 +26908,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 72519
+// Method Definition Index: 72522
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_UpdateText_mA95AD7F7375C618DB62E1A19BFC7CF8CEE2630B1 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26759,7 +27014,7 @@ IL_0087:
 		return;
 	}
 }
-// Method Definition Index: 72520
+// Method Definition Index: 72523
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_KeyboardOpening_m945587E573650FC613E74179072D4EAECCF167CA (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26814,7 +27069,7 @@ IL_0030:
 		return;
 	}
 }
-// Method Definition Index: 72521
+// Method Definition Index: 72524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_KeyboardClosing_m0F1F30853E0FCA96D26E3BDF365F7D1A8DBBDCC3 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26864,7 +27119,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 72522
+// Method Definition Index: 72525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay_KeyboardFocusChanged_m0FA3EAE416A7474CFA132CA28DB9887AA0265330 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26934,7 +27189,7 @@ IL_0043:
 		return;
 	}
 }
-// Method Definition Index: 72523
+// Method Definition Index: 72526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay__ctor_mDB9A2C2C16DEA0369A82223FDEA1F92773CE9576 (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -26950,6 +27205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay__ctor_mDB9A2C2
 	}
 	//<source_info:<no-source>:1>
 	{
+		__this->___m_AutoFindFields = (bool)1;
 		__this->___m_UpdateOnKeyPress = (bool)1;
 		__this->___m_HideKeyboardOnDisable = (bool)1;
 		UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* L_0 = (UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257*)il2cpp_codegen_object_new(UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257_il2cpp_TypeInfo_var);
@@ -26988,8 +27244,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MultiFieldKeyboardDisplay__ctor_mDB9A2C2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 72524
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0__ctor_m4AD1A05CA619D08F314AEC8E01B2AF58B5C72808 (U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* __this, const RuntimeMethod* method) 
+// Method Definition Index: 72527
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0__ctor_m9A15346E6F40729A95EB51E43C730FBA1CBACAF8 (U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
@@ -26997,8 +27253,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0__ctor_m4AD1A05
 		return;
 	}
 }
-// Method Definition Index: 72525
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0_U3CRegisterFieldsU3Eb__0_m6D31198C36057A023B26F9EDDF031FA23F7EC718 (U3CU3Ec__DisplayClass66_0_tFBB93C1F2AD96BD7C942D56893685A59AF0BE0B0* __this, String_t* ___0__, const RuntimeMethod* method) 
+// Method Definition Index: 72528
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__0_m98A948DEF9098D7EE9B00AC0FD83754E8D672638 (U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* __this, String_t* ___0__, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	{
@@ -27006,6 +27262,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0_U3CRegisterFie
 		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_1 = __this->___captured;
 		NullCheck(L_0);
 		MultiFieldKeyboardDisplay_OnInputFieldGainedFocus_mC1B15127C8187A6766D55DC3B2678BF3C2800EEC(L_0, L_1, NULL);
+		return;
+	}
+}
+// Method Definition Index: 72529
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0_U3CRegisterFieldsU3Eb__1_mA6C502575576291D32BAB93A275D9DC517EECE0E (U3CU3Ec__DisplayClass70_0_tF80524BC90B85F15250140943DBEEDCE1432C949* __this, const RuntimeMethod* method) 
+{
+	//<source_info:<no-source>:1>
+	{
+		MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* L_0 = __this->___U3CU3E4__this;
+		TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* L_1 = __this->___captured;
+		NullCheck(L_0);
+		MultiFieldKeyboardDisplay_OnFieldTouched_m050F8C59773BC3C0E9965F07EAE11AE046DC533A(L_0, L_1, NULL);
 		return;
 	}
 }
@@ -27272,7 +27540,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TMP_InputField_get_text
 		return L_0;
 	}
 }
-// Method Definition Index: 73393
+// Method Definition Index: 73399
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t FirebaseException_get_ErrorCode_mE665B1ADB8DD846C3C604DD72F25C1B476EB3A66_inline (FirebaseException_t9E9B64098EF276E794C8CFFFA87E23904F33F3ED* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28104,7 +28372,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float3_t7600B73F092B37F484B12910A
 		return L_6;
 	}
 }
-// Method Definition Index: 80364
+// Method Definition Index: 80370
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void float3__ctor_m226C74B198FB80C0537FCF7E51FC395A60EDE4D6_inline (float3_t7600B73F092B37F484B12910A5269F30C778D31E* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28361,7 +28629,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A3
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
 	}
 }
-// Method Definition Index: 82589
+// Method Definition Index: 82595
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool SubsystemWithProvider_get_running_m6BF31FC3BDA38C56C0F60FEA37767A4151B22C44_inline (SubsystemWithProvider_tC72E35EE2D413A4B0635B058154BABF265F31242* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28744,7 +29012,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TMP_InputField_set_resetOnDe
 		return;
 	}
 }
-// Method Definition Index: 80588
+// Method Definition Index: 80594
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* GlobalNonNativeKeyboard_get_instance_m9FF816CA1973CEB4A536D681B744624BA2A81B69_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -28759,7 +29027,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GlobalNonNativeKeyboard_tBA651BF7
 		return L_0;
 	}
 }
-// Method Definition Index: 80594
+// Method Definition Index: 80600
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* GlobalNonNativeKeyboard_get_keyboard_m15F98E74A4C2DA38D5FEA0913B21AD25F5396CE4_inline (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28786,7 +29054,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_InputField_get_isFocused
 		return L_0;
 	}
 }
-// Method Definition Index: 80658
+// Method Definition Index: 80664
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextUpdated_mD40DAD40D8F99815281AD6B5A8C0D1F50A445E74_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28795,7 +29063,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80656
+// Method Definition Index: 80662
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextSubmitted_m80397073FCFA7F8A3DC8DF5CDD856F3BAE372835_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28804,7 +29072,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80668
+// Method Definition Index: 80674
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onClosed_m546D7F12CF990CE18095DE173401F257980840B5_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28813,7 +29081,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80666
+// Method Definition Index: 80672
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onOpened_m7FC7C13C82FC4CCAF84F04A19CF8ADAF0165AA5C_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28822,7 +29090,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80670
+// Method Definition Index: 80676
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onFocusChanged_m074E2608B7E207D37F38B9827201DD5DB57A19BA_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28831,7 +29099,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 72486
+// Method Definition Index: 72488
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_get_alwaysObserveKeyboard_m29DEAFA0406102BFFF5099C84413A169DCF4BBDD_inline (MultiFieldKeyboardDisplay_t19A20AA5EFD244068D42489A183960E9E49026DE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28840,7 +29108,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool MultiFieldKeyboardDisplay_ge
 		return L_0;
 	}
 }
-// Method Definition Index: 80684
+// Method Definition Index: 80690
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRKeyboard_get_caretPosition_m1AA040763E5E358FE3E0F9A653A51173B30F7073_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28849,7 +29117,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRKeyboard_get_caretPosit
 		return L_0;
 	}
 }
-// Method Definition Index: 80807
+// Method Definition Index: 80813
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyboardTextEventArgs_get_keyboardText_m22134CB2381CDFA34C52B71F44A33550A8A48460_inline (KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -28867,7 +29135,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_InputField_get_charac
 		return L_0;
 	}
 }
-// Method Definition Index: 80804
+// Method Definition Index: 80810
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* KeyboardBaseEventArgs_get_keyboard_mC6EF5C2B4A8C82CBC9C3F2724347A0AE3933EA8C_inline (KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
