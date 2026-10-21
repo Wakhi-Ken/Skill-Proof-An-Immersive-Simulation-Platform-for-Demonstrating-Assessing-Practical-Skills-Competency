@@ -246,6 +246,14 @@
             "icon": null
           },
           {
+            "name": "CustomRenderTexture",
+            "scenes": [
+              "Assets/Scenes/SImulation 2.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "DelayedCallManager",
             "scenes": [],
             "dependencyType": 1,
@@ -515,7 +523,7 @@
           {
             "name": "RenderTexture",
             "scenes": [],
-            "dependencyType": 0,
+            "dependencyType": 1,
             "icon": null
           },
           {

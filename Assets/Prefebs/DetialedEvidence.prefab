@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2521004594966153959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7237145944560910231}
+  - component: {fileID: 4344133726119514375}
+  m_Layer: 0
+  m_Name: DetialedEvidence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7237145944560910231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2521004594966153959}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 656.8397, y: 3.54769, z: -40.3493}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4344133726119514375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2521004594966153959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a761dac2574ce47a53a988d06b6d06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DetailedGeneratedUI
+  detailedCanvas: {fileID: 0}
+  userNameText: {fileID: 0}
+  userIdText: {fileID: 0}
+  emailText: {fileID: 0}
+  simulationNameText: {fileID: 0}
+  activitiesSummaryText: {fileID: 0}
+  activitiesText: {fileID: 0}
+  dateText: {fileID: 0}
+  timeText: {fileID: 0}
+  completionStatusText: {fileID: 0}
+  competencyText: {fileID: 0}
+  safetyText: {fileID: 0}
+  errorsText: {fileID: 0}
+  overallScoreText: {fileID: 0}
+  feedbackText: {fileID: 0}
+  statusText: {fileID: 0}
+  goodColor: {r: 0.2, g: 0.8, b: 0.3, a: 1}
+  badColor: {r: 0.9, g: 0.2, b: 0.2, a: 1}

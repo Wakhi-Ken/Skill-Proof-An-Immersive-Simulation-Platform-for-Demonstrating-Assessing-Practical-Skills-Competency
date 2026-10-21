@@ -15,6 +15,7 @@ TagManager:
   - box
   - isoletor
   - StealCover
+  - safety
   layers:
   - Default
   - TransparentFX
