@@ -49,7 +49,7 @@ public class DetailedGeneratedUI : MonoBehaviour
             detailedCanvas.SetActive(false);
     }
 
-    // Hook this to a "View full details" button (for example on the results canvas)
+    // Opens the detailed results canvas and loads the data. Hook this to a button's OnClick.
     public async void Open()
     {
         if (isLoading) return;

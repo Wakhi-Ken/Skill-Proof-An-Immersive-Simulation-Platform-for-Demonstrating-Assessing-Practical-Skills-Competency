@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Firebase.Auth;
 using TMPro;
@@ -50,10 +51,7 @@ public class UserProfileUI : MonoBehaviour
     {
         if (loadOnEnable) Refresh();
     }
-
-    /// <summary>
-    /// Hook this to a Button's OnClick. Fetches the profile and updates the display.
-    /// </summary>
+    // refreshes the profile data. Hook this to a button's OnClick, or call it from another script.
     public async void Refresh()
     {
         await LoadProfileAsync();
@@ -137,13 +135,22 @@ public class UserProfileUI : MonoBehaviour
     private void Apply(UserData user)
     {
         SetText(nameText, user.name);
-        SetText(idText, user.userID);
+        SetText(idText, ShortId(user.userID));
         SetText(emailText, user.email);
         SetText(attemptCount, user.attemptCount.ToString());
 
         SetSlider(safetySlider, user.AverageSafety);
         SetSlider(competencySlider, user.AverageCompetency);
         SetSlider(proceduralSlider, user.AverageProcedural);
+    }
+
+    // Shortens long IDs for display: tCnYPIXqyXZiUcH4W8mLACVnZRg2 -> tCnY...ZRg2
+    // IDs shorter than 12 characters are left unchanged. Display only: the full ID
+    // is still stored in the database and in user.userID.
+    private string ShortId(string id)
+    {
+        if (string.IsNullOrEmpty(id)) return id;
+        return Regex.Replace(id, @"^(.{4}).{4,}(.{4})$", "$1...$2");
     }
 
     private void SetText(TMP_Text target, string value)
