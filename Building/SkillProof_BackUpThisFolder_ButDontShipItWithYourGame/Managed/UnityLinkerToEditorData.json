@@ -1288,8 +1288,10 @@
           {
             "name": "Rigidbody",
             "scenes": [
+              "Assets/Scenes/Main Menu.unity",
               "Assets/Scenes/SImulation 1.unity",
-              "Assets/Scenes/SImulation 2.unity"
+              "Assets/Scenes/SImulation 2.unity",
+              "Assets/Scenes/Simulation Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null

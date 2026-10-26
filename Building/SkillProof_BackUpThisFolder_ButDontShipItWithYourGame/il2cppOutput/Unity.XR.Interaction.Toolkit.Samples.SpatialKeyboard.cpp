@@ -3469,7 +3469,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80606
+// Method Definition Index: 106429
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* GlobalNonNativeKeyboard_get_instance_m9FF816CA1973CEB4A536D681B744624BA2A81B69 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3484,7 +3484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GlobalNonNativeKeyboard_tBA651BF7DC94CE605737
 		return L_0;
 	}
 }
-// Method Definition Index: 80607
+// Method Definition Index: 106430
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_instance_m955CE26051781367B14977B2DEFCF99FC77B2771 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3501,7 +3501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_instance_m95
 		return;
 	}
 }
-// Method Definition Index: 80608
+// Method Definition Index: 106431
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GlobalNonNativeKeyboard_get_keyboardPrefab_m2E254BCC7C9BF2350353349329D2B7885AF21A9E (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3510,7 +3510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651
 		return L_0;
 	}
 }
-// Method Definition Index: 80609
+// Method Definition Index: 106432
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboardPrefab_mFE03E0B08680833F71711C4C45339EBD8B14F598 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3521,7 +3521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboardPref
 		return;
 	}
 }
-// Method Definition Index: 80610
+// Method Definition Index: 106433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GlobalNonNativeKeyboard_get_playerRoot_mB50DF8D788F9246BE2B399DD35CC7CBA8F0416BC (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3530,7 +3530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80611
+// Method Definition Index: 106434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_playerRoot_m2119FC87253BA9B8894B36914BF8C5BE1EF940C6 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3541,7 +3541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_playerRoot_m
 		return;
 	}
 }
-// Method Definition Index: 80612
+// Method Definition Index: 106435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* GlobalNonNativeKeyboard_get_keyboard_m15F98E74A4C2DA38D5FEA0913B21AD25F5396CE4 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3550,7 +3550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D9
 		return L_0;
 	}
 }
-// Method Definition Index: 80613
+// Method Definition Index: 106436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboard_m924862613733252FB002D6178685F4065F05F56E (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3561,7 +3561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboard_m92
 		return;
 	}
 }
-// Method Definition Index: 80614
+// Method Definition Index: 106437
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 GlobalNonNativeKeyboard_get_keyboardOffset_mB2CC0E334574DA1EED24175907B14CC9BD046C68 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3570,7 +3570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		return L_0;
 	}
 }
-// Method Definition Index: 80615
+// Method Definition Index: 106438
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboardOffset_m93500BC60C56E846B07A06308E1783D4E8FDEA5A (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3580,7 +3580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboardOffs
 		return;
 	}
 }
-// Method Definition Index: 80616
+// Method Definition Index: 106439
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GlobalNonNativeKeyboard_get_cameraTransform_m9624D8A49DCCF08A3F4E82138E984EE206A116E5 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3589,7 +3589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80617
+// Method Definition Index: 106440
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_cameraTransform_mAE527288C15846CB66FFE93212C6109166895271 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3600,7 +3600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_cameraTransf
 		return;
 	}
 }
-// Method Definition Index: 80618
+// Method Definition Index: 106441
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalNonNativeKeyboard_get_repositionOutOfViewKeyboardOnOpen_m40512B3C99CD39005772F4A9167BFD6A40EC6F91 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3609,7 +3609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalNonNativeKeyboard_get_repositionOu
 		return L_0;
 	}
 }
-// Method Definition Index: 80619
+// Method Definition Index: 106442
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_repositionOutOfViewKeyboardOnOpen_mA517523FB761E84D3680D616933FDB5441497D41 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3619,7 +3619,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_repositionOu
 		return;
 	}
 }
-// Method Definition Index: 80620
+// Method Definition Index: 106443
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GlobalNonNativeKeyboard_get_facingKeyboardThreshold_m0D01631124F3C610C29CD2064AA90B025D237DE7 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3628,7 +3628,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GlobalNonNativeKeyboard_get_facingKeybo
 		return L_0;
 	}
 }
-// Method Definition Index: 80621
+// Method Definition Index: 106444
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_facingKeyboardThreshold_m96DB8CAA2D213DC70A700933C1857500ADD00FC7 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -3638,7 +3638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_facingKeyboa
 		return;
 	}
 }
-// Method Definition Index: 80622
+// Method Definition Index: 106445
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_Awake_m6040531AC1688C91F742CA22B962F7DFA02B5AAA (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3759,7 +3759,7 @@ IL_0098:
 		return;
 	}
 }
-// Method Definition Index: 80623
+// Method Definition Index: 106446
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_ShowKeyboard_m27A1A04EC8C9DEB8364B3EE6C59E70D50ADB8442 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_inputField, bool ___1_observeCharacterLimit, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3846,7 +3846,7 @@ IL_004b:
 		return;
 	}
 }
-// Method Definition Index: 80624
+// Method Definition Index: 106447
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_ShowKeyboard_m4F206BB3E56F939CF210E5FFCCFF01739A7357F8 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3932,7 +3932,7 @@ IL_004a:
 		return;
 	}
 }
-// Method Definition Index: 80625
+// Method Definition Index: 106448
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_ShowKeyboard_mEA79A0D63A2EC1C4968D80BD4E3E5481ED2803A7 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, bool ___0_clearKeyboardText, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3997,7 +3997,7 @@ IL_0025:
 		return;
 	}
 }
-// Method Definition Index: 80626
+// Method Definition Index: 106449
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_HideKeyboard_mD052D73298947119891A88870155745C803D6990 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4032,7 +4032,7 @@ IL_000f:
 		return;
 	}
 }
-// Method Definition Index: 80627
+// Method Definition Index: 106450
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_RepositionKeyboardIfOutOfView_m4401C02935CB4ADFFA1A4CCF04246A5C37AC8173 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4065,7 +4065,7 @@ IL_0021:
 		return;
 	}
 }
-// Method Definition Index: 80628
+// Method Definition Index: 106451
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_PositionKeyboard_m2DDB9C330E021B14FCEA29EC1404E8EF4F567952 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4118,7 +4118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_PositionKeyboard
 		return;
 	}
 }
-// Method Definition Index: 80629
+// Method Definition Index: 106452
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_FaceKeyboardAtTarget_m1B7E0D56103024F6DA7974BF38E13F8A6432810B (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_target, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4162,7 +4162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_FaceKeyboardAtTa
 		return;
 	}
 }
-// Method Definition Index: 80630
+// Method Definition Index: 106453
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalNonNativeKeyboard_IsKeyboardOutOfView_m5C24951E5FCD2FE8C562CF186C132D569667FD6B (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4236,7 +4236,7 @@ IL_0029:
 		return (bool)((((float)L_13) < ((float)L_14))? 1 : 0);
 	}
 }
-// Method Definition Index: 80631
+// Method Definition Index: 106454
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard__ctor_mF04147F9AF9FD520E9B0E2A1B6FD09CB5495EC02 (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4255,7 +4255,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard__ctor_mF04147F9A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80632
+// Method Definition Index: 106455
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyFunction_PreprocessKey_m9AAED24AEF92C93649BA090C90D5CD415C083969 (KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4288,7 +4288,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 80634
+// Method Definition Index: 106457
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyFunction_PostprocessKey_mD22FD227547E9C1050727522AC89F44D3D08DAF4 (KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4321,7 +4321,7 @@ IL_0010:
 		return;
 	}
 }
-// Method Definition Index: 80635
+// Method Definition Index: 106458
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyFunction_OverrideDisplayIcon_mFC71EABF6EA7F3D8EC49A6FEA30F5BFC14277078 (KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4329,7 +4329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyFunction_OverrideDisplayIcon_mFC71EAB
 		return (bool)0;
 	}
 }
-// Method Definition Index: 80636
+// Method Definition Index: 106459
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* KeyFunction_GetDisplayIcon_m6834332B45059B864B6A5BB16FFBBDB0021F162E (KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4337,7 +4337,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return (Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99*)NULL;
 	}
 }
-// Method Definition Index: 80637
+// Method Definition Index: 106460
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyFunction_ProcessRefreshDisplay_m7CB91DE70F92D72DBD5C1FC96996235977A5A536 (KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4345,7 +4345,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyFunction_ProcessRefreshDisplay_m7CB91
 		return;
 	}
 }
-// Method Definition Index: 80638
+// Method Definition Index: 106461
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyFunction__ctor_mFAC81D77350BE03C629FF9E5B766CA4AED90C4FE (KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4362,7 +4362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyFunction__ctor_mFAC81D77350BE03C629FF
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80639
+// Method Definition Index: 106462
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardBatchFollow_get_followTransform_mA3FFD5F1856F79CEDF05DD87DBA3A2FD72673A03 (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4371,7 +4371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80640
+// Method Definition Index: 106463
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow_set_followTransform_m12AC3D6BC5DE241EEBB343C9555DF39B660FD834 (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4382,7 +4382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow_set_followTransform_
 		return;
 	}
 }
-// Method Definition Index: 80641
+// Method Definition Index: 106464
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* KeyboardBatchFollow_get_followerTransforms_mB5E12D2388F8DE8325D1EF6AC62BEC61C616AD8D (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4391,7 +4391,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3
 		return L_0;
 	}
 }
-// Method Definition Index: 80642
+// Method Definition Index: 106465
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow_set_followerTransforms_mC7B93B2E4101D85A8FB442B28BB6AB30C9BF4D62 (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4402,7 +4402,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow_set_followerTransfor
 		return;
 	}
 }
-// Method Definition Index: 80643
+// Method Definition Index: 106466
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow_OnDisable_mBFDA4984EC97C38419AEE2AB68CF28DFB69DAF3A (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4471,7 +4471,7 @@ IL_003b:
 		return;
 	}
 }
-// Method Definition Index: 80644
+// Method Definition Index: 106467
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow_LateUpdate_m71101132CA940F576569CFDCFCEB12F8E6CF997C (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4565,7 +4565,7 @@ IL_0056:
 		return;
 	}
 }
-// Method Definition Index: 80645
+// Method Definition Index: 106468
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow__ctor_m0EF6A2FB57B1CB48276107093C4A43949CF21AEF (KeyboardBatchFollow_t9B0AD1539DE2E0C4D807D446A91CC697F141212E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4582,7 +4582,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBatchFollow__ctor_m0EF6A2FB57B1C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80646
+// Method Definition Index: 106469
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardOptimizer_get_optimizeOnStart_m509B1D48184500F63909508E1B063FCF054906A7 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4591,7 +4591,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardOptimizer_get_optimizeOnStart_m5
 		return L_0;
 	}
 }
-// Method Definition Index: 80647
+// Method Definition Index: 106470
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_optimizeOnStart_mCA5FBE6D449911DF8B9C8C45C95D2238B4B824B3 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4601,7 +4601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_optimizeOnStart_mC
 		return;
 	}
 }
-// Method Definition Index: 80648
+// Method Definition Index: 106471
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_get_batchGroupParentTransform_m2E62CF47F0935F1E819F0D83E6B77DA7DA3858C0 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4610,7 +4610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80649
+// Method Definition Index: 106472
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_batchGroupParentTransform_mBECD16CF1B9FB92FCF28CE51F80AFEA1B8469BED (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4621,7 +4621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_batchGroupParentTr
 		return;
 	}
 }
-// Method Definition Index: 80650
+// Method Definition Index: 106473
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_get_buttonParentTransform_mE2EE3E48371D71970B0A16E5F6FA0B11B445F137 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4630,7 +4630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80651
+// Method Definition Index: 106474
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_buttonParentTransform_m21E9A797713D4A30426293546C13CCF8143030C8 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4641,7 +4641,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_buttonParentTransf
 		return;
 	}
 }
-// Method Definition Index: 80652
+// Method Definition Index: 106475
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_get_imageParentTransform_m1C762D3122F04BC673B1E00BA19159C2E9BF9121 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4650,7 +4650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80653
+// Method Definition Index: 106476
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_imageParentTransform_m4BD041C3575E77A708935C35A1965E1FEF3D73DF (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4661,7 +4661,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_imageParentTransfo
 		return;
 	}
 }
-// Method Definition Index: 80654
+// Method Definition Index: 106477
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_get_textParentTransform_mC72F2CC863F41B26A71486461AB22296EFDDCB7E (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4670,7 +4670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80655
+// Method Definition Index: 106478
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_textParentTransform_m817C65C0F18C64605E83330873AB86CD2DA7D6DF (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4681,7 +4681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_textParentTransfor
 		return;
 	}
 }
-// Method Definition Index: 80656
+// Method Definition Index: 106479
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_get_iconParentTransform_m566AADEE9F580DD83584A0FD439D3FBBC5FFC7D8 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4690,7 +4690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80657
+// Method Definition Index: 106480
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_iconParentTransform_mFCC0E46F25644F0A5F8DEC20762160325A2D383F (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4701,7 +4701,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_iconParentTransfor
 		return;
 	}
 }
-// Method Definition Index: 80658
+// Method Definition Index: 106481
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_get_highlightParentTransform_mDE60559FEDEB81440F6D02635E55861FDBB6BE0C (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4710,7 +4710,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_0;
 	}
 }
-// Method Definition Index: 80659
+// Method Definition Index: 106482
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_highlightParentTransform_mFE1EF2D37D06E9106EA29F8481C540619D6E1724 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4721,7 +4721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_set_highlightParentTra
 		return;
 	}
 }
-// Method Definition Index: 80660
+// Method Definition Index: 106483
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardOptimizer_get_isCurrentlyOptimized_m175732CA2F14A1A99D0131579B7D8B5755A41A09 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4730,7 +4730,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardOptimizer_get_isCurrentlyOptimiz
 		return L_0;
 	}
 }
-// Method Definition Index: 80661
+// Method Definition Index: 106484
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_Start_m6F64CFC6A4A07BCC9F0FA7E8C1B6560A772A4D78 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4752,7 +4752,7 @@ IL_0019:
 		return;
 	}
 }
-// Method Definition Index: 80662
+// Method Definition Index: 106485
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_CheckReferences_m861AA5F953B948CAC383AA8384BF13CE987BF37E (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4820,7 +4820,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 80663
+// Method Definition Index: 106486
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardOptimizer_TryGetOrCreateTransformReferences_mE2BBFAE5FE146236B42DAA383FBB5D423F8C19AD (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4983,7 +4983,7 @@ IL_00f6:
 		return (bool)1;
 	}
 }
-// Method Definition Index: 80664
+// Method Definition Index: 106487
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_GetKeys_mAD22DD6E905C8ED721D49C96EB77D5D7D74112B2 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5066,7 +5066,7 @@ IL_0060:
 		return;
 	}
 }
-// Method Definition Index: 80665
+// Method Definition Index: 106488
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_GetLayoutGroups_m5CB6EA1DEF0C3602976A6148ACF224EF23AF174A (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5084,7 +5084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_GetLayoutGroups_m5CB6E
 		return;
 	}
 }
-// Method Definition Index: 80666
+// Method Definition Index: 106489
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* KeyboardOptimizer_CreateTransformAndSetParent_m9A4CB497BD007926BC971D1B3EB0CC8347306A83 (String_t* ___0_name, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5120,7 +5120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99
 		return L_7;
 	}
 }
-// Method Definition Index: 80667
+// Method Definition Index: 106490
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_Optimize_mC5A3C8D586652608F5661C061793B7D49F69FCBD (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5371,7 +5371,7 @@ IL_0133:
 		return;
 	}
 }
-// Method Definition Index: 80668
+// Method Definition Index: 106491
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer_Unoptimize_m2E85536E69E5D152218AD195F90913346A20799D (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5654,7 +5654,7 @@ IL_0158:
 		return;
 	}
 }
-// Method Definition Index: 80669
+// Method Definition Index: 106492
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardOptimizer__ctor_m421F16FF15F8A046C320F0728502885CC71226D5 (KeyboardOptimizer_t93441461463FEA466BAB832A28B3FFE7D3A7A4B7* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5741,7 +5741,7 @@ IL2CPP_EXTERN_C void KeyData_t20680CF05BE65E59FFAA69DC762E6A439D3C0857_marshal_c
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80670
+// Method Definition Index: 106493
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboard_get_text_mA8B24F23854C5298779BF4BF80CA35491CCAEABA (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5750,7 +5750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboard_get_text_mA8B24F23854C52
 		return L_0;
 	}
 }
-// Method Definition Index: 80671
+// Method Definition Index: 106494
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_text_mD6DDF9C1750935840404159CF6641A51B943E7E9 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5856,7 +5856,7 @@ IL_0075:
 		return;
 	}
 }
-// Method Definition Index: 80672
+// Method Definition Index: 106495
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* XRKeyboard_get_currentInputField_mB6F15AA860B4134B155C9F1AE98F3DFAB9B4959D (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5865,7 +5865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BE
 		return L_0;
 	}
 }
-// Method Definition Index: 80673
+// Method Definition Index: 106496
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_currentInputField_m04F27D1442C0D6528BA46C4723780F8B6677595E (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -5971,7 +5971,7 @@ IL_0071:
 		return;
 	}
 }
-// Method Definition Index: 80674
+// Method Definition Index: 106497
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextSubmitted_m80397073FCFA7F8A3DC8DF5CDD856F3BAE372835 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5980,7 +5980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8
 		return L_0;
 	}
 }
-// Method Definition Index: 80675
+// Method Definition Index: 106498
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onTextSubmitted_m574FF1E674018A700BF487F329FF8D7602C87E56 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -5991,7 +5991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onTextSubmitted_m574FF1E6
 		return;
 	}
 }
-// Method Definition Index: 80676
+// Method Definition Index: 106499
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextUpdated_mD40DAD40D8F99815281AD6B5A8C0D1F50A445E74 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6000,7 +6000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8
 		return L_0;
 	}
 }
-// Method Definition Index: 80677
+// Method Definition Index: 106500
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onTextUpdated_m00D439FE3F237FD360C775CAB54F1B4C7690055C (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6011,7 +6011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onTextUpdated_m00D439FE3F
 		return;
 	}
 }
-// Method Definition Index: 80678
+// Method Definition Index: 106501
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardKeyEvent_t58DA0BDC0C1D23FA38EF4B5BDB2CFA380D8EF687* XRKeyboard_get_onKeyPressed_mE17A4E64160E51AFA071F30E19B22C256035018D (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6020,7 +6020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardKeyEvent_t58DA0BDC0C1D23FA38EF4B5BDB2
 		return L_0;
 	}
 }
-// Method Definition Index: 80679
+// Method Definition Index: 106502
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onKeyPressed_m9EDCF92817CEA368D383A60BCE973B26DE56DCAE (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardKeyEvent_t58DA0BDC0C1D23FA38EF4B5BDB2CFA380D8EF687* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6031,7 +6031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onKeyPressed_m9EDCF92817C
 		return;
 	}
 }
-// Method Definition Index: 80680
+// Method Definition Index: 106503
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardModifiersEvent_t23AE5D4798D6E51CA902DC4F48C2137D38E8C136* XRKeyboard_get_onShifted_m0DCB0C37679F5F448C5434123BF3BFFE91BE59F2 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6040,7 +6040,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardModifiersEvent_t23AE5D4798D6E51CA902D
 		return L_0;
 	}
 }
-// Method Definition Index: 80681
+// Method Definition Index: 106504
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onShifted_mAC0476EA9D8CB146C1CC7EEC1AE30C20701041E7 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardModifiersEvent_t23AE5D4798D6E51CA902DC4F48C2137D38E8C136* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6051,7 +6051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onShifted_mAC0476EA9D8CB1
 		return;
 	}
 }
-// Method Definition Index: 80682
+// Method Definition Index: 106505
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardLayoutEvent_tB728F7DE29A5CD880965405482DC19B8BF255A7E* XRKeyboard_get_onLayoutChanged_mF24E1E2D159BFB0E5163DBE9FFEEEE6B9D3BA3F4 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6060,7 +6060,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardLayoutEvent_tB728F7DE29A5CD8809654054
 		return L_0;
 	}
 }
-// Method Definition Index: 80683
+// Method Definition Index: 106506
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onLayoutChanged_mACE2632AF1C4BD949944DBD95649EA240748D28E (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardLayoutEvent_tB728F7DE29A5CD880965405482DC19B8BF255A7E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6071,7 +6071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onLayoutChanged_mACE2632A
 		return;
 	}
 }
-// Method Definition Index: 80684
+// Method Definition Index: 106507
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onOpened_m7FC7C13C82FC4CCAF84F04A19CF8ADAF0165AA5C (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6080,7 +6080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8
 		return L_0;
 	}
 }
-// Method Definition Index: 80685
+// Method Definition Index: 106508
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onOpened_m238B0AE141EF550E59AC892EE6DC5496CB014CF5 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6091,7 +6091,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onOpened_m238B0AE141EF550
 		return;
 	}
 }
-// Method Definition Index: 80686
+// Method Definition Index: 106509
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onClosed_m546D7F12CF990CE18095DE173401F257980840B5 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6100,7 +6100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8
 		return L_0;
 	}
 }
-// Method Definition Index: 80687
+// Method Definition Index: 106510
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onClosed_m746CAB163D072AD4BD3E649B3F5547D0E5552DD1 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6111,7 +6111,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onClosed_m746CAB163D072AD
 		return;
 	}
 }
-// Method Definition Index: 80688
+// Method Definition Index: 106511
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onFocusChanged_m074E2608B7E207D37F38B9827201DD5DB57A19BA (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6120,7 +6120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8
 		return L_0;
 	}
 }
-// Method Definition Index: 80689
+// Method Definition Index: 106512
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onFocusChanged_m4CFFBC0F3B1F0B521F5373C5E64626E0D82BF108 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6131,7 +6131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onFocusChanged_m4CFFBC0F3
 		return;
 	}
 }
-// Method Definition Index: 80690
+// Method Definition Index: 106513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardEvent_t3EC42C4C5064BFABAC7774FB38C270936A2D8F8E* XRKeyboard_get_onCharacterLimitReached_mBD79A435D915627C1C0437435DD7382C6A5F3014 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6140,7 +6140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardEvent_t3EC42C4C5064BFABAC7774FB38C270
 		return L_0;
 	}
 }
-// Method Definition Index: 80691
+// Method Definition Index: 106514
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onCharacterLimitReached_mB480B32FF1CC45D21332E7E2CC420AAEC7C64EB6 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, KeyboardEvent_t3EC42C4C5064BFABAC7774FB38C270936A2D8F8E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6151,7 +6151,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_onCharacterLimitReached_m
 		return;
 	}
 }
-// Method Definition Index: 80692
+// Method Definition Index: 106515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_submitOnEnter_m33B5EC6E87786017D7258A09FB3076D9773DD3DF (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6160,7 +6160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_submitOnEnter_m33B5EC6E87
 		return L_0;
 	}
 }
-// Method Definition Index: 80693
+// Method Definition Index: 106516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_submitOnEnter_m6B50192B90E513E88B96BC6FCB77ED13714426A0 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6170,7 +6170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_submitOnEnter_m6B50192B90
 		return;
 	}
 }
-// Method Definition Index: 80694
+// Method Definition Index: 106517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_closeOnSubmit_m9EFE14D736F6055A6E40B31318B750A9333A94E5 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6179,7 +6179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_closeOnSubmit_m9EFE14D736
 		return L_0;
 	}
 }
-// Method Definition Index: 80695
+// Method Definition Index: 106518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_closeOnSubmit_mC482BF08491BEE260EE16AA338715C25A2BE4232 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6189,7 +6189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_closeOnSubmit_mC482BF0849
 		return;
 	}
 }
-// Method Definition Index: 80696
+// Method Definition Index: 106519
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKeyboard_get_doubleClickInterval_m091175889EB4A1EF31299C21C2EEFB2A7084368E (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6198,7 +6198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKeyboard_get_doubleClickInterval_m091
 		return L_0;
 	}
 }
-// Method Definition Index: 80697
+// Method Definition Index: 106520
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_doubleClickInterval_mB03C2B205B389F344636ED67AD8399EC6F8DBF86 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, float ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6208,7 +6208,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_doubleClickInterval_mB03C
 		return;
 	}
 }
-// Method Definition Index: 80698
+// Method Definition Index: 106521
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4C999C4477027FC6C7CAE9FB961C6624D6B406C3* XRKeyboard_get_subsetLayout_mA5A2341B8098CD611556D3D1E8B1CABF23300A48 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6217,7 +6217,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t4C999C4477027FC6C7CAE9FB961C6624D6B40
 		return L_0;
 	}
 }
-// Method Definition Index: 80699
+// Method Definition Index: 106522
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_subsetLayout_m87488CA9B3B768111A5770541CEFEC12C99D9F6D (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, List_1_t4C999C4477027FC6C7CAE9FB961C6624D6B406C3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6228,7 +6228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_subsetLayout_m87488CA9B3B
 		return;
 	}
 }
-// Method Definition Index: 80700
+// Method Definition Index: 106523
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tC05DCCFDA67663BE004B7A7D56F25D6B4FE64AFF* XRKeyboard_get_keys_mB07D00C48CA1CAFFD5602445C25DB580A215A65B (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6237,7 +6237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tC05DCCFDA67663BE004B7A7D56F25D6B4FE64
 		return L_0;
 	}
 }
-// Method Definition Index: 80701
+// Method Definition Index: 106524
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_keys_m5E166CECC3FA0F177947E231C94ECDBE38429BBD (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, List_1_tC05DCCFDA67663BE004B7A7D56F25D6B4FE64AFF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6248,7 +6248,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_keys_m5E166CECC3FA0F17794
 		return;
 	}
 }
-// Method Definition Index: 80702
+// Method Definition Index: 106525
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRKeyboard_get_caretPosition_m1AA040763E5E358FE3E0F9A653A51173B30F7073 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6257,7 +6257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRKeyboard_get_caretPosition_m1AA0407
 		return L_0;
 	}
 }
-// Method Definition Index: 80703
+// Method Definition Index: 106526
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_caretPosition_m8F05A04F9F630F671F3C60E0AB48FB59675FD85D (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6267,7 +6267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_set_caretPosition_m8F05A04F9F
 		return;
 	}
 }
-// Method Definition Index: 80704
+// Method Definition Index: 106527
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_shifted_mE0A4970B5C018F414A3D5FEEBDE360CB28B8EA51 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6276,7 +6276,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_shifted_mE0A4970B5C018F41
 		return L_0;
 	}
 }
-// Method Definition Index: 80705
+// Method Definition Index: 106528
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_capsLocked_m720EDF80CCDE80E1973AC99A8D87CE291FBC7F1F (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6285,7 +6285,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_capsLocked_m720EDF80CCDE8
 		return L_0;
 	}
 }
-// Method Definition Index: 80706
+// Method Definition Index: 106529
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_get_isOpen_m32CE50816C623D95B54A021692FB338DAC8885A0 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6307,7 +6307,7 @@ IL_000f:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 80707
+// Method Definition Index: 106530
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Awake_m78EC20F381F8D787F55E7AB1C97325A57FDF912A (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6456,7 +6456,7 @@ IL_0095:
 		return;
 	}
 }
-// Method Definition Index: 80708
+// Method Definition Index: 106531
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_OnDisable_m4E2EF8A711122926E72E3ABF7CCE6BB23ED1CFC6 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6465,7 +6465,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_OnDisable_m4E2EF8A711122926E7
 		return;
 	}
 }
-// Method Definition Index: 80709
+// Method Definition Index: 106532
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_ProcessKeyCode_mEA7C3F249AA368D883B95DE21A5DC04E2A6E4668 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, int32_t ___0_keyCode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6638,7 +6638,7 @@ IL_00b8:
 		return L_14;
 	}
 }
-// Method Definition Index: 80710
+// Method Definition Index: 106533
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_TryProcessKeyPress_m2F0A7ACD65076A58E84E0B69537B51C7642126C4 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___0_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -6978,7 +6978,7 @@ IL_0158:
 		return;
 	}
 }
-// Method Definition Index: 80711
+// Method Definition Index: 106534
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_PreprocessKeyPress_m1077BF742562A503E248A45E4CC7C88705ABE778 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___0_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -6986,7 +6986,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_PreprocessKeyPress_m1077BF742
 		return;
 	}
 }
-// Method Definition Index: 80712
+// Method Definition Index: 106535
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_PostprocessKeyPress_mEE2EF72496C39B7812B214ACC2CB2902487B2FE9 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___0_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7048,7 +7048,7 @@ IL_0038:
 		return;
 	}
 }
-// Method Definition Index: 80713
+// Method Definition Index: 106536
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_UpdateText_m125B88E82BF1B638680255AC34325321F874CF33 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, String_t* ___0_newText, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7200,7 +7200,7 @@ IL_00a5:
 		return;
 	}
 }
-// Method Definition Index: 80714
+// Method Definition Index: 106537
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Shift_m3BF81103A6B253A2B979AA82015921A1343CF504 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, bool ___0_shiftValue, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7268,7 +7268,7 @@ IL_0050:
 		return;
 	}
 }
-// Method Definition Index: 80715
+// Method Definition Index: 106538
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_CapsLock_mA77985140EB0BB647144851B162478CFDB16F9F2 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, bool ___0_capsLockValue, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7280,7 +7280,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_CapsLock_mA77985140EB0BB64714
 		return;
 	}
 }
-// Method Definition Index: 80716
+// Method Definition Index: 106539
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Backspace_mB1CC5F76D8E9126E336607651777142D29831D8C (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7314,7 +7314,7 @@ IL_0031:
 		return;
 	}
 }
-// Method Definition Index: 80717
+// Method Definition Index: 106540
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Delete_m62C0C7FE05F1EEF43537154B46CA178E07373176 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7347,7 +7347,7 @@ IL_002b:
 		return;
 	}
 }
-// Method Definition Index: 80718
+// Method Definition Index: 106541
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Submit_mD2CBD918E3EA0E08EC40499634C84B3B9E86E139 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7441,7 +7441,7 @@ IL_0053:
 		return;
 	}
 }
-// Method Definition Index: 80719
+// Method Definition Index: 106542
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Clear_mCF09FC022C859D89AFE2054E4ADF11458D09355F (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7457,7 +7457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Clear_mCF09FC022C859D89AFE205
 		return;
 	}
 }
-// Method Definition Index: 80720
+// Method Definition Index: 106543
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboard_UpdateLayout_m7C3BC9A0EF98514D3A14482A7F380F624253F326 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, String_t* ___0_layoutKey, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7660,7 +7660,7 @@ IL_00bf:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 80721
+// Method Definition Index: 106544
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Open_m44747EDCABA86C48569AD1C267C13F591274862A (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_inputField, bool ___1_observeCharacterLimit, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7711,7 +7711,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 80722
+// Method Definition Index: 106545
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Open_m39692C83303DD49002B94B58627C1B86E2AF9ADA (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7722,7 +7722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Open_m39692C83303DD49002B94B5
 		return;
 	}
 }
-// Method Definition Index: 80723
+// Method Definition Index: 106546
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_OpenCleared_m10A4BB4DEF13EC302E9F19BD5147EDEACDA37ECB (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -7732,7 +7732,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_OpenCleared_m10A4BB4DEF13EC30
 		return;
 	}
 }
-// Method Definition Index: 80724
+// Method Definition Index: 106547
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Open_m6F8F20E22D8D91FBEFFAF5A174A9977878D09DC4 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, String_t* ___0_newText, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7833,7 +7833,7 @@ IL_004b:
 		return;
 	}
 }
-// Method Definition Index: 80725
+// Method Definition Index: 106548
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Close_m6A9F0297CF6E60B1BA7376FABD6C69677D87AE67 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7943,7 +7943,7 @@ IL_006f:
 		return;
 	}
 }
-// Method Definition Index: 80726
+// Method Definition Index: 106549
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_Close_mF490FBC5C4594FD39BF1E28DB8BB7D1D0825F4D8 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, bool ___0_clearText, bool ___1_resetLayout, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8084,7 +8084,7 @@ IL_0086:
 		return;
 	}
 }
-// Method Definition Index: 80727
+// Method Definition Index: 106550
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_StopObservingInputField_mED9781D9B68F9A545240DBB716F4737065A06EB7 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_inputField, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8125,7 +8125,7 @@ IL_000a:
 		return;
 	}
 }
-// Method Definition Index: 80728
+// Method Definition Index: 106551
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_StartObservingInputField_m7A166D7E55915A1A435C9F9E6199869C9B745041 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_inputField, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8167,7 +8167,7 @@ IL_000a:
 		return;
 	}
 }
-// Method Definition Index: 80729
+// Method Definition Index: 106552
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_OnInputFieldValueChange_m9CD96AF10B7741FF0092B4A622178905454F56E2 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, String_t* ___0_updatedText, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8182,7 +8182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_OnInputFieldValueChange_m9CD9
 		return;
 	}
 }
-// Method Definition Index: 80730
+// Method Definition Index: 106553
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard__ctor_mEC5CCED9DE4F15B974D70C44C9A8C6EDB4BFCF82 (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8436,7 +8436,7 @@ IL_0161:
 		return;
 	}
 }
-// Method Definition Index: 80731
+// Method Definition Index: 106554
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboard_U3CAwakeU3Eb__87_0_mE8CF2D98E233DC16045900561C89723F5317F57A (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___0_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8505,7 +8505,7 @@ IL2CPP_EXTERN_C void SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70_mar
 IL2CPP_EXTERN_C void SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70_marshal_com_cleanup(SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70_marshaled_com& marshaled)
 {
 }
-// Method Definition Index: 80732
+// Method Definition Index: 106555
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SubsetMapping_get_layoutString_m6C01E1D8F8263EF3DAACA74ED5B798A1B905F5F0 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8514,7 +8514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SubsetMapping_get_layoutString_m6C0
 		return L_0;
 	}
 }
-// Method Definition Index: 80733
+// Method Definition Index: 106556
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_layoutString_mC3C9AF32774258815C893B9D61B3A3184FCA65F9 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8525,7 +8525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_layoutString_mC3C9AF32
 		return;
 	}
 }
-// Method Definition Index: 80734
+// Method Definition Index: 106557
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* SubsetMapping_get_layoutRoot_m9702F9968E15EAF96B1DC9EF41EDB9C9229E6328 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8534,7 +8534,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardLayout_t625ACEBCBA853E229D063930D8C
 		return L_0;
 	}
 }
-// Method Definition Index: 80735
+// Method Definition Index: 106558
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_layoutRoot_m85B561E2EFE7BB1869B51D69803F6E3B71C16F92 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8545,7 +8545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_layoutRoot_m85B561E2EF
 		return;
 	}
 }
-// Method Definition Index: 80736
+// Method Definition Index: 106559
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* SubsetMapping_get_toggleOnConfig_m10EE9674E4F11F31814A980D4EF451C7483EB2C1 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8554,7 +8554,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E
 		return L_0;
 	}
 }
-// Method Definition Index: 80737
+// Method Definition Index: 106560
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_toggleOnConfig_m9624A81F45DA1179A1CF5F76EF4F436D51667AE4 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8565,7 +8565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_toggleOnConfig_m9624A8
 		return;
 	}
 }
-// Method Definition Index: 80738
+// Method Definition Index: 106561
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* SubsetMapping_get_toggleOffConfig_m6BDB38DFDAD98CD906038D50A12BAEA437AF804D (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8574,7 +8574,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E
 		return L_0;
 	}
 }
-// Method Definition Index: 80739
+// Method Definition Index: 106562
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_toggleOffConfig_mDD723D03FE9C25E1366AE1CEE2E4DC311CA540A4 (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8593,7 +8593,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SubsetMapping_set_toggleOffConfig_mDD723
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80740
+// Method Definition Index: 106563
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mAB3B08935F29B2E3CB9FCA8C93D83FB2720DBF93 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8611,7 +8611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__cctor_mAB3B08935F29B2E3CB9FCA8C
 		return;
 	}
 }
-// Method Definition Index: 80741
+// Method Definition Index: 106564
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m104AC3BB6192B11B2F2A784B1A58361AF21F3EC2 (U3CU3Ec_t33E2D539B9F0DD08AD407AB6DB76E8773B65617E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8620,7 +8620,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m104AC3BB6192B11B2F2A784B1
 		return;
 	}
 }
-// Method Definition Index: 80742
+// Method Definition Index: 106565
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* U3CU3Ec_U3C_ctorU3Eb__110_0_m470AD1B9314D7AE0D5CC2C596A02EC2AA047DD81 (U3CU3Ec_t33E2D539B9F0DD08AD407AB6DB76E8773B65617E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8636,7 +8636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardTextEventArgs_tA4CA7DD4A82923A32C03AD
 		return L_0;
 	}
 }
-// Method Definition Index: 80743
+// Method Definition Index: 106566
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* U3CU3Ec_U3C_ctorU3Eb__110_1_mB281CFC5C1C7825CD02DCB67DBD9680B7EE30F89 (U3CU3Ec_t33E2D539B9F0DD08AD407AB6DB76E8773B65617E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8652,7 +8652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14
 		return L_0;
 	}
 }
-// Method Definition Index: 80744
+// Method Definition Index: 106567
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* U3CU3Ec_U3C_ctorU3Eb__110_2_m58CFEB710EA7B54390502E3ECC2B0918B154823A (U3CU3Ec_t33E2D539B9F0DD08AD407AB6DB76E8773B65617E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8668,7 +8668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardModifiersEventArgs_tE81503B447DF545E4
 		return L_0;
 	}
 }
-// Method Definition Index: 80745
+// Method Definition Index: 106568
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardKeyEventArgs_tE3B808B9F65E5B09CD63F3F98E938F046961BD38* U3CU3Ec_U3C_ctorU3Eb__110_3_m91721304AF21FB1521AECF10D00130321362E623 (U3CU3Ec_t33E2D539B9F0DD08AD407AB6DB76E8773B65617E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8684,7 +8684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardKeyEventArgs_tE3B808B9F65E5B09CD63F3F
 		return L_0;
 	}
 }
-// Method Definition Index: 80746
+// Method Definition Index: 106569
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* U3CU3Ec_U3C_ctorU3Eb__110_4_m8FA239B678F372AF2C137C022CF8DF12CF9BC661 (U3CU3Ec_t33E2D539B9F0DD08AD407AB6DB76E8773B65617E* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -8708,7 +8708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D07
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80747
+// Method Definition Index: 106570
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* XRKeyboardConfig_get_defaultKeyFunction_m4D74556D0E50E62CDDEEB208DD7D53CC3C0E3DA3 (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8717,7 +8717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B9140
 		return L_0;
 	}
 }
-// Method Definition Index: 80748
+// Method Definition Index: 106571
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardConfig_set_defaultKeyFunction_m618F8947B040104D033C27A3BF5384A582CE2D86 (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8728,7 +8728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardConfig_set_defaultKeyFunction_
 		return;
 	}
 }
-// Method Definition Index: 80749
+// Method Definition Index: 106572
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tB46E229551E8AE3ED9361C132D5A0833D116C10A* XRKeyboardConfig_get_keyMappings_mC66689B9B223F06D5042FD41B54F10EADB52EE36 (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8737,7 +8737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tB46E229551E8AE3ED9361C132D5A0833D116C
 		return L_0;
 	}
 }
-// Method Definition Index: 80750
+// Method Definition Index: 106573
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardConfig_set_keyMappings_m7D810A43CFD2D20A7954B331F09DF485EBC3121E (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, List_1_tB46E229551E8AE3ED9361C132D5A0833D116C10A* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8748,7 +8748,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardConfig_set_keyMappings_m7D810A
 		return;
 	}
 }
-// Method Definition Index: 80751
+// Method Definition Index: 106574
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardConfig__ctor_m2F3A0CFAE13793178709032259EDAACD1BB9D139 (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8765,7 +8765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardConfig__ctor_m2F3A0CFAE1379317
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80752
+// Method Definition Index: 106575
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_character_m5CFE72D9F27595F68507E34E2FAB9B20E6A17A02 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8774,7 +8774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_character_m5CFE72D9F
 		return L_0;
 	}
 }
-// Method Definition Index: 80753
+// Method Definition Index: 106576
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_character_mCD2DDE3DFF10CABD4271030CB71D122AB08A88E8 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8785,7 +8785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_character_mCD2DDE3DFF10CA
 		return;
 	}
 }
-// Method Definition Index: 80754
+// Method Definition Index: 106577
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_displayCharacter_mBE28F99AD43107C49F03EEE2EA4CD582748C5BD8 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8794,7 +8794,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_displayCharacter_mBE
 		return L_0;
 	}
 }
-// Method Definition Index: 80755
+// Method Definition Index: 106578
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_displayCharacter_m45AFC2A407D50CD1E5420F5561421778E28141D4 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8805,7 +8805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_displayCharacter_m45AFC2A
 		return;
 	}
 }
-// Method Definition Index: 80756
+// Method Definition Index: 106579
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* KeyMapping_get_displayIcon_m84CA1D479F62ACD6D96C65C88B1F24D6A493760A (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8814,7 +8814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return L_0;
 	}
 }
-// Method Definition Index: 80757
+// Method Definition Index: 106580
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_displayIcon_m3DC0505B27C37EFB189B0750BB381292C1EED125 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8825,7 +8825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_displayIcon_m3DC0505B27C3
 		return;
 	}
 }
-// Method Definition Index: 80758
+// Method Definition Index: 106581
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftCharacter_m2FB7B61238CE4E4DD7A926756B65747AE0E6DE44 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8834,7 +8834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftCharacter_m2FB7
 		return L_0;
 	}
 }
-// Method Definition Index: 80759
+// Method Definition Index: 106582
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_shiftCharacter_m382B70356111AB77DA21C34112B04203FEF73AAC (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8845,7 +8845,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_shiftCharacter_m382B70356
 		return;
 	}
 }
-// Method Definition Index: 80760
+// Method Definition Index: 106583
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftDisplayCharacter_m36EA908AD8841AC805400AB62F117A261E2E9FEC (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8854,7 +8854,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftDisplayCharacte
 		return L_0;
 	}
 }
-// Method Definition Index: 80761
+// Method Definition Index: 106584
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_shiftDisplayCharacter_mAD509AF2F8B03E2DF400363076E8F74C44A72CA5 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8865,7 +8865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_shiftDisplayCharacter_mAD
 		return;
 	}
 }
-// Method Definition Index: 80762
+// Method Definition Index: 106585
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* KeyMapping_get_shiftDisplayIcon_m48A624F41758209A045368E4377A491564970D16 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8874,7 +8874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return L_0;
 	}
 }
-// Method Definition Index: 80763
+// Method Definition Index: 106586
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_shiftDisplayIcon_m4014544CB0709D3AFE87DB413797DF0F1F2A4B53 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8885,7 +8885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_shiftDisplayIcon_m4014544
 		return;
 	}
 }
-// Method Definition Index: 80764
+// Method Definition Index: 106587
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyMapping_get_overrideDefaultKeyFunction_m48AA7D7AE67FCB37D0E3A787FD1052AB7852A1CB (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8894,7 +8894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyMapping_get_overrideDefaultKeyFunctio
 		return L_0;
 	}
 }
-// Method Definition Index: 80765
+// Method Definition Index: 106588
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_overrideDefaultKeyFunction_mA9676EEF369ADC66C65D1F191ED0081D796F3A05 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8904,7 +8904,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_overrideDefaultKeyFunctio
 		return;
 	}
 }
-// Method Definition Index: 80766
+// Method Definition Index: 106589
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* KeyMapping_get_keyFunction_m3FA5A1894B6AEE4C66354A1E5AF7286C7E2CFA82 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8913,7 +8913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B9140
 		return L_0;
 	}
 }
-// Method Definition Index: 80767
+// Method Definition Index: 106590
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_keyFunction_m743A8F81CED7CFED3C74DA697B31780EC7E03273 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8924,7 +8924,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_keyFunction_m743A8F81CED7
 		return;
 	}
 }
-// Method Definition Index: 80768
+// Method Definition Index: 106591
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t KeyMapping_get_keyCode_mB209EEF708BD475CC24C2D0DAEA27D29D2EF1F1C (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8933,7 +8933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t KeyMapping_get_keyCode_mB209EEF708BD4
 		return L_0;
 	}
 }
-// Method Definition Index: 80769
+// Method Definition Index: 106592
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_keyCode_mBB5561A78CEE3548D30C1014E5E88785F269AE64 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8943,7 +8943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_keyCode_mBB5561A78CEE3548
 		return;
 	}
 }
-// Method Definition Index: 80770
+// Method Definition Index: 106593
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyMapping_get_disabled_m4F731A9B73C829C8AF41B1D60AA691C8CBB52B9F (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8952,7 +8952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyMapping_get_disabled_m4F731A9B73C829C
 		return L_0;
 	}
 }
-// Method Definition Index: 80771
+// Method Definition Index: 106594
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_disabled_m3A8A9BA4D41F4BF26EDA873401573D5090F6961F (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8962,7 +8962,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping_set_disabled_m3A8A9BA4D41F4BF
 		return;
 	}
 }
-// Method Definition Index: 80772
+// Method Definition Index: 106595
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping__ctor_m02206B1F4553337099906A1FDB9C912C49685E61 (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8979,7 +8979,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyMapping__ctor_m02206B1F4553337099906A
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80773
+// Method Definition Index: 106596
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* XRKeyboardDisplay_get_inputFields_mD99980F430828F1744B14B245B8370040997D202 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -8988,7 +8988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C
 		return L_0;
 	}
 }
-// Method Definition Index: 80774
+// Method Definition Index: 106597
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_inputFields_m411E81CAAF4AB7A32D6F40618F3182F31836955B (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, TMP_InputFieldU5BU5D_tEFD25A03B28354534FE1D2C25B7629AC33D8E2B8* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9002,7 +9002,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_inputFields_m411E8
 		return;
 	}
 }
-// Method Definition Index: 80775
+// Method Definition Index: 106598
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* XRKeyboardDisplay_get_currentInputField_m80C6AE70CF36C07FD9D7695D6F8A5843CB8BAF9E (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9011,7 +9011,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BE
 		return L_0;
 	}
 }
-// Method Definition Index: 80776
+// Method Definition Index: 106599
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* XRKeyboardDisplay_get_keyboard_mFC86325F6EE4B17A72D990C3C7DAFD2B3418568E (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9020,7 +9020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D9
 		return L_0;
 	}
 }
-// Method Definition Index: 80777
+// Method Definition Index: 106600
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_keyboard_m8EE368E4CA76DD433FF14580B082B03FBAE5CED0 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9030,7 +9030,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_keyboard_m8EE368E4
 		return;
 	}
 }
-// Method Definition Index: 80778
+// Method Definition Index: 106601
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_useSceneKeyboard_mB407135461F5064A3C874BE4183BCC3C67025680 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9039,7 +9039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_useSceneKeyboard_m
 		return L_0;
 	}
 }
-// Method Definition Index: 80779
+// Method Definition Index: 106602
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_useSceneKeyboard_m62F803279864A89A242917BDFEA7852FF5452BA6 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9049,7 +9049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_useSceneKeyboard_m
 		return;
 	}
 }
-// Method Definition Index: 80780
+// Method Definition Index: 106603
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_updateOnKeyPress_m79C0F644216212970D70238D027571A88A622343 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9058,7 +9058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_updateOnKeyPress_m
 		return L_0;
 	}
 }
-// Method Definition Index: 80781
+// Method Definition Index: 106604
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_updateOnKeyPress_m63C484C3A75D833A5C89140F1C898A30AC5FF899 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9068,7 +9068,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_updateOnKeyPress_m
 		return;
 	}
 }
-// Method Definition Index: 80782
+// Method Definition Index: 106605
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_alwaysObserveKeyboard_mD2B207A53C62A2D8EC2EF77E9BA4C041B95CF9DD (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9077,7 +9077,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_alwaysObserveKeybo
 		return L_0;
 	}
 }
-// Method Definition Index: 80783
+// Method Definition Index: 106606
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_alwaysObserveKeyboard_m34BA6EB465494FFB4F921C0B8521E8A645C8A0FB (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9087,7 +9087,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_alwaysObserveKeybo
 		return;
 	}
 }
-// Method Definition Index: 80784
+// Method Definition Index: 106607
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_monitorInputFieldCharacterLimit_mD2B54DF59F1922B9F1397493A37AAFAAB082DE96 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9096,7 +9096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_monitorInputFieldC
 		return L_0;
 	}
 }
-// Method Definition Index: 80785
+// Method Definition Index: 106608
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_monitorInputFieldCharacterLimit_m80CC2F23923E87653829161F5DEBB6D4F4589152 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9106,7 +9106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_monitorInputFieldC
 		return;
 	}
 }
-// Method Definition Index: 80786
+// Method Definition Index: 106609
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_clearTextOnSubmit_m29C7000A9E427F5B988A9280C694539EF7A3CB77 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9115,7 +9115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_clearTextOnSubmit_
 		return L_0;
 	}
 }
-// Method Definition Index: 80787
+// Method Definition Index: 106610
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_clearTextOnSubmit_m9C242E87DFDC8E8B08B88CFE8CC3F65EDCD4A7B4 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9125,7 +9125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_clearTextOnSubmit_
 		return;
 	}
 }
-// Method Definition Index: 80788
+// Method Definition Index: 106611
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_clearTextOnOpen_mA4462B5F0883FF5737ABA617EBC4A2B08132E5FB (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9134,7 +9134,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_clearTextOnOpen_mA
 		return L_0;
 	}
 }
-// Method Definition Index: 80789
+// Method Definition Index: 106612
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_clearTextOnOpen_mCE77F84392A69A06A1B412E2502F3EC9D32752DC (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9144,7 +9144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_clearTextOnOpen_mC
 		return;
 	}
 }
-// Method Definition Index: 80790
+// Method Definition Index: 106613
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_hideKeyboardOnDisable_m22042BF339F873FF857AE687DA2530618FA6ECBA (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9153,7 +9153,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_hideKeyboardOnDisa
 		return L_0;
 	}
 }
-// Method Definition Index: 80791
+// Method Definition Index: 106614
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_hideKeyboardOnDisable_m9FE2E386CAFF70A8D5CA3DECE448DB82814727A9 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9163,7 +9163,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_hideKeyboardOnDisa
 		return;
 	}
 }
-// Method Definition Index: 80792
+// Method Definition Index: 106615
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* XRKeyboardDisplay_get_onTextSubmitted_mF94EBC80CDE6BC41219E2277EF7CC84EA88FBE5F (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9172,7 +9172,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D9
 		return L_0;
 	}
 }
-// Method Definition Index: 80793
+// Method Definition Index: 106616
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onTextSubmitted_m63B98F872CE1144EF4BDEAB848A6994B5AA6754A (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9183,7 +9183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onTextSubmitted_m6
 		return;
 	}
 }
-// Method Definition Index: 80794
+// Method Definition Index: 106617
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* XRKeyboardDisplay_get_onKeyboardOpened_m3A901BCB415F52E7D6A89CA9C3ABC37FAC0FAEFB (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9192,7 +9192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F
 		return L_0;
 	}
 }
-// Method Definition Index: 80795
+// Method Definition Index: 106618
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onKeyboardOpened_m7A19EC9578639087C8663F4D15D1F248D3DAD8ED (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9203,7 +9203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onKeyboardOpened_m
 		return;
 	}
 }
-// Method Definition Index: 80796
+// Method Definition Index: 106619
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* XRKeyboardDisplay_get_onKeyboardClosed_m2221A8885589DCDAA9C085BAFC5F93726C938D64 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9212,7 +9212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F
 		return L_0;
 	}
 }
-// Method Definition Index: 80797
+// Method Definition Index: 106620
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onKeyboardClosed_mF92B13B760510C17047DFDB5217B112AFC8BC7A7 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9223,7 +9223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onKeyboardClosed_m
 		return;
 	}
 }
-// Method Definition Index: 80798
+// Method Definition Index: 106621
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* XRKeyboardDisplay_get_onKeyboardFocusChanged_m04BE4E6638CCCFBBA46320611F94E574160AB59B (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9232,7 +9232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F
 		return L_0;
 	}
 }
-// Method Definition Index: 80799
+// Method Definition Index: 106622
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onKeyboardFocusChanged_mBE04AD1D693629AC75A477DFE6B17F7ECBE6E222 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9243,7 +9243,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_set_onKeyboardFocusCha
 		return;
 	}
 }
-// Method Definition Index: 80800
+// Method Definition Index: 106623
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_Awake_mCAEB2588D395AFCCD07D679757B4E355123650C0 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9345,7 +9345,7 @@ IL_006f:
 		return;
 	}
 }
-// Method Definition Index: 80801
+// Method Definition Index: 106624
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnEnable_m1123C5D76384045D67DFE6FD6AD209FE2C9EC53B (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9355,7 +9355,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnEnable_m1123C5D76384
 		return;
 	}
 }
-// Method Definition Index: 80802
+// Method Definition Index: 106625
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnDisable_m724298AA29A2B3CABDB76F6DBAEB1DFF9E549D2C (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9434,7 +9434,7 @@ IL_0052:
 		return;
 	}
 }
-// Method Definition Index: 80803
+// Method Definition Index: 106626
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnDestroy_m732CCA62F6CC6AFD5A09D3B081AD618573B7F8EE (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -9444,7 +9444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnDestroy_m732CCA62F6C
 		return;
 	}
 }
-// Method Definition Index: 80804
+// Method Definition Index: 106627
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_Start_m0613A41B48099042AAF960D43A1AA04F9683F120 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9525,7 +9525,7 @@ IL_0055:
 		return;
 	}
 }
-// Method Definition Index: 80805
+// Method Definition Index: 106628
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_BuildFieldList_m1319910ED501055F2A2709E62FE1626E0ECBA4BA (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9645,7 +9645,7 @@ IL_0081:
 		return;
 	}
 }
-// Method Definition Index: 80806
+// Method Definition Index: 106629
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_RegisterFields_m1B5156808348D3A0293C59277DDD91151D6D9C83 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9765,7 +9765,7 @@ IL_007e:
 		return;
 	}
 }
-// Method Definition Index: 80807
+// Method Definition Index: 106630
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_UnregisterFields_m2F50EC842AA736DF35978AED0013054C251D3B45 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9861,7 +9861,7 @@ IL_0056:
 		return;
 	}
 }
-// Method Definition Index: 80808
+// Method Definition Index: 106631
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_IsAnyFieldFocused_mF5A1E32B3CFE3012F42114048B01651239FDD232 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -9962,7 +9962,7 @@ IL_0046:
 		return L_8;
 	}
 }
-// Method Definition Index: 80809
+// Method Definition Index: 106632
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_SetKeyboard_m9E268A5020D7436A2CB8DA66375720B9C1E9DB34 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_updateKeyboard, bool ___1_observeKeyboard, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10030,7 +10030,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 80810
+// Method Definition Index: 106633
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_StartObservingKeyboard_mA92E4DB88300FB94C5C1FC2CC923C19F8A7CB29F (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_activeKeyboard, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10117,7 +10117,7 @@ IL_0012:
 		return;
 	}
 }
-// Method Definition Index: 80811
+// Method Definition Index: 106634
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_StopObservingKeyboard_m4F39EC10E3A8B227A7FE48881B0A5B6C47E04B15 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_activeKeyboard, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10194,7 +10194,7 @@ IL_000a:
 		return;
 	}
 }
-// Method Definition Index: 80812
+// Method Definition Index: 106635
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnInputFieldGainedFocus_m9E781B7602C80883473C74D211E7FAC702E5BB60 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* ___0_field, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10409,7 +10409,7 @@ IL_00f6:
 		return;
 	}
 }
-// Method Definition Index: 80813
+// Method Definition Index: 106636
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnTextSubmit_mE33083A9D7450E85C4A7AC8FA484D84E0EFA2652 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10482,7 +10482,7 @@ IL_0049:
 		return;
 	}
 }
-// Method Definition Index: 80814
+// Method Definition Index: 106637
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_OnTextUpdate_mC190E220B5819F3CB00778D236EC2A138F1F303C (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10507,7 +10507,7 @@ IL_0009:
 		return;
 	}
 }
-// Method Definition Index: 80815
+// Method Definition Index: 106638
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_UpdateText_m1AE2F3C51605C469517AFB03E16B6EA54CA9564A (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, String_t* ___0_text, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10613,7 +10613,7 @@ IL_0087:
 		return;
 	}
 }
-// Method Definition Index: 80816
+// Method Definition Index: 106639
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_KeyboardOpening_mC9C2DF01805C6059191FA1498EA59B0CC4E16614 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10668,7 +10668,7 @@ IL_0030:
 		return;
 	}
 }
-// Method Definition Index: 80817
+// Method Definition Index: 106640
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_KeyboardClosing_mD815D4CD4E71ABFC16E0F8A1D1B745F6B2C71807 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10718,7 +10718,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 80818
+// Method Definition Index: 106641
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay_KeyboardFocusChanged_m90597053BF1B390483C6FDD79838BFB87EC2711F (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* ___0_args, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10788,7 +10788,7 @@ IL_0043:
 		return;
 	}
 }
-// Method Definition Index: 80819
+// Method Definition Index: 106642
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay__ctor_m6E3CE1669127320EFE7B43966BE0009E5A546D67 (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -10842,7 +10842,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardDisplay__ctor_m6E3CE1669127320
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80820
+// Method Definition Index: 106643
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0__ctor_m6B5E63F1D1A2CAF7A8D066CC36EC27ACF8164977 (U3CU3Ec__DisplayClass66_0_t6E4A1954A4C85BE7A7FDA64F3768713A8EA85635* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10851,7 +10851,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0__ctor_m6B5E63F
 		return;
 	}
 }
-// Method Definition Index: 80821
+// Method Definition Index: 106644
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0_U3CRegisterFieldsU3Eb__0_mAADF5F6054218DA43D7E6AA1FCFF2394A9FC0501 (U3CU3Ec__DisplayClass66_0_t6E4A1954A4C85BE7A7FDA64F3768713A8EA85635* __this, String_t* ___0__, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10871,7 +10871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass66_0_U3CRegisterFie
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80822
+// Method Definition Index: 106645
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* KeyboardBaseEventArgs_get_keyboard_mC6EF5C2B4A8C82CBC9C3F2724347A0AE3933EA8C (KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10880,7 +10880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D9
 		return L_0;
 	}
 }
-// Method Definition Index: 80823
+// Method Definition Index: 106646
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBaseEventArgs_set_keyboard_m6CA881EC42205076C1B87C91F367DA293A70BDEA (KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10891,7 +10891,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBaseEventArgs_set_keyboard_m6CA8
 		return;
 	}
 }
-// Method Definition Index: 80824
+// Method Definition Index: 106647
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBaseEventArgs__ctor_m6424D64D99D34DD000EBF5A061621F2E1B022C78 (KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10908,7 +10908,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBaseEventArgs__ctor_m6424D64D99D
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80825
+// Method Definition Index: 106648
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyboardTextEventArgs_get_keyboardText_m22134CB2381CDFA34C52B71F44A33550A8A48460 (KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10917,7 +10917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyboardTextEventArgs_get_keyboardT
 		return L_0;
 	}
 }
-// Method Definition Index: 80826
+// Method Definition Index: 106649
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardTextEventArgs_set_keyboardText_m6E379A0FECA038CF2AB64229730CEC2E0F9335A8 (KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10928,7 +10928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardTextEventArgs_set_keyboardText_m
 		return;
 	}
 }
-// Method Definition Index: 80827
+// Method Definition Index: 106650
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardTextEventArgs__ctor_mA31ECAE845C31A981AD389D4127311EF40769C7C (KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10945,7 +10945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardTextEventArgs__ctor_mA31ECAE845C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80828
+// Method Definition Index: 106651
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* KeyboardKeyEventArgs_get_key_mE7F8D945B41B1E5C6EA7107F399E18BB67246BE9 (KeyboardKeyEventArgs_tE3B808B9F65E5B09CD63F3F98E938F046961BD38* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10954,7 +10954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardKey_t8964882D349D44689A75594CD1D846
 		return L_0;
 	}
 }
-// Method Definition Index: 80829
+// Method Definition Index: 106652
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardKeyEventArgs_set_key_m3C7CAC3489D33334140E94E29B8448F83F0DA2A0 (KeyboardKeyEventArgs_tE3B808B9F65E5B09CD63F3F98E938F046961BD38* __this, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10965,7 +10965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardKeyEventArgs_set_key_m3C7CAC3489
 		return;
 	}
 }
-// Method Definition Index: 80830
+// Method Definition Index: 106653
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardKeyEventArgs__ctor_mB1E3DD8F496651D9004A9FFA4A50947C5AC3BF3E (KeyboardKeyEventArgs_tE3B808B9F65E5B09CD63F3F98E938F046961BD38* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10982,7 +10982,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardKeyEventArgs__ctor_mB1E3DD8F4966
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80831
+// Method Definition Index: 106654
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardBoolEventArgs_get_value_m996B432D407A53193EC60A3BE93602517B79CAE8 (KeyboardBoolEventArgs_t494690F2A448149DB6F015C2850AE584CB28A497* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -10991,7 +10991,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardBoolEventArgs_get_value_m996B432
 		return L_0;
 	}
 }
-// Method Definition Index: 80832
+// Method Definition Index: 106655
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBoolEventArgs_set_value_m2F343B1973D0863FD4B61082F644EB58CA435850 (KeyboardBoolEventArgs_t494690F2A448149DB6F015C2850AE584CB28A497* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11001,7 +11001,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBoolEventArgs_set_value_m2F343B1
 		return;
 	}
 }
-// Method Definition Index: 80833
+// Method Definition Index: 106656
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBoolEventArgs__ctor_mE6C69A9EEF2E5B980B04584DE015296591525359 (KeyboardBoolEventArgs_t494690F2A448149DB6F015C2850AE584CB28A497* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11018,7 +11018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBoolEventArgs__ctor_mE6C69A9EEF2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80834
+// Method Definition Index: 106657
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyboardLayoutEventArgs_get_layout_mCB6C063B2B2F9D54CC7D93FFE7CF534B33AAF706 (KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11027,7 +11027,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KeyboardLayoutEventArgs_get_layout_
 		return L_0;
 	}
 }
-// Method Definition Index: 80835
+// Method Definition Index: 106658
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardLayoutEventArgs_set_layout_m288E0C549EB829D1546B1F66903606E8888541E2 (KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11038,7 +11038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardLayoutEventArgs_set_layout_m288E
 		return;
 	}
 }
-// Method Definition Index: 80836
+// Method Definition Index: 106659
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardLayoutEventArgs__ctor_m9672351A08E7C67A4B01948F30E0F8B9B21F13AE (KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11055,7 +11055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardLayoutEventArgs__ctor_m9672351A0
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80837
+// Method Definition Index: 106660
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardModifiersEventArgs_get_shiftValue_m94F6431F0BBFC0769375012E6BE72F2EBBA7BE0C (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11064,7 +11064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardModifiersEventArgs_get_shiftValu
 		return L_0;
 	}
 }
-// Method Definition Index: 80838
+// Method Definition Index: 106661
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_set_shiftValue_mD0A5CB3DEE67374D0641100408352E22508FB8C9 (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11074,7 +11074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_set_shiftValu
 		return;
 	}
 }
-// Method Definition Index: 80839
+// Method Definition Index: 106662
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardModifiersEventArgs_get_capsLockValue_m07131747B60A617792E6D5B22C82C7AC59D48712 (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11083,7 +11083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool KeyboardModifiersEventArgs_get_capsLockV
 		return L_0;
 	}
 }
-// Method Definition Index: 80840
+// Method Definition Index: 106663
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_set_capsLockValue_m49DE42E1A275D9950946F78AE72C6A1640450A0E (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11093,7 +11093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_set_capsLockV
 		return;
 	}
 }
-// Method Definition Index: 80841
+// Method Definition Index: 106664
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs__ctor_m287C445C911050888567490379C1DE00BE3B2367 (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11110,7 +11110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs__ctor_m287C44
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80842
+// Method Definition Index: 106665
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardEvent__ctor_m8AEDDFF22F694E2344093021CB3B0A720BF9D17B (KeyboardEvent_t3EC42C4C5064BFABAC7774FB38C270936A2D8F8E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11127,7 +11127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardEvent__ctor_m8AEDDFF22F694E23440
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80843
+// Method Definition Index: 106666
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardTextEvent__ctor_m471C74AD38605094DE63161E095517043E1177F8 (KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11144,7 +11144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardTextEvent__ctor_m471C74AD3860509
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80844
+// Method Definition Index: 106667
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardKeyEvent__ctor_mA7F4C7C00522F6A6223F945612B282F9DB443A0D (KeyboardKeyEvent_t58DA0BDC0C1D23FA38EF4B5BDB2CFA380D8EF687* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11161,7 +11161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardKeyEvent__ctor_mA7F4C7C00522F6A6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80845
+// Method Definition Index: 106668
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBoolEvent__ctor_mA5C77DADB50EE30BA10452CA2EA407E8F71D8631 (KeyboardBoolEvent_tDDD2074FA6651C650B9E6B513B876F6E762D6CA2* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11178,7 +11178,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardBoolEvent__ctor_mA5C77DADB50EE30
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80846
+// Method Definition Index: 106669
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardLayoutEvent__ctor_m46B4010B03BC53BC4330571779E519AE461CBFB7 (KeyboardLayoutEvent_tB728F7DE29A5CD880965405482DC19B8BF255A7E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11195,7 +11195,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardLayoutEvent__ctor_m46B4010B03BC5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80847
+// Method Definition Index: 106670
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEvent__ctor_mB494AB435BC3869BDC664D86EBCDEBABDE0F1D03 (KeyboardModifiersEvent_t23AE5D4798D6E51CA902DC4F48C2137D38E8C136* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11212,7 +11212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyboardModifiersEvent__ctor_mB494AB435B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80848
+// Method Definition Index: 106671
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* XRKeyboardKey_get_keyFunction_mF38E5DD9DB1D9439BD30A9F92FC7243DCC72377A (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11221,7 +11221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B9140
 		return L_0;
 	}
 }
-// Method Definition Index: 80849
+// Method Definition Index: 106672
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyFunction_m99ADB71CA491F69FA3B79589B5E55014F52EA153 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11232,7 +11232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyFunction_m99ADB71CA
 		return;
 	}
 }
-// Method Definition Index: 80850
+// Method Definition Index: 106673
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRKeyboardKey_get_keyCode_m1074C147E8755B5AA57D77F55C244AA43F2F3C62 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11241,7 +11241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t XRKeyboardKey_get_keyCode_m1074C147E8
 		return L_0;
 	}
 }
-// Method Definition Index: 80851
+// Method Definition Index: 106674
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyCode_m0CFB94D14EC2BDCF1551FEC929E3116B69683668 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11251,7 +11251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyCode_m0CFB94D14EC2B
 		return;
 	}
 }
-// Method Definition Index: 80852
+// Method Definition Index: 106675
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_character_m4F5222D56777895AD72B6FF6393C0EA783D145D1 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11260,7 +11260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_character_m4F5222
 		return L_0;
 	}
 }
-// Method Definition Index: 80853
+// Method Definition Index: 106676
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_character_m7DB885CC64169E7D1BBD63EE0CB8492CDA2E48B8 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11271,7 +11271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_character_m7DB885CC641
 		return;
 	}
 }
-// Method Definition Index: 80854
+// Method Definition Index: 106677
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_displayCharacter_m52CF79599C4C1DF77329AE9C05D03636C8C34A18 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11280,7 +11280,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_displayCharacter_
 		return L_0;
 	}
 }
-// Method Definition Index: 80855
+// Method Definition Index: 106678
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_displayCharacter_mDA40D2EE14E40A665D7C15D9B56509CF89C689FD (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11292,7 +11292,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_displayCharacter_mDA40
 		return;
 	}
 }
-// Method Definition Index: 80856
+// Method Definition Index: 106679
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* XRKeyboardKey_get_displayIcon_m7D6FF6BDA716EB342FB53A6CC084E7A5FDFB1C2C (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11301,7 +11301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return L_0;
 	}
 }
-// Method Definition Index: 80857
+// Method Definition Index: 106680
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_displayIcon_m57A54283C3DFD8A7AA27C8C00A25D9FF8C879901 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11345,7 +11345,7 @@ IL_003d:
 		return;
 	}
 }
-// Method Definition Index: 80858
+// Method Definition Index: 106681
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_shiftCharacter_m215B1B216075F7F3E95E3AFD5B13C803E644EADD (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11354,7 +11354,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_shiftCharacter_m2
 		return L_0;
 	}
 }
-// Method Definition Index: 80859
+// Method Definition Index: 106682
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftCharacter_m5B4D304E13F5F6D6035C84B191031FC14455C8FB (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11365,7 +11365,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftCharacter_m5B4D30
 		return;
 	}
 }
-// Method Definition Index: 80860
+// Method Definition Index: 106683
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_shiftDisplayCharacter_m022D6C9FB3C2CED26F126C04ACB4D67B128E9CC7 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11374,7 +11374,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_get_shiftDisplayChara
 		return L_0;
 	}
 }
-// Method Definition Index: 80861
+// Method Definition Index: 106684
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftDisplayCharacter_mFDC15E7A36D727779307B0E0C5F628203F03F110 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11386,7 +11386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftDisplayCharacter_
 		return;
 	}
 }
-// Method Definition Index: 80862
+// Method Definition Index: 106685
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* XRKeyboardKey_get_shiftDisplayIcon_mA0E87E79BC58D5E44AC6F0F2C0CB016CE9E8645B (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11395,7 +11395,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return L_0;
 	}
 }
-// Method Definition Index: 80863
+// Method Definition Index: 106686
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftDisplayIcon_mFACDC49A6F95427B5175DC1F444CC4F547CA3E45 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11441,7 +11441,7 @@ IL_003d:
 		return;
 	}
 }
-// Method Definition Index: 80864
+// Method Definition Index: 106687
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardKey_get_updateOnKeyDown_mAF2BD877367B9BFC8524E332E4920294AB56A218 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11450,7 +11450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardKey_get_updateOnKeyDown_mAF2BD
 		return L_0;
 	}
 }
-// Method Definition Index: 80865
+// Method Definition Index: 106688
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_updateOnKeyDown_m57346E617FF32982F9CE1EAE02F729CD745576B3 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11460,7 +11460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_updateOnKeyDown_m57346
 		return;
 	}
 }
-// Method Definition Index: 80866
+// Method Definition Index: 106689
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* XRKeyboardKey_get_textComponent_m0434DBCF4E17DECFF74A2AAEB9291D8517F69FCB (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11469,7 +11469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B
 		return L_0;
 	}
 }
-// Method Definition Index: 80867
+// Method Definition Index: 106690
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_textComponent_m598457DD0E30969C8B62E5D14CEDD08C507D3A97 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11480,7 +11480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_textComponent_m598457D
 		return;
 	}
 }
-// Method Definition Index: 80868
+// Method Definition Index: 106691
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* XRKeyboardKey_get_iconComponent_mE140C7C564710E849CBA4D3D4CA9C5A79D66DEF2 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11489,7 +11489,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E
 		return L_0;
 	}
 }
-// Method Definition Index: 80869
+// Method Definition Index: 106692
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_iconComponent_mADAE901FF8B8C389488312EB5CE9942B6717B41A (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11500,7 +11500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_iconComponent_mADAE901
 		return;
 	}
 }
-// Method Definition Index: 80870
+// Method Definition Index: 106693
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* XRKeyboardKey_get_highlightComponent_m54AB1A28FDE6B3AC37B52FCAF8A7C4A0ED6E7BCA (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11509,7 +11509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E
 		return L_0;
 	}
 }
-// Method Definition Index: 80871
+// Method Definition Index: 106694
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_highlightComponent_m57026605ADC2501BE8A39D03F324CD255E19FBB8 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11520,7 +11520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_highlightComponent_m57
 		return;
 	}
 }
-// Method Definition Index: 80872
+// Method Definition Index: 106695
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* XRKeyboardKey_get_audioSource_mE73EFCB94C19915D0C664119C544D88301526F4B (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11529,7 +11529,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AudioSource_t871AC2272F896738252F04EE949AEF5B
 		return L_0;
 	}
 }
-// Method Definition Index: 80873
+// Method Definition Index: 106696
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_audioSource_mA1DBD7C1DB68A6320337112E7069D32E482DB3BA (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11540,7 +11540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_audioSource_mA1DBD7C1D
 		return;
 	}
 }
-// Method Definition Index: 80874
+// Method Definition Index: 106697
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardKey_get_shifted_m501B89874D6A4B241F9F31DDAFCD9CB4A222918E (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11549,7 +11549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool XRKeyboardKey_get_shifted_m501B89874D6A4
 		return L_0;
 	}
 }
-// Method Definition Index: 80875
+// Method Definition Index: 106698
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shifted_m277945478FE8722DDF7B51897FF07F1F41385594 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11560,7 +11560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shifted_m277945478FE87
 		return;
 	}
 }
-// Method Definition Index: 80876
+// Method Definition Index: 106699
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKeyboardKey_get_lastClickTime_mBAAC9141B44704FD911DFFF39261721873851975 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11569,7 +11569,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKeyboardKey_get_lastClickTime_mBAAC91
 		return L_0;
 	}
 }
-// Method Definition Index: 80877
+// Method Definition Index: 106700
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKeyboardKey_get_timeSinceLastClick_m2E3C0923861F209E36C3F3FA7C2364EA9DA8CBD7 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11580,7 +11580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float XRKeyboardKey_get_timeSinceLastClick_m2
 		return ((float)il2cpp_codegen_subtract(L_0, L_1));
 	}
 }
-// Method Definition Index: 80878
+// Method Definition Index: 106701
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* XRKeyboardKey_get_keyboard_m950E137C99CDED7E035EF47F3733522B6A4EB4DB (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11589,7 +11589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D9
 		return L_0;
 	}
 }
-// Method Definition Index: 80879
+// Method Definition Index: 106702
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyboard_mB523A654DD354C4926B7BEDC978751D79865AD85 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11675,7 +11675,7 @@ IL_0097:
 		return;
 	}
 }
-// Method Definition Index: 80880
+// Method Definition Index: 106703
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_Start_m2CC0C08C5964F93A2D01927A9C94058D4546D053 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11685,7 +11685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_Start_m2CC0C08C5964F93A2D0
 		return;
 	}
 }
-// Method Definition Index: 80881
+// Method Definition Index: 106704
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_OnDestroy_m9F4654125AAC28716CF0E5F8E2FA2153774041BC (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11735,7 +11735,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 80882
+// Method Definition Index: 106705
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_OnPointerDown_m106234B6DDD079EFB7BFF40198EF87591C266D2C (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11765,7 +11765,7 @@ IL_001d:
 		return;
 	}
 }
-// Method Definition Index: 80883
+// Method Definition Index: 106706
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_OnPointerClick_m6CCC9974082658F79975E83FD648C64BEDA0EF78 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, PointerEventData_t9670F3C7D823CCB738A1604C72A1EB90292396FB* ___0_eventData, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11787,7 +11787,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 80884
+// Method Definition Index: 106707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_KeyClick_m2832BC364FBC3E407F1F399D5AFD6B4A89ECB0C8 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11846,7 +11846,7 @@ IL_0070:
 		return;
 	}
 }
-// Method Definition Index: 80885
+// Method Definition Index: 106708
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_KeyPressed_m74D21891D1FA65346110CD81BC01F76AB5B0EF58 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11903,7 +11903,7 @@ IL_004d:
 		return;
 	}
 }
-// Method Definition Index: 80886
+// Method Definition Index: 106709
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_OnKeyboardShift_m7990E1EA32C750ADFB8C231C0AB2471B7245AA9C (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* ___0_args, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11916,7 +11916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_OnKeyboardShift_m7990E1EA3
 		return;
 	}
 }
-// Method Definition Index: 80887
+// Method Definition Index: 106710
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_OnKeyboardLayoutChange_mA65B3779D7E41088AE7C62F144047C704CFA4D6C (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* ___0_args, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11957,7 +11957,7 @@ IL_0024:
 		return;
 	}
 }
-// Method Definition Index: 80888
+// Method Definition Index: 106711
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_EnableHighlight_m71312085311B446CCA2ADA9A85C5F149C4B6C0A4 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, bool ___0_enable, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -11990,7 +11990,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 80889
+// Method Definition Index: 106712
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_RefreshDisplayCharacter_m3F4F512A726AA252B3684613F18CF2B5FD2B681A (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12097,7 +12097,7 @@ IL_00b0:
 		return;
 	}
 }
-// Method Definition Index: 80890
+// Method Definition Index: 106713
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_GetEffectiveDisplayCharacter_m960745112B20888EB993FAC05A06DA457B099E4C (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12193,7 +12193,7 @@ IL_006d:
 		return L_16;
 	}
 }
-// Method Definition Index: 80891
+// Method Definition Index: 106714
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* XRKeyboardKey_GetEffectiveDisplayIcon_m821D1DD6FB1461CC971044240F3807C00CCF86A0 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12263,7 +12263,7 @@ IL_0052:
 		return L_12;
 	}
 }
-// Method Definition Index: 80892
+// Method Definition Index: 106715
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* XRKeyboardKey_GetEffectiveCharacter_mEBDAB15FBBE1F0BFF8C0853DD5A6D20A27CE16CA (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12303,7 +12303,7 @@ IL_0028:
 		return L_6;
 	}
 }
-// Method Definition Index: 80893
+// Method Definition Index: 106716
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey_SetButtonInteractable_mF71759300A4D0C7C9C6B5A510C855C1149FCE06C (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, bool ___0_enable, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12415,7 +12415,7 @@ IL_006b:
 		return;
 	}
 }
-// Method Definition Index: 80894
+// Method Definition Index: 106717
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey__ctor_m151EC4D60476BAED9F2C7BB143D923DA2DE02A55 (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12432,7 +12432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardKey__ctor_m151EC4D60476BAED9F2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80895
+// Method Definition Index: 106718
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* XRKeyboardLayout_get_defaultKeyMapping_m73D1BEAACE59FCC3AD84AC8394D8D768E188A4D1 (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12441,7 +12441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E
 		return L_0;
 	}
 }
-// Method Definition Index: 80896
+// Method Definition Index: 106719
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_set_defaultKeyMapping_m8DD8DC96D6DFF4CDB44823E4C567178F2D8CB944 (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12452,7 +12452,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_set_defaultKeyMapping_m
 		return;
 	}
 }
-// Method Definition Index: 80897
+// Method Definition Index: 106720
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* XRKeyboardLayout_get_activeKeyMapping_m944F7636FF70D49F5707047847F1FFA30658717D (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12461,7 +12461,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E
 		return L_0;
 	}
 }
-// Method Definition Index: 80898
+// Method Definition Index: 106721
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_set_activeKeyMapping_mD35CB10504850FD1C1E3930F975389F85B813453 (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12473,7 +12473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_set_activeKeyMapping_mD
 		return;
 	}
 }
-// Method Definition Index: 80899
+// Method Definition Index: 106722
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_Awake_mB71082B5236F4DC5088CFB1382F3BB47C2185AD5 (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12491,7 +12491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_Awake_mB71082B5236F4DC5
 		return;
 	}
 }
-// Method Definition Index: 80900
+// Method Definition Index: 106723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_Start_m86CAA46E530CE53A180852A5F2D08771225636AB (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12500,7 +12500,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_Start_m86CAA46E530CE53A
 		return;
 	}
 }
-// Method Definition Index: 80901
+// Method Definition Index: 106724
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_SetDefaultLayout_m8391A99032B76BA1EC4A07BAE6CB69342F84FB4B (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12531,7 +12531,7 @@ IL_001a:
 		return;
 	}
 }
-// Method Definition Index: 80902
+// Method Definition Index: 106725
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout_PopulateKeys_m90FF2586FFA6481D839A5823304A6B0BBE7AAB83 (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12754,7 +12754,7 @@ IL_00f2:
 		return;
 	}
 }
-// Method Definition Index: 80903
+// Method Definition Index: 106726
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout__ctor_m28B5B3E9D50C881BBDBB54BE6E83153A2A27CD0F (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12771,7 +12771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRKeyboardLayout__ctor_m28B5B3E9D50C881B
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80904
+// Method Definition Index: 106727
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideFunction_ProcessKey_mEF1D9BF9C8C2D39C71DB8C1BD3251F761F2968F5 (HideFunction_tFFB1C199B67D8011F2AAB7E0CBB0BED3E18E5841* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12803,7 +12803,7 @@ IL_0011:
 		return;
 	}
 }
-// Method Definition Index: 80905
+// Method Definition Index: 106728
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideFunction__ctor_mE770095BEAC595EA62074AD1577B3879E0A3EAEF (HideFunction_tFFB1C199B67D8011F2AAB7E0CBB0BED3E18E5841* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12820,7 +12820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HideFunction__ctor_mE770095BEAC595EA6207
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80906
+// Method Definition Index: 106729
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyCodeFunction_ProcessKey_mEB40E5C3E2BB064235E3951C0257DCA510C6BE9A (KeyCodeFunction_tCD06CBFEC66A22045E301FE5C92BF36252CDE036* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12857,7 +12857,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 80907
+// Method Definition Index: 106730
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyCodeFunction__ctor_m69FE296BB838D43B819E161C915E8DD52C918CFB (KeyCodeFunction_tCD06CBFEC66A22045E301FE5C92BF36252CDE036* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12874,7 +12874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyCodeFunction__ctor_m69FE296BB838D43B8
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80908
+// Method Definition Index: 106731
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutFunction_ProcessKey_m809F4BCE4734F56CC5D66D977E3443C76C12ACD2 (LayoutFunction_tE6A47978DD78D1369F47598F5870DCE139B44E19* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12911,7 +12911,7 @@ IL_0016:
 		return;
 	}
 }
-// Method Definition Index: 80909
+// Method Definition Index: 106732
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutFunction__ctor_m15C1A6A9C2BB5C34EEAF3B642435782AAEFBEA6F (LayoutFunction_tE6A47978DD78D1369F47598F5870DCE139B44E19* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12928,7 +12928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LayoutFunction__ctor_m15C1A6A9C2BB5C34EE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80910
+// Method Definition Index: 106733
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ShiftFunction_get_capsLockDisplayIcon_mBCA6C4EDA0254E1B0471222CF1A84DE522A6E75A (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12937,7 +12937,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return L_0;
 	}
 }
-// Method Definition Index: 80911
+// Method Definition Index: 106734
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_set_capsLockDisplayIcon_m77B9E6DA5B7968E3D1BBB19E2DFEC90B3760BF6D (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12948,7 +12948,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_set_capsLockDisplayIcon_m7
 		return;
 	}
 }
-// Method Definition Index: 80912
+// Method Definition Index: 106735
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ShiftFunction_GetDisplayIcon_mBA5261961C412F4CFEF029F2BCD18626A5A4D4E0 (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12957,7 +12957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CA
 		return L_0;
 	}
 }
-// Method Definition Index: 80913
+// Method Definition Index: 106736
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ShiftFunction_OverrideDisplayIcon_mCFE2992EA1C5BC0EF9418282D743B1754112F835 (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12991,7 +12991,7 @@ IL_0010:
 		return (bool)0;
 	}
 }
-// Method Definition Index: 80914
+// Method Definition Index: 106737
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_ProcessKey_mB0A95811AAC9BB588BDB3E45305067ACE679D3F7 (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13069,7 +13069,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 80915
+// Method Definition Index: 106738
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_PostprocessKey_mE6A30863F3E9AADC7DE4BA9B72453DCA0546485C (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13083,7 +13083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_PostprocessKey_mE6A30863F3
 		return;
 	}
 }
-// Method Definition Index: 80916
+// Method Definition Index: 106739
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_ProcessRefreshDisplay_mD5B150978E8850C1A5FB5D692C7A690F05939E2A (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13097,7 +13097,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_ProcessRefreshDisplay_mD5B
 		return;
 	}
 }
-// Method Definition Index: 80917
+// Method Definition Index: 106740
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction_RefreshKeyHighlight_m2D7E936DBC3634D6E56BEE1FAEC237965142AAB9 (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13159,7 +13159,7 @@ IL_001b:
 		return;
 	}
 }
-// Method Definition Index: 80918
+// Method Definition Index: 106741
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction__ctor_m5B151061856FBCD7C2740C0A530A07FD3C9747B4 (ShiftFunction_tBBF7F5A47B9C6788832FFD2464F68CED955D10F2* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13176,7 +13176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ShiftFunction__ctor_m5B151061856FBCD7C27
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 80919
+// Method Definition Index: 106742
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueKeyFunction_ProcessKey_mC0B554EED80CF18778FB5806DDD4DF70DC1EF76A (ValueKeyFunction_tB354372A3A70066EAF2595F7DE142536EBC77776* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_keyboardContext, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___1_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13212,7 +13212,7 @@ IL_0015:
 		return;
 	}
 }
-// Method Definition Index: 80920
+// Method Definition Index: 106743
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueKeyFunction__ctor_mA78550F38833813CDADB83DFC45097EA9DF4A94B (ValueKeyFunction_tB354372A3A70066EAF2595F7DE142536EBC77776* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13224,7 +13224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ValueKeyFunction__ctor_mA78550F38833813C
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-// Method Definition Index: 80606
+// Method Definition Index: 106429
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* GlobalNonNativeKeyboard_get_instance_m9FF816CA1973CEB4A536D681B744624BA2A81B69_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13239,7 +13239,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GlobalNonNativeKeyboard_tBA651BF7
 		return L_0;
 	}
 }
-// Method Definition Index: 80607
+// Method Definition Index: 106430
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_instance_m955CE26051781367B14977B2DEFCF99FC77B2771_inline (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13256,7 +13256,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_
 		return;
 	}
 }
-// Method Definition Index: 80613
+// Method Definition Index: 106436
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_keyboard_m924862613733252FB002D6178685F4065F05F56E_inline (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13267,7 +13267,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GlobalNonNativeKeyboard_set_
 		return;
 	}
 }
-// Method Definition Index: 80612
+// Method Definition Index: 106435
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* GlobalNonNativeKeyboard_get_keyboard_m15F98E74A4C2DA38D5FEA0913B21AD25F5396CE4_inline (GlobalNonNativeKeyboard_tBA651BF7DC94CE6057374438270F9B735B8578AF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13276,7 +13276,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739
 		return L_0;
 	}
 }
-// Method Definition Index: 80670
+// Method Definition Index: 106493
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* XRKeyboard_get_text_mA8B24F23854C5298779BF4BF80CA35491CCAEABA_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13285,7 +13285,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* XRKeyboard_get_text_mA8
 		return L_0;
 	}
 }
-// Method Definition Index: 42810
+// Method Definition Index: 51669
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13309,7 +13309,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_9;
 	}
 }
-// Method Definition Index: 42807
+// Method Definition Index: 51666
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13336,7 +13336,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 42803
+// Method Definition Index: 51662
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13345,7 +13345,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 42808
+// Method Definition Index: 51667
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13372,7 +13372,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_12;
 	}
 }
-// Method Definition Index: 42782
+// Method Definition Index: 51641
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13382,7 +13382,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 42783
+// Method Definition Index: 51642
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13402,7 +13402,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A3
 		return ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
 	}
 }
-// Method Definition Index: 44034
+// Method Definition Index: 52918
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971 Pose_get_identity_m145C7BA9D895CD7F8CCE2483B69764F7A9FEC66E_inline (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13419,7 +13419,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pose_t06BA69EAA6E9FAF60056D519A87
 		return L_0;
 	}
 }
-// Method Definition Index: 42800
+// Method Definition Index: 51659
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13428,7 +13428,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-// Method Definition Index: 60623
+// Method Definition Index: 86949
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* Selectable_get_targetGraphic_m659A2940226EC644AAFC2D5CCC326ABEE6384388_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13437,7 +13437,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Graphic_tCBFCA4585A19E2B75465AECF
 		return L_0;
 	}
 }
-// Method Definition Index: 80866
+// Method Definition Index: 106689
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* XRKeyboardKey_get_textComponent_m0434DBCF4E17DECFF74A2AAEB9291D8517F69FCB_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13446,7 +13446,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TMP_Text_tE8D677872D43AD4B2AAF0D6
 		return L_0;
 	}
 }
-// Method Definition Index: 80868
+// Method Definition Index: 106691
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* XRKeyboardKey_get_iconComponent_mE140C7C564710E849CBA4D3D4CA9C5A79D66DEF2_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13455,7 +13455,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8
 		return L_0;
 	}
 }
-// Method Definition Index: 80870
+// Method Definition Index: 106693
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* XRKeyboardKey_get_highlightComponent_m54AB1A28FDE6B3AC37B52FCAF8A7C4A0ED6E7BCA_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13464,7 +13464,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Image_tBC1D03F63BF71132E9A5E472B8
 		return L_0;
 	}
 }
-// Method Definition Index: 80702
+// Method Definition Index: 106525
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRKeyboard_get_caretPosition_m1AA040763E5E358FE3E0F9A653A51173B30F7073_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13473,7 +13473,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRKeyboard_get_caretPosit
 		return L_0;
 	}
 }
-// Method Definition Index: 443
+// Method Definition Index: 704
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13482,7 +13482,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-// Method Definition Index: 1676
+// Method Definition Index: 2074
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Math_Clamp_mAB687477D3AAC0E7243D724F45626026980CE2FF_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -13543,7 +13543,7 @@ IL_0017:
 		return L_10;
 	}
 }
-// Method Definition Index: 80703
+// Method Definition Index: 106526
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboard_set_caretPosition_m8F05A04F9F630F671F3C60E0AB48FB59675FD85D_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13553,7 +13553,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboard_set_caretPosition
 		return;
 	}
 }
-// Method Definition Index: 80823
+// Method Definition Index: 106646
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardBaseEventArgs_set_keyboard_m6CA881EC42205076C1B87C91F367DA293A70BDEA_inline (KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* __this, XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13564,7 +13564,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardBaseEventArgs_set_ke
 		return;
 	}
 }
-// Method Definition Index: 80826
+// Method Definition Index: 106649
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardTextEventArgs_set_keyboardText_m6E379A0FECA038CF2AB64229730CEC2E0F9335A8_inline (KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13575,7 +13575,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardTextEventArgs_set_ke
 		return;
 	}
 }
-// Method Definition Index: 80676
+// Method Definition Index: 106499
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextUpdated_mD40DAD40D8F99815281AD6B5A8C0D1F50A445E74_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13584,7 +13584,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80688
+// Method Definition Index: 106511
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onFocusChanged_m074E2608B7E207D37F38B9827201DD5DB57A19BA_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13593,7 +13593,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80732
+// Method Definition Index: 106555
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* SubsetMapping_get_layoutString_m6C01E1D8F8263EF3DAACA74ED5B798A1B905F5F0_inline (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13602,7 +13602,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* SubsetMapping_get_layou
 		return L_0;
 	}
 }
-// Method Definition Index: 80734
+// Method Definition Index: 106557
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* SubsetMapping_get_layoutRoot_m9702F9968E15EAF96B1DC9EF41EDB9C9229E6328_inline (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13611,7 +13611,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardLayout_t625ACEBCBA853E2
 		return L_0;
 	}
 }
-// Method Definition Index: 80701
+// Method Definition Index: 106524
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboard_set_keys_m5E166CECC3FA0F177947E231C94ECDBE38429BBD_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, List_1_tC05DCCFDA67663BE004B7A7D56F25D6B4FE64AFF* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13622,7 +13622,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboard_set_keys_m5E166CE
 		return;
 	}
 }
-// Method Definition Index: 80700
+// Method Definition Index: 106523
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tC05DCCFDA67663BE004B7A7D56F25D6B4FE64AFF* XRKeyboard_get_keys_mB07D00C48CA1CAFFD5602445C25DB580A215A65B_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13631,7 +13631,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tC05DCCFDA67663BE004B7A7D5
 		return L_0;
 	}
 }
-// Method Definition Index: 80692
+// Method Definition Index: 106515
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_submitOnEnter_m33B5EC6E87786017D7258A09FB3076D9773DD3DF_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13640,7 +13640,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_submitOnEnter
 		return L_0;
 	}
 }
-// Method Definition Index: 80878
+// Method Definition Index: 106701
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* XRKeyboardKey_get_keyboard_m950E137C99CDED7E035EF47F3733522B6A4EB4DB_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13649,7 +13649,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739
 		return L_0;
 	}
 }
-// Method Definition Index: 80678
+// Method Definition Index: 106501
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardKeyEvent_t58DA0BDC0C1D23FA38EF4B5BDB2CFA380D8EF687* XRKeyboard_get_onKeyPressed_mE17A4E64160E51AFA071F30E19B22C256035018D_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13658,7 +13658,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardKeyEvent_t58DA0BDC0C1D23F
 		return L_0;
 	}
 }
-// Method Definition Index: 80850
+// Method Definition Index: 106673
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRKeyboardKey_get_keyCode_m1074C147E8755B5AA57D77F55C244AA43F2F3C62_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13667,7 +13667,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t XRKeyboardKey_get_keyCode
 		return L_0;
 	}
 }
-// Method Definition Index: 80829
+// Method Definition Index: 106652
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardKeyEventArgs_set_key_m3C7CAC3489D33334140E94E29B8448F83F0DA2A0_inline (KeyboardKeyEventArgs_tE3B808B9F65E5B09CD63F3F98E938F046961BD38* __this, XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13678,7 +13678,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardKeyEventArgs_set_key
 		return;
 	}
 }
-// Method Definition Index: 80690
+// Method Definition Index: 106513
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardEvent_t3EC42C4C5064BFABAC7774FB38C270936A2D8F8E* XRKeyboard_get_onCharacterLimitReached_mBD79A435D915627C1C0437435DD7382C6A5F3014_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13687,7 +13687,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardEvent_t3EC42C4C5064BFABAC
 		return L_0;
 	}
 }
-// Method Definition Index: 80838
+// Method Definition Index: 106661
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_set_shiftValue_mD0A5CB3DEE67374D0641100408352E22508FB8C9_inline (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13697,7 +13697,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_s
 		return;
 	}
 }
-// Method Definition Index: 80840
+// Method Definition Index: 106663
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_set_capsLockValue_m49DE42E1A275D9950946F78AE72C6A1640450A0E_inline (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13707,7 +13707,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardModifiersEventArgs_s
 		return;
 	}
 }
-// Method Definition Index: 80680
+// Method Definition Index: 106503
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardModifiersEvent_t23AE5D4798D6E51CA902DC4F48C2137D38E8C136* XRKeyboard_get_onShifted_m0DCB0C37679F5F448C5434123BF3BFFE91BE59F2_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13716,7 +13716,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardModifiersEvent_t23AE5D479
 		return L_0;
 	}
 }
-// Method Definition Index: 80674
+// Method Definition Index: 106497
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onTextSubmitted_m80397073FCFA7F8A3DC8DF5CDD856F3BAE372835_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13725,7 +13725,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80694
+// Method Definition Index: 106517
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_closeOnSubmit_m9EFE14D736F6055A6E40B31318B750A9333A94E5_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13734,7 +13734,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_closeOnSubmit
 		return L_0;
 	}
 }
-// Method Definition Index: 80897
+// Method Definition Index: 106720
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* XRKeyboardLayout_get_activeKeyMapping_m944F7636FF70D49F5707047847F1FFA30658717D_inline (XRKeyboardLayout_t625ACEBCBA853E229D063930D8CF3173B08AD227* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13743,7 +13743,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB
 		return L_0;
 	}
 }
-// Method Definition Index: 80736
+// Method Definition Index: 106559
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* SubsetMapping_get_toggleOnConfig_m10EE9674E4F11F31814A980D4EF451C7483EB2C1_inline (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13752,7 +13752,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB
 		return L_0;
 	}
 }
-// Method Definition Index: 80738
+// Method Definition Index: 106561
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* SubsetMapping_get_toggleOffConfig_m6BDB38DFDAD98CD906038D50A12BAEA437AF804D_inline (SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13761,7 +13761,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboardConfig_t9FE4A3A80AFC9DB
 		return L_0;
 	}
 }
-// Method Definition Index: 80835
+// Method Definition Index: 106658
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardLayoutEventArgs_set_layout_m288E0C549EB829D1546B1F66903606E8888541E2_inline (KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13772,7 +13772,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyboardLayoutEventArgs_set_
 		return;
 	}
 }
-// Method Definition Index: 80682
+// Method Definition Index: 106505
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardLayoutEvent_tB728F7DE29A5CD880965405482DC19B8BF255A7E* XRKeyboard_get_onLayoutChanged_mF24E1E2D159BFB0E5163DBE9FFEEEE6B9D3BA3F4_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13781,7 +13781,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardLayoutEvent_tB728F7DE29A5
 		return L_0;
 	}
 }
-// Method Definition Index: 80672
+// Method Definition Index: 106495
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* XRKeyboard_get_currentInputField_mB6F15AA860B4134B155C9F1AE98F3DFAB9B4959D_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13790,7 +13790,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TMP_InputField_t3488E0EE8C3DF56C6
 		return L_0;
 	}
 }
-// Method Definition Index: 53785
+// Method Definition Index: 74859
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_InputField_get_characterLimit_m59833E0A22BACBDF3EDA6A70A30B87272FBAA409_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13799,7 +13799,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t TMP_InputField_get_charac
 		return L_0;
 	}
 }
-// Method Definition Index: 53742
+// Method Definition Index: 74816
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TMP_InputField_get_text_mA4ACBF52435893D9DFD822A492454301740B3C6A_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13808,7 +13808,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* TMP_InputField_get_text
 		return L_0;
 	}
 }
-// Method Definition Index: 80684
+// Method Definition Index: 106507
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onOpened_m7FC7C13C82FC4CCAF84F04A19CF8ADAF0165AA5C_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13817,7 +13817,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 80686
+// Method Definition Index: 106509
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2FDF5654FAEEC8F67D83BA7C71D2* XRKeyboard_get_onClosed_m546D7F12CF990CE18095DE173401F257980840B5_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13826,7 +13826,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyboardTextEvent_t479FC764B48E2F
 		return L_0;
 	}
 }
-// Method Definition Index: 53779
+// Method Definition Index: 74853
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR OnChangeEvent_tDBB13012ABF81899E4DFDD82258EB7E9BB7A9F1D* TMP_InputField_get_onValueChanged_m407B5F5BFD1F4B04032F6B90B06F5072F5993407_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13835,7 +13835,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR OnChangeEvent_tDBB13012ABF81899E4
 		return L_0;
 	}
 }
-// Method Definition Index: 53794
+// Method Definition Index: 74868
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TMP_InputField_set_resetOnDeActivation_mCB035C9EADE4A6896C42DDCEC996D00D4A7F6CB2_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13845,7 +13845,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TMP_InputField_set_resetOnDe
 		return;
 	}
 }
-// Method Definition Index: 53771
+// Method Definition Index: 74845
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SelectionEvent_t8FC75B869F70C9F0BF13390AD0237AD310511119* TMP_InputField_get_onSelect_m6762226148A4B3265EE5FD70ED894BBE8DE86AF0_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13854,7 +13854,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SelectionEvent_t8FC75B869F70C9F0B
 		return L_0;
 	}
 }
-// Method Definition Index: 53746
+// Method Definition Index: 74820
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_InputField_get_isFocused_m7FD1AA3B92404C30596FF6EE5F644757A2F060DE_inline (TMP_InputField_t3488E0EE8C3DF56C6A328EC95D1BEEA2DF4A7D5F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13863,7 +13863,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TMP_InputField_get_isFocused
 		return L_0;
 	}
 }
-// Method Definition Index: 80782
+// Method Definition Index: 106605
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_alwaysObserveKeyboard_mD2B207A53C62A2D8EC2EF77E9BA4C041B95CF9DD_inline (XRKeyboardDisplay_t419E512E27CEFDD40FDD3E47BF11EEEDBE6877A0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13872,7 +13872,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboardDisplay_get_always
 		return L_0;
 	}
 }
-// Method Definition Index: 80825
+// Method Definition Index: 106648
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyboardTextEventArgs_get_keyboardText_m22134CB2381CDFA34C52B71F44A33550A8A48460_inline (KeyboardTextEventArgs_tA4CA7DD4A82923A32C03ADDBED9B2E32561D93DD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13881,7 +13881,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyboardTextEventArgs_g
 		return L_0;
 	}
 }
-// Method Definition Index: 80822
+// Method Definition Index: 106645
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* KeyboardBaseEventArgs_get_keyboard_mC6EF5C2B4A8C82CBC9C3F2724347A0AE3933EA8C_inline (KeyboardBaseEventArgs_tFB7BB6DD23E9F474009D0743C17112E11461383D* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13890,7 +13890,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR XRKeyboard_tD34A4DF306589F65F8739
 		return L_0;
 	}
 }
-// Method Definition Index: 80862
+// Method Definition Index: 106685
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* XRKeyboardKey_get_shiftDisplayIcon_mA0E87E79BC58D5E44AC6F0F2C0CB016CE9E8645B_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13899,7 +13899,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F
 		return L_0;
 	}
 }
-// Method Definition Index: 60625
+// Method Definition Index: 86951
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Selectable_get_interactable_m17DD0484DC62DCB4467109488D7A599BC85EC112_inline (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13908,7 +13908,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Selectable_get_interactable_
 		return L_0;
 	}
 }
-// Method Definition Index: 80837
+// Method Definition Index: 106660
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool KeyboardModifiersEventArgs_get_shiftValue_m94F6431F0BBFC0769375012E6BE72F2EBBA7BE0C_inline (KeyboardModifiersEventArgs_tE81503B447DF545E4813ECECA4B081F0CFB6E748* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13917,7 +13917,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool KeyboardModifiersEventArgs_g
 		return L_0;
 	}
 }
-// Method Definition Index: 80834
+// Method Definition Index: 106657
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyboardLayoutEventArgs_get_layout_mCB6C063B2B2F9D54CC7D93FFE7CF534B33AAF706_inline (KeyboardLayoutEventArgs_tB62505E21DE4B9F3EC14E0805F31A9D3C1E0A064* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13926,7 +13926,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyboardLayoutEventArgs
 		return L_0;
 	}
 }
-// Method Definition Index: 59794
+// Method Definition Index: 86120
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* Image_get_sprite_mB2AA377708722E100574F6F75BC102513BB3BCB1_inline (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13935,7 +13935,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F
 		return L_0;
 	}
 }
-// Method Definition Index: 80749
+// Method Definition Index: 106572
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tB46E229551E8AE3ED9361C132D5A0833D116C10A* XRKeyboardConfig_get_keyMappings_mC66689B9B223F06D5042FD41B54F10EADB52EE36_inline (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13944,7 +13944,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR List_1_tB46E229551E8AE3ED9361C132
 		return L_0;
 	}
 }
-// Method Definition Index: 80752
+// Method Definition Index: 106575
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_character_m5CFE72D9F27595F68507E34E2FAB9B20E6A17A02_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13953,7 +13953,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_characte
 		return L_0;
 	}
 }
-// Method Definition Index: 80853
+// Method Definition Index: 106676
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_character_m7DB885CC64169E7D1BBD63EE0CB8492CDA2E48B8_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13964,7 +13964,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_character_
 		return;
 	}
 }
-// Method Definition Index: 80754
+// Method Definition Index: 106577
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_displayCharacter_mBE28F99AD43107C49F03EEE2EA4CD582748C5BD8_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13973,7 +13973,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_displayC
 		return L_0;
 	}
 }
-// Method Definition Index: 80758
+// Method Definition Index: 106581
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftCharacter_m2FB7B61238CE4E4DD7A926756B65747AE0E6DE44_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13982,7 +13982,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftCha
 		return L_0;
 	}
 }
-// Method Definition Index: 80859
+// Method Definition Index: 106682
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftCharacter_m5B4D304E13F5F6D6035C84B191031FC14455C8FB_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13993,7 +13993,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_shiftChara
 		return;
 	}
 }
-// Method Definition Index: 80760
+// Method Definition Index: 106583
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftDisplayCharacter_m36EA908AD8841AC805400AB62F117A261E2E9FEC_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14002,7 +14002,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* KeyMapping_get_shiftDis
 		return L_0;
 	}
 }
-// Method Definition Index: 80764
+// Method Definition Index: 106587
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool KeyMapping_get_overrideDefaultKeyFunction_m48AA7D7AE67FCB37D0E3A787FD1052AB7852A1CB_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14011,7 +14011,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool KeyMapping_get_overrideDefau
 		return L_0;
 	}
 }
-// Method Definition Index: 80747
+// Method Definition Index: 106570
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* XRKeyboardConfig_get_defaultKeyFunction_m4D74556D0E50E62CDDEEB208DD7D53CC3C0E3DA3_inline (XRKeyboardConfig_t9FE4A3A80AFC9DB5232B85EB91E6B3A017E46DE8* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14020,7 +14020,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A7
 		return L_0;
 	}
 }
-// Method Definition Index: 80766
+// Method Definition Index: 106589
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* KeyMapping_get_keyFunction_m3FA5A1894B6AEE4C66354A1E5AF7286C7E2CFA82_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14029,7 +14029,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyFunction_t2656B5C92AD61E58F8A7
 		return L_0;
 	}
 }
-// Method Definition Index: 80849
+// Method Definition Index: 106672
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyFunction_m99ADB71CA491F69FA3B79589B5E55014F52EA153_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, KeyFunction_t2656B5C92AD61E58F8A724801A6B91403867056E* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14040,7 +14040,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyFunctio
 		return;
 	}
 }
-// Method Definition Index: 80768
+// Method Definition Index: 106591
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t KeyMapping_get_keyCode_mB209EEF708BD475CC24C2D0DAEA27D29D2EF1F1C_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14049,7 +14049,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t KeyMapping_get_keyCode_mB
 		return L_0;
 	}
 }
-// Method Definition Index: 80851
+// Method Definition Index: 106674
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyCode_m0CFB94D14EC2BDCF1551FEC929E3116B69683668_inline (XRKeyboardKey_t8964882D349D44689A75594CD1D846CB1044C19F* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14059,7 +14059,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void XRKeyboardKey_set_keyCode_m0
 		return;
 	}
 }
-// Method Definition Index: 80756
+// Method Definition Index: 106579
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* KeyMapping_get_displayIcon_m84CA1D479F62ACD6D96C65C88B1F24D6A493760A_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14068,7 +14068,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F
 		return L_0;
 	}
 }
-// Method Definition Index: 80762
+// Method Definition Index: 106585
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* KeyMapping_get_shiftDisplayIcon_m48A624F41758209A045368E4377A491564970D16_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14077,7 +14077,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Sprite_tAFF74BC83CD68037494CB0B4F
 		return L_0;
 	}
 }
-// Method Definition Index: 80770
+// Method Definition Index: 106593
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool KeyMapping_get_disabled_m4F731A9B73C829C8AF41B1D60AA691C8CBB52B9F_inline (KeyMapping_t695B1F7D23603D339FE70E89B17ED07C1C488365* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14086,7 +14086,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool KeyMapping_get_disabled_m4F7
 		return L_0;
 	}
 }
-// Method Definition Index: 80705
+// Method Definition Index: 106528
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_capsLocked_m720EDF80CCDE80E1973AC99A8D87CE291FBC7F1F_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14095,7 +14095,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_capsLocked_m7
 		return L_0;
 	}
 }
-// Method Definition Index: 80704
+// Method Definition Index: 106527
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_shifted_mE0A4970B5C018F414A3D5FEEBDE360CB28B8EA51_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14104,7 +14104,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool XRKeyboard_get_shifted_mE0A4
 		return L_0;
 	}
 }
-// Method Definition Index: 80696
+// Method Definition Index: 106519
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float XRKeyboard_get_doubleClickInterval_m091175889EB4A1EF31299C21C2EEFB2A7084368E_inline (XRKeyboard_tD34A4DF306589F65F8739D55C0EB293D93E61DF3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14113,7 +14113,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float XRKeyboard_get_doubleClickI
 		return L_0;
 	}
 }
-// Method Definition Index: 9323
+// Method Definition Index: 11324
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mD2ED26ACAF3BAF386FFEA83893BA51DB9FD8BA30_fshared_inline (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14122,7 +14122,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mD2ED26A
 		return L_0;
 	}
 }
-// Method Definition Index: 9332
+// Method Definition Index: 11335
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mE0A3ABCF1B5C1528D578B2D899CBBC2597F8433B_inline (List_1_tA28A8373D1BBD695CEE6C6AF1AD0820853030C62* __this, KeyData_t20680CF05BE65E59FFAA69DC762E6A439D3C0857 ___0_item, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14162,7 +14162,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 9381
+// Method Definition Index: 11385
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyData_t20680CF05BE65E59FFAA69DC762E6A439D3C0857 Enumerator_get_Current_m203838A7B4B9433CA3ABFA1517CD73D26C9E9C2F_inline (Enumerator_t969AC5618A4C39F51191F4FAE161358435624599* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14171,7 +14171,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyData_t20680CF05BE65E59FFAA69DC
 		return L_0;
 	}
 }
-// Method Definition Index: 9381
+// Method Definition Index: 11385
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70 Enumerator_get_Current_mE6083020F1E64267411AB32EB4C21907548E3E2E_inline (Enumerator_t89AC72C0561A9541A9BD22F6EA10F582ED519F85* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14180,7 +14180,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SubsetMapping_t5759BBD72F864DDC98
 		return L_0;
 	}
 }
-// Method Definition Index: 9332
+// Method Definition Index: 11335
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mECF06CDFC39003D8C2916FB346AAD7216921727F_inline (List_1_t4C999C4477027FC6C7CAE9FB961C6624D6B406C3* __this, SubsetMapping_t5759BBD72F864DDC98E94F0A191DA2CD3F6C5E70 ___0_item, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14220,7 +14220,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 78403
+// Method Definition Index: 79396
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* Enumerator_get_Current_m06AE6B158E72B471CF5FC6BCF63AA55CE70CC9A4_gshared_inline (Enumerator_t21DE302BED6606A0927F65B97AD5C1633699E17B* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14229,7 +14229,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* Enumer
 		return L_0;
 	}
 }
-// Method Definition Index: 9381
+// Method Definition Index: 11385
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* Enumerator_get_Current_mA50CED82C4671CC4E1D82333FAC2587F700565D0_gshared_inline (Enumerator_tC367FBE981D257FF6A6357382526F6EC9FF3B2F9* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14238,7 +14238,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* Enumer
 		return L_0;
 	}
 }
-// Method Definition Index: 9340
+// Method Definition Index: 11343
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_mCCC05B98943E8F4E0F6FBF47063A269048AE71E5_gshared_inline (List_1_t6959D78D53022948E65A4FDA6291D7F38FEFA02E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14269,7 +14269,7 @@ IL_003c:
 		return;
 	}
 }
-// Method Definition Index: 9332
+// Method Definition Index: 11335
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m0CE6E39234ED33F5195AABC8029D06D4756C75C1_gshared_inline (List_1_t6959D78D53022948E65A4FDA6291D7F38FEFA02E* __this, Il2CppSharedGenericObject* ___0_item, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14309,7 +14309,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 9235
+// Method Definition Index: 11230
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tEB5CFC17B6D8F2A082613AF75FCB091A2A4EB826 Enumerator_get_Current_m07BBC92FACF2833ADF73017D627B6F818067DA01_gshared_inline (Enumerator_tF5CB4685E5CE314516C255FB297CA56E9D7408BD* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14318,7 +14318,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyValuePair_2_tEB5CFC17B6D8F2A08
 		return L_0;
 	}
 }
-// Method Definition Index: 9314
+// Method Definition Index: 11315
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* KeyValuePair_2_get_Key_m652AB26F17E6ECED100EADCA06D2352D6612B42B_gshared_inline (KeyValuePair_2_tEB5CFC17B6D8F2A082613AF75FCB091A2A4EB826* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14327,7 +14327,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* KeyVal
 		return L_0;
 	}
 }
-// Method Definition Index: 9315
+// Method Definition Index: 11316
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* KeyValuePair_2_get_Value_mC4437F96887FBE0C954234394562430C0CE7747C_gshared_inline (KeyValuePair_2_tEB5CFC17B6D8F2A082613AF75FCB091A2A4EB826* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14336,7 +14336,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* KeyVal
 		return L_0;
 	}
 }
-// Method Definition Index: 42780
+// Method Definition Index: 51639
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_m1DE89849FE2019B6AA0031306896F3B800849399_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -14378,7 +14378,7 @@ IL_0015:
 		return L_13;
 	}
 }
-// Method Definition Index: 42792
+// Method Definition Index: 51651
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;

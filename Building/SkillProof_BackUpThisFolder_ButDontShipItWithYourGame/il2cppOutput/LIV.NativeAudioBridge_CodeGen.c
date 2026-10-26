@@ -1,0 +1,48 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void NativeAudioPlayerFactory_CreateNativeAudioPlayer_mBCBDDB55422697C1E58EF9DEF059EE93698BF619 (void);
+extern void NativeAudioUtils_ConvertAudioClipToByteArray_m8072B6A4D91EDA023DB1EB82F5F2F171258345F3 (void);
+extern void NativeAudioPlayerAndroid__ctor_m7EDDE647E85686E5F6CCD7A17FCCC3C13CE814DA (void);
+extern void NativeAudioPlayerAndroid_GetJavaNativeAudioBridgeClass_m752AC5145760F6DD580A1A9178FD8D3DA5CAE179 (void);
+extern void NativeAudioPlayerAndroid_PreloadAudioClip_m62EB2BA62B9E0EB7560403DE0ACE79C4D95F827C (void);
+extern void NativeAudioPlayerAndroid_PlayAudioClip_m7F76042762592F4DFE22A1A014685090FE73BAB1 (void);
+extern void NativeAudioPlayerAndroid_StopAllAudio_m4CACB91BC54431CC2139FA02BDF8D1FDDA56A7B0 (void);
+extern void NativeAudioPlayerAndroid_Dispose_mCBB05EF85AEEE67FDA7A5E8633C02514060A2EF3 (void);
+extern void NativeAudioPlayerAndroid_PlayAudio_mE58FCBFB4A0D9CB8AEC9DCE5B5F740A375EE8BF4 (void);
+static Il2CppMethodPointer s_methodPointers[12] = 
+{
+	NULL,
+	NULL,
+	NULL,
+	NativeAudioPlayerFactory_CreateNativeAudioPlayer_mBCBDDB55422697C1E58EF9DEF059EE93698BF619,
+	NativeAudioUtils_ConvertAudioClipToByteArray_m8072B6A4D91EDA023DB1EB82F5F2F171258345F3,
+	NativeAudioPlayerAndroid__ctor_m7EDDE647E85686E5F6CCD7A17FCCC3C13CE814DA,
+	NativeAudioPlayerAndroid_GetJavaNativeAudioBridgeClass_m752AC5145760F6DD580A1A9178FD8D3DA5CAE179,
+	NativeAudioPlayerAndroid_PreloadAudioClip_m62EB2BA62B9E0EB7560403DE0ACE79C4D95F827C,
+	NativeAudioPlayerAndroid_PlayAudioClip_m7F76042762592F4DFE22A1A014685090FE73BAB1,
+	NativeAudioPlayerAndroid_StopAllAudio_m4CACB91BC54431CC2139FA02BDF8D1FDDA56A7B0,
+	NativeAudioPlayerAndroid_Dispose_mCBB05EF85AEEE67FDA7A5E8633C02514060A2EF3,
+	NativeAudioPlayerAndroid_PlayAudio_mE58FCBFB4A0D9CB8AEC9DCE5B5F740A375EE8BF4,
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_LIV_NativeAudioBridge_CodeGenModule;
+const Il2CppCodeGenModule g_LIV_NativeAudioBridge_CodeGenModule = 
+{
+	"LIV.NativeAudioBridge.dll",
+	12,
+	s_methodPointers,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
