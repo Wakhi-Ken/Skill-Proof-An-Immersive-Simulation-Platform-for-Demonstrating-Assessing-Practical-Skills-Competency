@@ -8419,6 +8419,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 62b1673da127f6946957b49089049199, type: 3}
   m_PrefabInstance: {fileID: 634615670}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &273130156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+  m_PrefabInstance: {fileID: 105655432284929621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &278042972
 GameObject:
   m_ObjectHideFlags: 0
@@ -29209,6 +29220,68 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -567, y: 0, z: -519}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1018616387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018616389}
+  - component: {fileID: 1018616388}
+  m_Layer: 0
+  m_Name: Hints Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1018616388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018616387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca224d27ce0fd144d972dc37fb61cdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HintManager
+  hintText: {fileID: 273130156}
+  steps:
+  - activityId: activity_1
+    title: Safety Before Work
+    hint: Locate the safety gear and wear it before work
+  - activityId: activity_2
+    title: Light Bulb circuit
+    hint: Identify the componets of the circuit then connect them accordingly on the red workbench
+  - activityId: activity_3
+    title: 
+    hint: 
+  - activityId: activity_4
+    title: 
+    hint: 
+  - activityId: activity_5
+    title: 
+    hint: 
+  allDoneMessage: All activities complete. Press Complete to see your results.
+--- !u!4 &1018616389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018616387}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.29305, y: -0.033, z: -46.21262}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -64433,12 +64506,20 @@ PrefabInstance:
       value: -65.96712
       objectReference: {fileID: 0}
     - target: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_margin.x
+      value: -14.722824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_margin.y
       value: 3.7788906
       objectReference: {fileID: 0}
     - target: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_margin.z
-      value: 127.393425
+      value: 114.65561
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4175234959407151535, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64869,7 +64950,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 71.548
+      value: 104.803
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_SizeDelta.y
@@ -64877,11 +64958,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.046
+      value: 0.176
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.646
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -143110,3 +143191,4 @@ SceneRoots:
   - {fileID: 1424042684}
   - {fileID: 1846764568}
   - {fileID: 1120690307}
+  - {fileID: 1018616389}
