@@ -11423,6 +11423,74 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.05037503, y: 0.07708359, z: 0.0755297}
   m_Center: {x: 0.022397086, y: 0.2775751, z: -0.036230918}
+--- !u!1 &882671429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882671431}
+  - component: {fileID: 882671430}
+  m_Layer: 0
+  m_Name: HIntsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882671430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882671429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca224d27ce0fd144d972dc37fb61cdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HintManager
+  hintText: {fileID: 1005934784}
+  steps:
+  - activityId: activity_1
+    title: Safety Before Work
+    hint: Go to the Van and get your safety gear on
+  - activityId: activity_2
+    title: Geyzer Solar Panels
+    hint: 'Install the geyzer panels -4 together with their connections which you can fin in the Van on the front side of the roof
+
+      Use the ladder in the shed to get up the roof '
+  - activityId: activity_3
+    title: Garden Panels
+    hint: 'Install the garden panels - 2 in the back yard and cover the wirng pipes using the metal covers next to the house
+
+      Panels are in the shed'
+  - activityId: activity_4
+    title: Solar Light
+    hint: 'Install the solar light - 1 on the front door roof  togther with its connections
+
+      connection wires are in the van together with the solar panel.'
+  - activityId: activity_4
+    title: Solar Invertor
+    hint: 'Install the missing parts to the solar invertor in the back yard : parts found inside the box next to the invertor'
+  allDoneMessage: All activities complete.
+--- !u!4 &882671431
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882671429}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 654.895, y: 2.10067, z: -43.54237}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &891869370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 688758197324552756, guid: e85c7e3cf2d90204fbd4cf1fa45c65bd, type: 3}
@@ -13611,6 +13679,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 10.000001, y: 0.0000047683716, z: 10.000008}
   m_Center: {x: 0, y: 0.000030517578, z: -0.0000038146973}
+--- !u!114 &1005934784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+  m_PrefabInstance: {fileID: 105655432284929621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1016027929
 GameObject:
   m_ObjectHideFlags: 0
@@ -29276,11 +29355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2896152918193828012, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2896152918193828012, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 64.5
+      value: 53.2
       objectReference: {fileID: 0}
     - target: {fileID: 2896152918193828012, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -29376,7 +29455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_margin.z
-      value: 127.393425
+      value: 103.97172
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046443252879879947, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4175234959407151535, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -29811,19 +29894,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 71.548
+      value: 98.439
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 112.5669
+      value: 112.567
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.046
+      value: -0.041
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.646
+      value: -3.273
       objectReference: {fileID: 0}
     - target: {fileID: 6593640516259687778, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -35231,3 +35314,4 @@ SceneRoots:
   - {fileID: 1120690307}
   - {fileID: 1908078460}
   - {fileID: 527277146}
+  - {fileID: 882671431}
