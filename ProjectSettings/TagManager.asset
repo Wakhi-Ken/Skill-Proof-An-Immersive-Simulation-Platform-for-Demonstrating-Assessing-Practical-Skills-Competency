@@ -18,6 +18,7 @@ TagManager:
   - safety
   - PowerBulb
   - PowerBulbR
+  - Wires
   layers:
   - Default
   - TransparentFX
