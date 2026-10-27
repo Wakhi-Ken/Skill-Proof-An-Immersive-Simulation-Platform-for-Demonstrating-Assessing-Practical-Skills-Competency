@@ -29271,7 +29271,9 @@ MonoBehaviour:
   - activityId: activity_5
     title: 
     hint: 
+  beforeStartMessage: Press Start Simulation to begin.
   allDoneMessage: All activities complete. Press Complete to see your results.
+  sessionEndedMessage: The session has ended.
 --- !u!4 &1018616389
 Transform:
   m_ObjectHideFlags: 0
@@ -59766,7 +59768,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!1 &2054210361
 GameObject:
   m_ObjectHideFlags: 0
@@ -64433,6 +64435,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0.0488
       objectReference: {fileID: 0}
+    - target: {fileID: 3270786829466631083, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: handGloves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3270786829466631083, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: 'handGloves.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1835575214}
+    - target: {fileID: 3270786829466631083, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: bareHandModels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3270786829466631083, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: 'bareHandModels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1022864149}
+    - target: {fileID: 3270786829466631083, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: 'bareHandModels.Array.data[1]'
+      value: 
+      objectReference: {fileID: 1022864149}
     - target: {fileID: 3278886146057294584, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 6.6
@@ -64521,6 +64543,22 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4052427672687822297, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: handGloves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052427672687822297, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: 'handGloves.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1405455752}
+    - target: {fileID: 4052427672687822297, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: bareHandModels.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052427672687822297, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: 'bareHandModels.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1377393027}
     - target: {fileID: 4175234959407151535, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -64841,6 +64879,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5664364519837055033, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5825895220132757675, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -64848,6 +64890,18 @@ PrefabInstance:
     - target: {fileID: 5871992719598477241, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894281500880790954, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5188679
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894281500880790954, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.13977656
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894281500880790954, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.080767184
       objectReference: {fileID: 0}
     - target: {fileID: 5894976482658027016, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_IsActive
@@ -65116,6 +65170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: step 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8008977799887122505, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8323927181104413966, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_margin.z
       value: -679.67926
@@ -65207,6 +65265,22 @@ PrefabInstance:
     - target: {fileID: 8960681722238050957, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961300167315048678, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961300167315048678, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961300167315048678, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.3168494
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961300167315048678, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.28893736
       objectReference: {fileID: 0}
     - target: {fileID: 9043846424254693899, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.y

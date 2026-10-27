@@ -4,15 +4,15 @@ using TMPro;
 using UnityEngine;
 
 /// <summary>
-/// Shows a hint you type in the Inspector for the first activity the player
-/// has not finished yet, in order. Put one HintManager in each simulation scene.
+/// Shows the hint for the first activity the player has not finished yet.
+/// Updates the instant SessionTracker reports progress. One per simulation scene.
 /// </summary>
-public class HintManager : MonoBehaviour
+public class HintsManager : MonoBehaviour
 {
     [Serializable]
     public class HintStep
     {
-        [Tooltip("Must match the activityID used by your triggers, e.g. activity_1")]
+        [Tooltip("Must match the activityID used by your triggers and Firestore, e.g. activity_1")]
         public string activityId;
 
         [Tooltip("Short title shown after the step number")]
@@ -28,13 +28,13 @@ public class HintManager : MonoBehaviour
     [Header("Hints in order (first = activity 1)")]
     [SerializeField] private List<HintStep> steps = new List<HintStep>();
 
-    [SerializeField]
-    [TextArea(2, 4)]
-    private string allDoneMessage = "All activities complete. Press Complete to see your results.";
+    [Header("Messages")]
+    [SerializeField][TextArea(2, 4)] private string beforeStartMessage = "Press Start Simulation to begin.";
+    [SerializeField][TextArea(2, 4)] private string allDoneMessage = "All activities complete. Press Complete to see your results.";
+    [SerializeField][TextArea(2, 4)] private string sessionEndedMessage = "The session has ended.";
 
-    private readonly HashSet<string> _completed = new HashSet<string>();
+    private SessionTracker tracker;
 
-    // Fills empty activity ids with activity_1, activity_2, ... when you add elements.
     private void OnValidate()
     {
         for (int i = 0; i < steps.Count; i++)
@@ -46,46 +46,61 @@ public class HintManager : MonoBehaviour
 
     private void Start()
     {
+        tracker = SessionTracker.Instance;
+        if (tracker == null)
+        {
+            Debug.LogWarning("HintManager: no SessionTracker found in the scene.");
+        }
+        else
+        {
+            tracker.OnSessionStarted += Refresh;
+            tracker.OnProgressChanged += Refresh;
+            tracker.OnSessionFinished += OnFinished;
+        }
         Refresh();
     }
 
-    /// <summary>Call from your session tracker, e.g. NotifyActivityCompleted("activity_1").</summary>
-    public void NotifyActivityCompleted(string activityId)
+    private void OnDestroy()
     {
-        _completed.Add(activityId);
-        Refresh();
+        if (tracker == null) return;
+        tracker.OnSessionStarted -= Refresh;
+        tracker.OnProgressChanged -= Refresh;
+        tracker.OnSessionFinished -= OnFinished;
     }
 
-    /// <summary>Call if an activity is undone and should be required again.</summary>
-    public void NotifyActivityReset(string activityId)
-    {
-        _completed.Remove(activityId);
-        Refresh();
-    }
-
-    /// <summary>Clears progress, e.g. when a simulation restarts.</summary>
-    public void ResetProgress()
-    {
-        _completed.Clear();
-        Refresh();
-    }
+    private void OnFinished(PerformanceData p) { Refresh(); }
 
     private void Refresh()
     {
         if (hintText == null) return;
 
-        // Always point at the first activity that is not done yet, so the player
-        // is sent back in order even if they finished one out of sequence.
-        for (int i = 0; i < steps.Count; i++)
+        // Session not started yet
+        if (tracker == null || tracker.Results == null || tracker.Results.Count == 0)
         {
-            if (!_completed.Contains(steps[i].activityId))
+            hintText.text = beforeStartMessage;
+            return;
+        }
+
+        // Only count steps that exist in this session (useFirstActivities may trim the list)
+        var active = new List<HintStep>();
+        foreach (HintStep s in steps)
+            if (tracker.Results.Exists(r => r.activityID == s.activityId))
+                active.Add(s);
+
+        for (int i = 0; i < active.Count; i++)
+        {
+            ActivityResult r = tracker.Results.Find(x => x.activityID == active[i].activityId);
+            if (r != null && !r.completed)
             {
-                string title = string.IsNullOrEmpty(steps[i].title) ? "" : " " + steps[i].title;
-                hintText.text = $"Step {i + 1} of {steps.Count}:{title}\n{steps[i].hint}";
+                string title = string.IsNullOrEmpty(active[i].title) ? "" : " " + active[i].title;
+                hintText.text = $"Step {i + 1} of {active.Count}:{title}\n{active[i].hint}";
                 return;
             }
         }
 
-        hintText.text = allDoneMessage;
+        // Nothing left to do
+        hintText.text = tracker.CompletedCount == tracker.Results.Count
+            ? allDoneMessage
+            : sessionEndedMessage;   // e.g. time ran out or Finish pressed early
     }
 }

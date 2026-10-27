@@ -11475,7 +11475,9 @@ MonoBehaviour:
   - activityId: activity_4
     title: Solar Invertor
     hint: 'Install the missing parts to the solar invertor in the back yard : parts found inside the box next to the invertor'
+  beforeStartMessage: Press Start Simulation to begin.
   allDoneMessage: All activities complete.
+  sessionEndedMessage: The session has ended.
 --- !u!4 &882671431
 Transform:
   m_ObjectHideFlags: 0
@@ -13092,7 +13094,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -29781,6 +29783,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5664364519837055033, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5825895220132757675, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -29788,6 +29794,18 @@ PrefabInstance:
     - target: {fileID: 5871992719598477241, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894281500880790954, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5849056
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894281500880790954, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.18897696
+      objectReference: {fileID: 0}
+    - target: {fileID: 5894281500880790954, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.08552865
       objectReference: {fileID: 0}
     - target: {fileID: 5894976482658027016, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_IsActive
@@ -30060,6 +30078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: step 4
       objectReference: {fileID: 0}
+    - target: {fileID: 8008977799887122505, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8323927181104413966, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_margin.z
       value: -679.67926
@@ -30150,6 +30172,10 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 695f1e622fe987b4ab1ae357209ba427, type: 3}
     - target: {fileID: 8960681722238050957, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8961300167315048678, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9043846424254693899, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}

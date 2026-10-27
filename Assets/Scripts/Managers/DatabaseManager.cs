@@ -23,8 +23,6 @@ public class DatabaseManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    
-
     // Call right after Firebase Auth creates the account
     public async Task<bool> CreateUserProfileAsync(string uid, string name, string email)
     {
@@ -34,6 +32,9 @@ public class DatabaseManager : MonoBehaviour
             name = name,
             email = email,
             attemptCount = 0,
+            latestSafety = 0,
+            latestCompetency = 0,
+            latestProcedural = 0,
             sumSafety = 0,
             sumCompetency = 0,
             sumProcedural = 0
@@ -96,9 +97,9 @@ public class DatabaseManager : MonoBehaviour
         }
     }
 
-    //Performances
+    // Performances
 
-    // Saves one finished simulation AND updates the profile averages together
+    // Saves one finished simulation AND replaces the profile's latest scores, together
     public async Task<bool> SavePerformanceAsync(PerformanceData p)
     {
         FirebaseUser authUser = FirebaseAuth.DefaultInstance.CurrentUser;
@@ -114,17 +115,17 @@ public class DatabaseManager : MonoBehaviour
             DocumentReference perfRef = userRef.Collection("performances").Document();
             p.performanceID = perfRef.Id;
 
-            Dictionary<string, object> totals = new Dictionary<string, object>
+            Dictionary<string, object> summary = new Dictionary<string, object>
             {
                 { "attemptCount", FieldValue.Increment(1) },
-                { "sumSafety", FieldValue.Increment(p.safetyScore) },
-                { "sumCompetency", FieldValue.Increment(p.competencyScore) },
-                { "sumProcedural", FieldValue.Increment(p.proceduralScore) }
+                { "latestSafety", (double)p.safetyScore },          // replaced, not added
+                { "latestCompetency", (double)p.competencyScore },
+                { "latestProcedural", (double)p.proceduralScore }
             };
 
             WriteBatch batch = Db.StartBatch();
-            batch.Set(perfRef, p);
-            batch.Update(userRef, totals);
+            batch.Set(perfRef, p);            // every session is still kept
+            batch.Update(userRef, summary);   // profile summary replaced with the newest scores
             await batch.CommitAsync();
 
             Debug.Log("Performance saved: " + p.performanceID);

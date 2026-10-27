@@ -17,6 +17,15 @@ public class UserProfileUI : MonoBehaviour
     [SerializeField] private Slider competencySlider;
     [SerializeField] private Slider proceduralSlider;
 
+    [Header("Slider colours (scores are 0-100)")]
+    [Tooltip("Below this score the slider uses the Low colour")]
+    [SerializeField] private float lowBelow = 50f;
+    [Tooltip("Below this score (and above Low) the slider uses the Medium colour. At or above it, High.")]
+    [SerializeField] private float mediumBelow = 70f;
+    [SerializeField] private Color lowColor = new Color(0.90f, 0.25f, 0.25f);     // red
+    [SerializeField] private Color mediumColor = new Color(0.98f, 0.75f, 0.20f);  // amber
+    [SerializeField] private Color highColor = new Color(0.20f, 0.75f, 0.35f);    // green
+
     [Header("Refresh")]
     [Tooltip("Optional. Assign the menu button here, or hook UserProfileUI.Refresh in the button's OnClick instead.")]
     [SerializeField] private Button refreshButton;
@@ -34,6 +43,8 @@ public class UserProfileUI : MonoBehaviour
     [SerializeField] private int maxAttempts = 3;
 
     private bool isLoading;
+    private bool refreshQueued;
+    private SessionTracker subscribedTracker;
 
     private void Awake()
     {
@@ -49,9 +60,27 @@ public class UserProfileUI : MonoBehaviour
 
     private void OnEnable()
     {
+        // Reload as soon as a finished session has been saved
+        subscribedTracker = SessionTracker.Instance;
+        if (subscribedTracker != null)
+            subscribedTracker.OnPerformanceSaved += HandlePerformanceSaved;
+
         if (loadOnEnable) Refresh();
     }
-    // refreshes the profile data. Hook this to a button's OnClick, or call it from another script.
+
+    private void OnDisable()
+    {
+        if (subscribedTracker != null)
+            subscribedTracker.OnPerformanceSaved -= HandlePerformanceSaved;
+        subscribedTracker = null;
+    }
+
+    private void HandlePerformanceSaved(bool saved)
+    {
+        if (saved) Refresh();
+    }
+
+    // Refreshes the profile data. Hook this to a button's OnClick, or call it from another script.
     public async void Refresh()
     {
         await LoadProfileAsync();
@@ -59,7 +88,12 @@ public class UserProfileUI : MonoBehaviour
 
     private async Task LoadProfileAsync()
     {
-        if (isLoading) return;          // ignore presses while a load is already running
+        if (isLoading)
+        {
+            refreshQueued = true;   // run once more when the current load ends
+            return;
+        }
+
         isLoading = true;
         SetButtonInteractable(false);
         SetStatus("Loading...");
@@ -122,6 +156,12 @@ public class UserProfileUI : MonoBehaviour
         {
             isLoading = false;
             SetButtonInteractable(true);
+
+            if (refreshQueued)
+            {
+                refreshQueued = false;
+                Refresh();
+            }
         }
     }
 
@@ -158,9 +198,27 @@ public class UserProfileUI : MonoBehaviour
         if (target != null) target.text = value;
     }
 
-    private void SetSlider(Slider slider, float value)
+    // score is 0-100. Works whatever the slider's min/max are.
+    private void SetSlider(Slider slider, float score)
     {
-        if (slider != null) slider.value = value;
+        if (slider == null) return;
+
+        float clamped = Mathf.Clamp(score, 0f, 100f);
+        slider.value = Mathf.Lerp(slider.minValue, slider.maxValue, clamped / 100f);
+
+        // Colour the filled part of the slider by score
+        if (slider.fillRect != null)
+        {
+            Image fill = slider.fillRect.GetComponent<Image>();
+            if (fill != null) fill.color = ColorForScore(clamped);
+        }
+    }
+
+    private Color ColorForScore(float score)
+    {
+        if (score < lowBelow) return lowColor;
+        if (score < mediumBelow) return mediumColor;
+        return highColor;
     }
 
     private void SetStatus(string message)

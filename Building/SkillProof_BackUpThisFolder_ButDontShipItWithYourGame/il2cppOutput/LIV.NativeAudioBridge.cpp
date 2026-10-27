@@ -352,7 +352,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject_Dispose_m2B1593C20B3CE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110501
+// Method Definition Index: 110513
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* NativeAudioPlayerFactory_CreateNativeAudioPlayer_mBCBDDB55422697C1E58EF9DEF059EE93698BF619 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -376,7 +376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* NativeAudioPlayerFactory_Creat
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110502
+// Method Definition Index: 110514
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SByteU5BU5D_t88116DA68378C3333DB73E7D36C1A06AFAA91913* NativeAudioUtils_ConvertAudioClipToByteArray_m8072B6A4D91EDA023DB1EB82F5F2F171258345F3 (AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_audioClip, float ___1_volume, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -472,7 +472,7 @@ IL_006f:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110503
+// Method Definition Index: 110515
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid__ctor_m7EDDE647E85686E5F6CCD7A17FCCC3C13CE814DA (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -550,7 +550,7 @@ IL_003e:
 		return;
 	}
 }
-// Method Definition Index: 110504
+// Method Definition Index: 110516
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* NativeAudioPlayerAndroid_GetJavaNativeAudioBridgeClass_m752AC5145760F6DD580A1A9178FD8D3DA5CAE179 (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -593,7 +593,7 @@ IL_0022:
 		return G_B2_0;
 	}
 }
-// Method Definition Index: 110505
+// Method Definition Index: 110517
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_PreloadAudioClip_m62EB2BA62B9E0EB7560403DE0ACE79C4D95F827C (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_audioClip, float ___1_volume, bool ___2_forceReload, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -659,7 +659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_PreloadAudioCli
 		return;
 	}
 }
-// Method Definition Index: 110506
+// Method Definition Index: 110518
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_PlayAudioClip_m7F76042762592F4DFE22A1A014685090FE73BAB1 (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_audioClip, float ___1_volume, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -675,7 +675,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_PlayAudioClip_m
 		return;
 	}
 }
-// Method Definition Index: 110507
+// Method Definition Index: 110519
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_StopAllAudio_m4CACB91BC54431CC2139FA02BDF8D1FDDA56A7B0 (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -696,7 +696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_StopAllAudio_m4
 		return;
 	}
 }
-// Method Definition Index: 110508
+// Method Definition Index: 110520
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_Dispose_mCBB05EF85AEEE67FDA7A5E8633C02514060A2EF3 (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -756,7 +756,7 @@ IL_0026:
 		return;
 	}
 }
-// Method Definition Index: 110509
+// Method Definition Index: 110521
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeAudioPlayerAndroid_PlayAudio_mE58FCBFB4A0D9CB8AEC9DCE5B5F740A375EE8BF4 (NativeAudioPlayerAndroid_tD10B4F84AD52E4F9E2CADC8073848BEA9DEE4D4C* __this, String_t* ___0_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
