@@ -20,6 +20,9 @@ TagManager:
   - PowerBulbR
   - Wires
   - stove
+  - Tools
+  - Cloth
+  - DamagedCable
   layers:
   - Default
   - TransparentFX
