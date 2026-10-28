@@ -19,6 +19,7 @@ TagManager:
   - PowerBulb
   - PowerBulbR
   - Wires
+  - stove
   layers:
   - Default
   - TransparentFX
