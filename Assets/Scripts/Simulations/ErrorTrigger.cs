@@ -34,6 +34,9 @@ public class ErrorTrigger : MonoBehaviour
         if (Time.time - lastTime < cooldown) return;
         lastTime = Time.time;
 
+        if (SoundManager.Instance != null)
+            SoundManager.Instance.PlayWrong();
+
         if (SessionTracker.Instance != null)
             SessionTracker.Instance.RegisterError(relatedActivityID, isSafetyViolation);
     }

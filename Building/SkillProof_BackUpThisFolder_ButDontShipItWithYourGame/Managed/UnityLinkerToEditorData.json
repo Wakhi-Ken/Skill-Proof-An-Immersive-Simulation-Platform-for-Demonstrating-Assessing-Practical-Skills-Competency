@@ -127,6 +127,39 @@
             "icon": null
           },
           {
+            "name": "AudioMixer",
+            "scenes": [
+              "Assets/Scenes/Main Menu.unity",
+              "Assets/Scenes/SImulation 1.unity",
+              "Assets/Scenes/SImulation 2.unity",
+              "Assets/Scenes/Simulation Menu.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioMixerGroup",
+            "scenes": [
+              "Assets/Scenes/Main Menu.unity",
+              "Assets/Scenes/SImulation 1.unity",
+              "Assets/Scenes/SImulation 2.unity",
+              "Assets/Scenes/Simulation Menu.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "AudioMixerSnapshot",
+            "scenes": [
+              "Assets/Scenes/Main Menu.unity",
+              "Assets/Scenes/SImulation 1.unity",
+              "Assets/Scenes/SImulation 2.unity",
+              "Assets/Scenes/Simulation Menu.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "AudioResource",
             "scenes": [
               "Assets/Scenes/Main Menu.unity",

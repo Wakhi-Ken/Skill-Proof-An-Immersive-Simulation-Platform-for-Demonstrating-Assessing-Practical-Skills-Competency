@@ -10738,6 +10738,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RectMask2D
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!1001 &1149706302
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2210958506725603922, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_Name
+      value: Sound Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 653.7472
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -37.0569
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6716130275828958192, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7a89294322d6b84da482fd5746d3bfa, type: 3}
 --- !u!114 &1160110878 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5899637797233123487, guid: 9f753a686097a3a46a4276c49e824f89, type: 3}
@@ -17933,13 +17990,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8874065426687851429, guid: f42594302ea7bad4aa032f7aad2cb929, type: 3}
+      propertyPath: m_Name
+      value: AmbienceSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 8986986534628959576, guid: f42594302ea7bad4aa032f7aad2cb929, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9081370833114147259, guid: f42594302ea7bad4aa032f7aad2cb929, type: 3}
+      propertyPath: m_Name
+      value: SFXSlider
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 3703847455682723424, guid: f42594302ea7bad4aa032f7aad2cb929, type: 3}
+    - {fileID: 1295950103099249816, guid: f42594302ea7bad4aa032f7aad2cb929, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5908729488174343843, guid: f42594302ea7bad4aa032f7aad2cb929, type: 3}
       insertIndex: 2
@@ -19204,3 +19270,4 @@ SceneRoots:
   - {fileID: 225174361}
   - {fileID: 1488900638595983951}
   - {fileID: 5130837219251356316}
+  - {fileID: 1149706302}

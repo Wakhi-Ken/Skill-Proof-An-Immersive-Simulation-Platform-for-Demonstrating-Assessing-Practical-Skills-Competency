@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2210958506725603922
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6716130275828958192}
+  - component: {fileID: 1582749164332983932}
+  m_Layer: 0
+  m_Name: Sound Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6716130275828958192
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210958506725603922}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -20.82156, y: 2.50065, z: -40.93991}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1582749164332983932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210958506725603922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670303cf46fb28347a3d80e170c49b19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  mixer: {fileID: 24100000, guid: e4e1f3faa873f894c974270a41a1ad1f, type: 2}
+  sfxGroup: {fileID: -2102117402103591305, guid: e4e1f3faa873f894c974270a41a1ad1f, type: 2}
+  ambienceGroup: {fileID: -6720187567291696154, guid: e4e1f3faa873f894c974270a41a1ad1f, type: 2}
+  taskCorrect: {fileID: 8300000, guid: c1ec0a6faf9ed724e8bd4283c7c41dfa, type: 3}
+  activityComplete: {fileID: 8300000, guid: 32d2c64524be2b44ead695b664f349d0, type: 3}
+  wrong: {fileID: 8300000, guid: 5099418a164b442428a70864b004fc86, type: 3}
+  sfxSliderName: SFXSlider
+  ambienceSliderName: AmbienceSlider
+  sceneAudio:
+  - sceneName: Main Menu
+    ambience: {fileID: 8300000, guid: 15c8022c4a65da04e90cbaf8a47b4761, type: 3}
+  - sceneName: Simulation Menu
+    ambience: {fileID: 8300000, guid: 15c8022c4a65da04e90cbaf8a47b4761, type: 3}
+  - sceneName: SImulation 1
+    ambience: {fileID: 8300000, guid: e1ea2a45f995e514cbfc489685ce8e7d, type: 3}
+  - sceneName: SImulation 2
+    ambience: {fileID: 8300000, guid: 30ce6f738d8c3d44b942f287ee6de4b1, type: 3}

@@ -111,8 +111,13 @@ public class ActivityTrigger : MonoBehaviour
         if (done >= list.Count)
         {
             activityDone.Add(activityID);
+            if (SoundManager.Instance != null) SoundManager.Instance.PlayActivityComplete();
             if (SessionTracker.Instance != null)
                 SessionTracker.Instance.CompleteActivity(activityID);
+        }
+        else
+        {
+            if (SoundManager.Instance != null) SoundManager.Instance.PlayTaskCorrect();
         }
     }
 
