@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-/// <summary>
-/// Shows the hint for the first activity the player has not finished yet.
-/// Updates the instant SessionTracker reports progress. One per simulation scene.
-/// </summary>
+//hints
 public class HintsManager : MonoBehaviour
 {
     [Serializable]

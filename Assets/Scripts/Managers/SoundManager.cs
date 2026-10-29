@@ -229,7 +229,7 @@ public class SoundManager : MonoBehaviour
         src.Play();
     }
 
-    /// <summary>For looping machine sounds: adds a 3D AudioSource to 'host' that is routed to the SFX group.</summary>
+    //For looping machine sounds: adds a 3D AudioSource to 'host' that is routed to the SFX group
     public AudioSource CreateSfxSource(GameObject host, bool loop, float maxDistance = 10f)
     {
         var s = host.AddComponent<AudioSource>();
