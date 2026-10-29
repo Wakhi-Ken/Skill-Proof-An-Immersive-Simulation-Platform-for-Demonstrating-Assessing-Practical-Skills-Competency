@@ -19,10 +19,24 @@ TagManager:
   - PowerBulb
   - PowerBulbR
   - Wires
-  - stove
   - Tools
   - Cloth
   - DamagedCable
+  - IronStove
+  - EarthStove
+  - BrownStove
+  - PlateStove
+  - PowerSwitch
+  - PowerSocket
+  - PowerRed
+  - PowerBrown
+  - Geyzer P1
+  - Geyzer P2
+  - Geyzer P3
+  - SolarPanel
+  - Light P1
+  - Light P2
+  - Light P3
   layers:
   - Default
   - TransparentFX

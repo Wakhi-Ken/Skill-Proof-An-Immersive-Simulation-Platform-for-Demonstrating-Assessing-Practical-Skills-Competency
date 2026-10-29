@@ -50,6 +50,32 @@ MonoBehaviour:
   taskCorrect: {fileID: 8300000, guid: c1ec0a6faf9ed724e8bd4283c7c41dfa, type: 3}
   activityComplete: {fileID: 8300000, guid: 32d2c64524be2b44ead695b664f349d0, type: 3}
   wrong: {fileID: 8300000, guid: 5099418a164b442428a70864b004fc86, type: 3}
+  pickup: {fileID: 8300000, guid: 483db0daa74c4b0479efbab5199f3ea3, type: 3}
+  drop: {fileID: 8300000, guid: 7b0f8ab93e2a37a4385d2466549399e0, type: 3}
+  snap: {fileID: 8300000, guid: 853c66f928e85fb40b644403819ed334, type: 3}
+  pickupVolume: 1
+  dropVolume: 1
+  pickupHaptic: 0.25
+  hapticDuration: 0.08
+  spark: {fileID: 8300000, guid: 54bc24dfba4e9f7468fe69cb34e3219a, type: 3}
+  breakerSwitch: {fileID: 8300000, guid: 5592b6677d43c5f47a0867c8b70e2b8a, type: 3}
+  lightSwitchOn: {fileID: 8300000, guid: 4789a6278ee5c034f934e035d83bda1a, type: 3}
+  lightSwitchOff: {fileID: 8300000, guid: 4789a6278ee5c034f934e035d83bda1a, type: 3}
+  machineSounds:
+  - type: 0
+    start: {fileID: 8300000, guid: fed9b0ae7a28a4f4ca58b86d905c59ac, type: 3}
+    loop: {fileID: 8300000, guid: 573f64cf95ce51b43afc5dfe79bd8923, type: 3}
+  - type: 1
+    start: {fileID: 8300000, guid: 6dc4bf13fecc2274090c327010fffcbc, type: 3}
+    loop: {fileID: 8300000, guid: 6dc4bf13fecc2274090c327010fffcbc, type: 3}
+  - type: 4
+    start: {fileID: 8300000, guid: e3c58262fc395304692af92cb6cecda2, type: 3}
+    loop: {fileID: 8300000, guid: e3c58262fc395304692af92cb6cecda2, type: 3}
+  - type: 2
+    start: {fileID: 8300000, guid: 4789a6278ee5c034f934e035d83bda1a, type: 3}
+    loop: {fileID: 0}
+  spatialPoolSize: 10
+  spatialMaxDistance: 15
   sfxSliderName: SFXSlider
   ambienceSliderName: AmbienceSlider
   sceneAudio:

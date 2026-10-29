@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,12 @@ public class ActivityTrigger : MonoBehaviour
     private static readonly Dictionary<string, List<ActivityTrigger>> groups = new Dictionary<string, List<ActivityTrigger>>();
     private static readonly HashSet<string> activityDone = new HashSet<string>();
 
+    //Fired every time a task of any activity is completed. ActivityTestable listens to this.
+    public static event Action<ActivityTrigger> TaskCompleted;
+
+    //True once ALL tasks of this activity are complete.
+    public static bool IsActivityComplete(string id) => activityDone.Contains(id);
+
     private Collider col;
     private bool taskDone;
     private Coroutine disableRoutine;
@@ -30,6 +37,7 @@ public class ActivityTrigger : MonoBehaviour
     {
         groups.Clear();
         activityDone.Clear();
+        TaskCompleted = null;
     }
 
     private void Reset()
@@ -119,6 +127,8 @@ public class ActivityTrigger : MonoBehaviour
         {
             if (SoundManager.Instance != null) SoundManager.Instance.PlayTaskCorrect();
         }
+
+        TaskCompleted?.Invoke(this);
     }
 
     private static List<ActivityTrigger> GetGroup(string id)
