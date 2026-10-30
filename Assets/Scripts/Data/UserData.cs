@@ -1,8 +1,11 @@
 using Firebase.Firestore;
 
 [FirestoreData]
+
+// Represents a user profile in the Firestore database.
 public class UserData
 {
+   
     [FirestoreProperty] public string userID { get; set; }
     [FirestoreProperty] public string name { get; set; }
     [FirestoreProperty] public string email { get; set; }

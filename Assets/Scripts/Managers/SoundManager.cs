@@ -8,6 +8,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
+// sound manager for the whole app. Singleton, don't destroy on load.
 public enum MachineType { LightBulb, SolarInverter, Stove, Generic, Geyser }
 
 public class SoundManager : MonoBehaviour
@@ -29,14 +30,14 @@ public class SoundManager : MonoBehaviour
     [Header("Grab sounds (applied automatically to EVERY XR Grab Interactable)")]
     [SerializeField] AudioClip pickup;
     [SerializeField] AudioClip drop;
-    [SerializeField] AudioClip snap;                 // object clicks into an XR Socket Interactor
+    [SerializeField] AudioClip snap;                
     [SerializeField, Range(0f, 1f)] float pickupVolume = 1f;
     [SerializeField, Range(0f, 1f)] float dropVolume = 1f;
-    [SerializeField, Range(0f, 1f)] float pickupHaptic = 0.25f;   // 0 = no vibration
+    [SerializeField, Range(0f, 1f)] float pickupHaptic = 0.25f;   
     [SerializeField] float hapticDuration = 0.08f;
-
+    // wrong sound is played by the ErrorTrigger, not here
     [Header("Electrical sounds")]
-    [SerializeField] AudioClip spark;                // wrong wiring / connecting with power ON
+    [SerializeField] AudioClip spark;                
     [SerializeField] AudioClip breakerSwitch;
     [SerializeField] AudioClip lightSwitchOn, lightSwitchOff;
 
@@ -46,8 +47,8 @@ public class SoundManager : MonoBehaviour
     public class MachineSounds
     {
         public MachineType type;
-        public AudioClip start;   // bulb: switch click | inverter: relay/beep | stove: ignition clicks
-        public AudioClip loop;    // bulb: soft hum | inverter: hum/fan | stove: flame loop
+        public AudioClip start;   
+        public AudioClip loop;    
     }
 
     [Header("Machine sounds (played when the player tests the machine)")]
@@ -64,7 +65,7 @@ public class SoundManager : MonoBehaviour
     [Serializable]
     public class SceneAudio
     {
-        public string sceneName;   // must match the scene name exactly
+        public string sceneName;   
         public AudioClip ambience;
     }
 
@@ -117,7 +118,7 @@ public class SoundManager : MonoBehaviour
         s.outputAudioMixerGroup = group;
         s.loop = loop;
         s.playOnAwake = false;
-        s.spatialBlend = 0f; // 2D sound
+        s.spatialBlend = 0f; 
         return s;
     }
 
@@ -142,13 +143,13 @@ public class SoundManager : MonoBehaviour
     void SwapLoop(AudioSource source, AudioClip clip)
     {
         if (clip == null) { source.Stop(); source.clip = null; return; }
-        if (source.clip == clip && source.isPlaying) return; // don't restart
+        if (source.clip == clip && source.isPlaying) return; 
         source.clip = clip;
         source.Play();
     }
 
     // Sliders
-    // Call it yourself if you create the settings panel later while the scene is running.
+
     public void BindSliders()
     {
         boundSliders.RemoveAll(s => s == null);
@@ -242,7 +243,7 @@ public class SoundManager : MonoBehaviour
     public void PlayLightSwitch(Vector3 position, bool turnedOn)
     {
         var clip = turnedOn ? lightSwitchOn : lightSwitchOff;
-        if (clip == null) clip = turnedOn ? lightSwitchOff : lightSwitchOn;   // use whichever is assigned
+        if (clip == null) clip = turnedOn ? lightSwitchOff : lightSwitchOn;   
         PlaySfxAt(clip, position);
     }
 
@@ -297,11 +298,11 @@ public class SoundManager : MonoBehaviour
         if (pickupHaptic > 0f && args.interactorObject is XRBaseInputInteractor controller)
             controller.SendHapticImpulse(pickupHaptic, hapticDuration);
     }
-
+    // object disabled / destroyed / scene change
     void OnGrabExited(SelectExitEventArgs args)
     {
-        if (args.isCanceled) return;                                // object disabled / destroyed / scene change
-        if (args.interactorObject is XRSocketInteractor) return;    // taken out of a socket: the hand's pickup plays next
+        if (args.isCanceled) return;                                
+        if (args.interactorObject is XRSocketInteractor) return;    
 
         PlaySfxAt(drop, args.interactableObject.transform.position, dropVolume);
     }

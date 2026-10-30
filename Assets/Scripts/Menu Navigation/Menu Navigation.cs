@@ -1,3 +1,4 @@
+
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -6,27 +7,40 @@ using UnityEngine.UI;
 
 public class MenuNavigation : MonoBehaviour
 {
+    [Header("Pause")]
     public GameObject pauseCanvas;
 
-    [Header("Loading screen (shown during every scene change)")]
+    [Header("Loading Screen")]
     public GameObject loadingCanvas;
-    [Tooltip("Optional progress bar")]
+
+    [Tooltip("Optional loading progress bar")]
     public Slider progressBar;
-    [Tooltip("Optional text such as 45%")]
+
+    [Tooltip("Optional loading percentage text")]
     public TMP_Text progressText;
-    [Tooltip("Shortest time the loading screen stays up, so it never just flashes")]
+
+    [Tooltip("Minimum time the loading screen stays visible")]
     public float minimumLoadSeconds = 1f;
 
-    private bool isLoading;
+    private bool isLoading = false;
 
     private void Start()
     {
-        // The loading canvas stays hidden until a scene change starts
+        // Always restore normal game speed
+        Time.timeScale = 1f;
+
+        // Hide loading screen at startup
         if (loadingCanvas != null)
             loadingCanvas.SetActive(false);
+
+        // Hide pause screen at startup
+        if (pauseCanvas != null)
+            pauseCanvas.SetActive(false);
     }
 
-    //  Scene buttons
+    
+    // SCENE NAVIGATION
+    
 
     public void StartMenu()
     {
@@ -48,20 +62,35 @@ public class MenuNavigation : MonoBehaviour
         LoadScene("SImulation 2");
     }
 
+    
+    // RESTART CURRENT SCENE
+   
+
     public void RestartGame()
     {
-        LoadScene(SceneManager.GetActiveScene().name);
+        string currentSceneName =
+            SceneManager.GetActiveScene().name;
+
+        LoadScene(currentSceneName);
     }
+
+    // QUIT APPLICATION
+
 
     public void OnApplicationQuit()
     {
         Application.Quit();
     }
 
-    // Pause 
+  
+    // PAUSE AND RESUME
+
 
     public void PauseGame()
     {
+        if (isLoading)
+            return;
+
         if (pauseCanvas != null)
             pauseCanvas.SetActive(true);
 
@@ -76,11 +105,15 @@ public class MenuNavigation : MonoBehaviour
             pauseCanvas.SetActive(false);
     }
 
-    //  Loading
+   
+    // SCENE LOADING
+
 
     private void LoadScene(string sceneName)
     {
-        if (isLoading) return;   // ignores a second tap while loading
+        if (isLoading)
+            return;
+
         StartCoroutine(LoadSceneRoutine(sceneName));
     }
 
@@ -88,25 +121,37 @@ public class MenuNavigation : MonoBehaviour
     {
         isLoading = true;
 
-        // A paused game has timeScale 0, which would freeze the next scene too
+        // Restore normal time before loading
         Time.timeScale = 1f;
 
+        // Hide pause screen
         if (pauseCanvas != null)
             pauseCanvas.SetActive(false);
 
+        // Show loading screen
         if (loadingCanvas != null)
             loadingCanvas.SetActive(true);
 
         UpdateProgress(0f);
 
-        // Wait one frame so the loading canvas is drawn before loading starts
+        // Give Unity time to display loading screen
         yield return null;
 
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
+        // Load destination scene in Single mode.
+        // This unloads the previous scene.
+        AsyncOperation operation =
+            SceneManager.LoadSceneAsync(
+                sceneName,
+                LoadSceneMode.Single
+            );
+
         if (operation == null)
         {
-            Debug.LogError("MenuNavigation: could not load scene '" + sceneName
-                           + "'. Check the name and that it is in Build Settings.");
+            Debug.LogError(
+                "MenuNavigation: Could not load scene: "
+                + sceneName
+                + ". Check Build Settings."
+            );
 
             if (loadingCanvas != null)
                 loadingCanvas.SetActive(false);
@@ -115,23 +160,36 @@ public class MenuNavigation : MonoBehaviour
             yield break;
         }
 
-        // Hold the new scene back until loading is done and the minimum time has passed
+        // Wait before activating the new scene
         operation.allowSceneActivation = false;
+
         float startTime = Time.realtimeSinceStartup;
 
-        while (operation.progress < 0.9f
-               || Time.realtimeSinceStartup - startTime < minimumLoadSeconds)
+        while (
+            operation.progress < 0.9f ||
+            Time.realtimeSinceStartup - startTime
+            < minimumLoadSeconds
+        )
         {
-            // Unity reports 0 to 0.9 while loading, so scale it to 0 to 1
-            UpdateProgress(Mathf.Clamp01(operation.progress / 0.9f));
+            float progress = Mathf.Clamp01(
+                operation.progress / 0.9f
+            );
+
+            UpdateProgress(progress);
+
             yield return null;
         }
 
+        // Loading completed
         UpdateProgress(1f);
-        operation.allowSceneActivation = true;
 
-        // The new scene replaces this one, so the loading canvas disappears with it
+        // Activate the new scene
+        operation.allowSceneActivation = true;
     }
+
+  
+    // LOADING PROGRESS
+  
 
     private void UpdateProgress(float value)
     {
@@ -139,6 +197,9 @@ public class MenuNavigation : MonoBehaviour
             progressBar.value = value;
 
         if (progressText != null)
-            progressText.text = Mathf.RoundToInt(value * 100f) + "%";
+        {
+            progressText.text =
+                Mathf.RoundToInt(value * 100f) + "%";
+        }
     }
 }

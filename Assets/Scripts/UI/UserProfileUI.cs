@@ -4,7 +4,7 @@ using Firebase.Auth;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-
+// Displays the logged-in user's profile information, including name, email, ID and performance scores.
 public class UserProfileUI : MonoBehaviour
 {
     [Header("Profile fields")]
@@ -18,28 +18,28 @@ public class UserProfileUI : MonoBehaviour
     [SerializeField] private Slider proceduralSlider;
 
     [Header("Slider colours (scores are 0-100)")]
-    [Tooltip("Below this score the slider uses the Low colour")]
+    
     [SerializeField] private float lowBelow = 50f;
-    [Tooltip("Below this score (and above Low) the slider uses the Medium colour. At or above it, High.")]
+
     [SerializeField] private float mediumBelow = 70f;
     [SerializeField] private Color lowColor = new Color(0.90f, 0.25f, 0.25f);     // red
     [SerializeField] private Color mediumColor = new Color(0.98f, 0.75f, 0.20f);  // amber
     [SerializeField] private Color highColor = new Color(0.20f, 0.75f, 0.35f);    // green
 
     [Header("Refresh")]
-    [Tooltip("Optional. Assign the menu button here, or hook UserProfileUI.Refresh in the button's OnClick instead.")]
+   
     [SerializeField] private Button refreshButton;
 
-    [Tooltip("Optional. Shows 'Loading...' or an error message.")]
+
     [SerializeField] private TMP_Text statusText;
 
-    [Tooltip("Also load automatically when this canvas is switched on.")]
+
     [SerializeField] private bool loadOnEnable = true;
 
-    [Tooltip("How long to wait for Firebase, the database manager and the logged-in user")]
+
     [SerializeField] private float maxWaitSeconds = 5f;
 
-    [Tooltip("How many times to look for the profile document if it is not there yet")]
+
     [SerializeField] private int maxAttempts = 3;
 
     private bool isLoading;

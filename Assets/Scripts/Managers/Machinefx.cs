@@ -197,7 +197,7 @@ public class MachineSFX : MonoBehaviour
         }
     }
 
-    // ------------------------------------------------ helpers
+    //  helpers
     private void SetGlow(float t)
     {
         for (int i = 0; i < glowMats.Length; i++)

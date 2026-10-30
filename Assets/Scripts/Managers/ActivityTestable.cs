@@ -4,6 +4,7 @@ using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 
+// activityTestable: a circuit that can be tested, with a breaker switch and a test switch. If the breaker is left ON while the test switch is toggled, sparks and a warning are triggered. If the test switch is toggled while the circuit is not ready (steps missing or wrong object in place), sparks and an error are triggered. If the test switch is toggled while the circuit is ready, the machine runs and a success event is triggered.
 public class ActivityTestable : MonoBehaviour
 {
     [Header("Which activity (same ID as the ActivityTriggers)")]
@@ -18,23 +19,22 @@ public class ActivityTestable : MonoBehaviour
 
     [Header("Spark effects")]
     public ParticleSystem sparkParticles;    // moved to where the spark happens
-    public Light flashLight;                 // optional
+    public Light flashLight;                
     public float flashDuration = 0.4f;
     public float sparkCooldown = 1.5f;
     public bool playWrongSound = true;
     public XRBaseInputInteractor[] hapticControllers;   // left + right hand interactors
-    [SerializeField] private float armDelay = 1f;       // ignore tasks that are completed as the scene starts
+    [SerializeField] private float armDelay = 1f;       
 
     [Header("Session tracker")]
-    [Tooltip("ON: wrong tests and working with the power ON are sent to the SessionTracker automatically")]
+
     public bool registerWithTracker = true;
-
-    [Header("Extra events (optional)")]
-    public UnityEvent onSafetyViolation;     // worked with the breaker ON
-    public UnityEvent onError;               // tested before the activity was complete
-    public UnityEvent onTestPassed;          // machine ran successfully (first time)
-    public UnityEvent<string> onMessage;     // hint text for your hints UI
-
+    // if true, the SessionTracker will be notified of safety violations and errors
+    [Header("Extra events")]
+    public UnityEvent onSafetyViolation;     
+    public UnityEvent onError;               
+    public UnityEvent onTestPassed;          
+    public UnityEvent<string> onMessage;     
     private float lastSpark = -99f;
     private float lastError = -99f;
     private bool violationCounted;
@@ -48,6 +48,7 @@ public class ActivityTestable : MonoBehaviour
     void OnEnable()
     {
         ActivityTrigger.TaskCompleted += OnTaskCompleted;
+        ActivityTrigger.TaskUndone += OnTaskUndone;
         if (testSwitch != null) testSwitch.onToggled.AddListener(OnTestSwitchToggled);
         if (breakerSwitch != null) breakerSwitch.onToggled.AddListener(OnBreakerToggled);
     }
@@ -55,21 +56,24 @@ public class ActivityTestable : MonoBehaviour
     void OnDisable()
     {
         ActivityTrigger.TaskCompleted -= OnTaskCompleted;
+        ActivityTrigger.TaskUndone -= OnTaskUndone;
         if (testSwitch != null) testSwitch.onToggled.RemoveListener(OnTestSwitchToggled);
         if (breakerSwitch != null) breakerSwitch.onToggled.RemoveListener(OnBreakerToggled);
     }
 
-    // ------------------------------------------------ working with the power ON
+    // working with the power ON
     private void OnTaskCompleted(ActivityTrigger trigger)
     {
+        // power is off: safe
         if (trigger.activityID != activityID) return;
         if (Time.timeSinceLevelLoad < armDelay) return;
-        if (breakerSwitch == null || !breakerSwitch.IsOn) return;     // power is off: safe
+        if (breakerSwitch == null || !breakerSwitch.IsOn) return;     
 
         Spark(trigger.transform.position);
         Say("Danger! Switch the breaker OFF before you work on the circuit.");
 
-        if (!violationCounted)               // one penalty each time the power was left on
+        // one penalty each time the power was left on
+        if (!violationCounted)               
         {
             violationCounted = true;
             Register(true);
@@ -77,12 +81,26 @@ public class ActivityTestable : MonoBehaviour
         }
     }
 
-    //  switches
+    // A component was taken out: the circuit is open, so the machine loses power
+    private void OnTaskUndone(ActivityTrigger trigger)
+    {
+        if (trigger.activityID != activityID) return;
+
+        if (machine != null && machine.IsRunning)
+        {
+            machine.StopTest();
+            if (testSwitch != null) testSwitch.SetOn(false, false, false);
+            Say("A component was removed. The circuit is open.");
+        }
+    }
+
+    //switches
     private void OnBreakerToggled(bool on)
     {
+        //isolated the power
         if (!on)
         {
-            violationCounted = false;                                 // they isolated the power
+            violationCounted = false;                                 
             if (machine != null) machine.StopTest();                  // power cut
         }
         else if (testSwitch != null && testSwitch.IsOn)
@@ -134,10 +152,10 @@ public class ActivityTestable : MonoBehaviour
     private IEnumerator ResetTestSwitch()
     {
         yield return new WaitForSeconds(0.5f);
-        if (testSwitch != null) testSwitch.SetOn(false, false, false);   // flips back so they can try again
+        if (testSwitch != null) testSwitch.SetOn(false, false, false);  
     }
 
-    //  effects
+    // effects
     private void Spark(Vector3 position)
     {
         if (Time.time - lastSpark < sparkCooldown) return;

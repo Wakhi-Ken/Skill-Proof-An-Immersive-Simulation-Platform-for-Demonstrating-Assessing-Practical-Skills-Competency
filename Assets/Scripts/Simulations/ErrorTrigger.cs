@@ -1,20 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+// a trigger collider that represents a "wrong" zone for an activity.
 
 [RequireComponent(typeof(Collider))]
 public class ErrorTrigger : MonoBehaviour
 {
-    [Tooltip("Optional: the activity this mistake belongs to, e.g. activity_2")]
     public string relatedActivityID = "";
 
-    [Tooltip("Tick if this is a safety mistake (lowers the safety score)")]
+
     public bool isSafetyViolation = true;
 
-    [Tooltip("Leave empty to accept any object. Otherwise only this tag counts.")]
     public string requiredTag = "";
 
-    [Tooltip("Seconds before the alert sound can play again for this trigger")]
     public float cooldown = 2f;
 
     private static readonly List<ErrorTrigger> all = new List<ErrorTrigger>();
@@ -83,14 +80,14 @@ public class ErrorTrigger : MonoBehaviour
         return inside.Count > 0;
     }
 
-    //True if any ErrorTrigger of this activity currently has a wrong object in it.</summary>
+    //True if any ErrorTrigger of this activity currently has a wrong object in it.
     public static bool HasPending(string activityID)
     {
         foreach (var t in all)
             if (t.relatedActivityID == activityID && t.HasWrongObject()) return true;
         return false;
     }
-    // Registers all pending errors (wrong objects still in the zones) as actual mistakes.</summary>
+    // Registers all pending errors (wrong objects still in the zones) as actual mistakes
     public static void CommitPendingErrors()
     {
         foreach (var t in all)
@@ -103,7 +100,7 @@ public class ErrorTrigger : MonoBehaviour
         }
     }
 
-    //Immediate error. Only for actions that are clearly wrong the moment they happen (button / XR event).</summary>
+    //Immediate error, Only for actions that are clearly wrong the moment they happen 
     public void Report()
     {
         if (SoundManager.Instance != null) SoundManager.Instance.PlayWrong();

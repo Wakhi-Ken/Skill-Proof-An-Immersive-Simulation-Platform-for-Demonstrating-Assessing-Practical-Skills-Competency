@@ -7,10 +7,10 @@ using UnityEngine;
 
 public class DetailedGeneratedUI : MonoBehaviour
 {
-    [Header("Details canvas (leave inactive in the Hierarchy)")]
+    [Header("Details canvas")]
     [SerializeField] private GameObject detailedCanvas;
 
-    [Header("User (all texts are optional)")]
+    [Header("User")]
     [SerializeField] private TMP_Text userNameText;
     [SerializeField] private TMP_Text userIdText;
     [SerializeField] private TMP_Text emailText;

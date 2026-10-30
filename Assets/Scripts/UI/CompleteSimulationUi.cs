@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class CompleteSimulationUI : MonoBehaviour
 {
-    [Header("Results canvas (leave inactive in the Hierarchy)")]
+    [Header("Results canvas")]
     [SerializeField] private GameObject completeCanvas;
 
-    [Header("Hide these when the results appear (e.g. task progress canvas)")]
+    [Header("Hide these when the results appear ")]
     [SerializeField] private GameObject[] hideOnComplete;
 
-    [Header("Texts (all optional)")]
+    [Header("Texts ")]
     [SerializeField] private TMP_Text userNameText;
     [SerializeField] private TMP_Text simulationNameText;
     [SerializeField] private TMP_Text competencyText;      // demonstrated or not (green / red)
@@ -23,12 +23,12 @@ public class CompleteSimulationUI : MonoBehaviour
     [SerializeField] private TMP_Text overallScoreText;    // overall score of all measurements
     [SerializeField] private TMP_Text saveStatusText;
 
-    [Header("Sliders (0 to 100). Leave any you don't have empty")]
+    [Header("Sliders (0 to 100). ")]
     [SerializeField] private Slider proceduralSlider;
     [SerializeField] private Slider complianceSlider;
     [SerializeField] private Slider competenceSlider;
 
-    [Header("Optional value texts next to the sliders")]
+    [Header("value text")]
     [SerializeField] private TMP_Text proceduralValueText;
     [SerializeField] private TMP_Text complianceValueText;
     [SerializeField] private TMP_Text competenceValueText;

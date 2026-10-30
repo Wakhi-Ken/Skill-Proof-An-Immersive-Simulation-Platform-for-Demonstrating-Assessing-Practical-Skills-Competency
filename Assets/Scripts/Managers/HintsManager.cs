@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-//hints
+// hints manager: shows the current hint for the current activity, or a message if all done or not started yet.
 public class HintsManager : MonoBehaviour
 {
     [Serializable]
     public class HintStep
     {
-        [Tooltip("Must match the activityID used by your triggers and Firestore, e.g. activity_1")]
+    
         public string activityId;
 
-        [Tooltip("Short title shown after the step number")]
+   
         public string title;
 
-        [Tooltip("The specific directions for the player")]
         [TextArea(3, 6)] public string hint;
     }
 

@@ -1338,8 +1338,10 @@
           {
             "name": "SphereCollider",
             "scenes": [
+              "Assets/Scenes/Main Menu.unity",
               "Assets/Scenes/SImulation 1.unity",
-              "Assets/Scenes/SImulation 2.unity"
+              "Assets/Scenes/SImulation 2.unity",
+              "Assets/Scenes/Simulation Menu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -2159,8 +2161,20 @@
         "name": "Video",
         "dependencies": [
           {
+            "name": "VideoClip",
+            "scenes": [
+              "Assets/Scenes/Main Menu.unity",
+              "Assets/Scenes/Simulation Menu.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "VideoPlayer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/Main Menu.unity",
+              "Assets/Scenes/Simulation Menu.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           }

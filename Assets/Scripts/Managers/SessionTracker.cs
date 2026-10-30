@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Firebase.Firestore;
 using UnityEngine;
 
+
+// Tracks the current simulation session, including the timer, errors, and scoring.
 public class SessionTracker : MonoBehaviour
 {
     public static SessionTracker Instance { get; private set; }
@@ -12,19 +14,18 @@ public class SessionTracker : MonoBehaviour
     public string simulationId = "electrical_wiring";
 
     [Header("Timer")]
-    [Tooltip("0 = no time limit. Otherwise the session ends automatically after this many minutes.")]
     public float timeLimitMinutes = 0f;
 
-    [Header("Scoring (change these as you like)")]
+    [Header("Scoring")]
     public float safetyPenalty = 10f;      // lost from safety score per safety violation
     public float accuracyPenalty = 5f;     // lost from accuracy per error
     public float passMark = 70f;           // minimum score to count as competent
     public int maxErrorsToPass = 5;        // more errors than this = not competent
     public bool countOutOfOrderAsError = true;
+
     public bool autoFinishWhenAllDone = true;
 
     [Header("Testing")]
-    [Tooltip("0 = use every activity from Firestore. Set to 1 while only one activity exists in the scene.")]
     public int useFirstActivities = 0;
 
     // Events the UI listens to
@@ -63,7 +64,11 @@ public class SessionTracker : MonoBehaviour
     private float startTime;
     private float lastElapsed;
     private DateTime startedAtUtc;
-    private int inOrderCount;
+
+    // Order is judged only the FIRST time an activity is completed, so removing and
+    // re-adding a component doesn't change the procedural score or add extra errors.
+    private readonly HashSet<string> orderChecked = new HashSet<string>();
+    private readonly HashSet<string> inOrderIds = new HashSet<string>();
 
     private void Awake()
     {
@@ -86,7 +91,7 @@ public class SessionTracker : MonoBehaviour
         }
     }
 
-    // Hook this to your "Start Simulation" button
+    // starts the session and loads the simulation data from Firestore. Returns false if the session could not be started.
     public async void StartSession()
     {
         await StartSessionAsync();
@@ -125,7 +130,8 @@ public class SessionTracker : MonoBehaviour
 
         TotalErrors = 0;
         SafetyViolations = 0;
-        inOrderCount = 0;
+        orderChecked.Clear();
+        inOrderIds.Clear();
         lastElapsed = 0f;
         startTime = Time.time;
         startedAtUtc = DateTime.UtcNow;
@@ -161,13 +167,17 @@ public class SessionTracker : MonoBehaviour
 
         Results[index].completed = true;
 
-        if (previousDone)
+        // Only judge the order the first time this activity is completed
+        if (orderChecked.Add(activityID))
         {
-            inOrderCount++;
-        }
-        else if (countOutOfOrderAsError)
-        {
-            RegisterError(activityID, false);   // also fires the progress event
+            if (previousDone)
+            {
+                inOrderIds.Add(activityID);
+            }
+            else if (countOutOfOrderAsError)
+            {
+                RegisterError(activityID, false);   // also fires the progress event
+            }
         }
 
         Debug.Log("Activity completed: " + activityID + " (" + CompletedCount + "/" + Results.Count + ")");
@@ -175,6 +185,20 @@ public class SessionTracker : MonoBehaviour
 
         if (autoFinishWhenAllDone && CompletedCount == Results.Count)
             FinishSession();
+    }
+
+    // Called by ActivityTrigger when a component of a completed activity is taken out again
+    public void UncompleteActivity(string activityID)
+    {
+        if (!IsRunning) return;
+
+        int index = Results.FindIndex(r => r.activityID == activityID);
+        if (index < 0 || !Results[index].completed) return;
+
+        Results[index].completed = false;
+
+        Debug.Log("Activity no longer complete: " + activityID + " (" + CompletedCount + "/" + Results.Count + ")");
+        OnProgressChanged?.Invoke();
     }
 
     // Called by ErrorTrigger (activityID can be empty if the error isn't tied to one step)
@@ -195,7 +219,7 @@ public class SessionTracker : MonoBehaviour
         OnProgressChanged?.Invoke();
     }
 
-    // Hook this to a "Finish / Complete" button too
+    // Finish / Complete button
     public async void FinishSession()
     {
         if (!IsRunning)
@@ -203,6 +227,9 @@ public class SessionTracker : MonoBehaviour
             Debug.LogWarning("SessionTracker: FinishSession ignored because no session is running. Press Start Simulation first.");
             return;
         }
+
+        // Wrong objects still in a wrong place now count as errors
+        ErrorTrigger.CommitPendingErrors();
 
         IsRunning = false;
         lastElapsed = Time.time - startTime;
@@ -228,7 +255,7 @@ public class SessionTracker : MonoBehaviour
         bool allDone = completed == total;
 
         float safety = SafetyScore;
-        float procedural = total == 0 ? 0f : (float)inOrderCount / total * 100f;
+        float procedural = total == 0 ? 0f : (float)inOrderIds.Count / total * 100f;
         float accuracy = Mathf.Max(0f, 100f - TotalErrors * accuracyPenalty);
         float compliance = (safety + procedural) / 2f;
         float completion = total == 0 ? 0f : (float)completed / total * 100f;
@@ -270,7 +297,7 @@ public class SessionTracker : MonoBehaviour
         };
     }
 
-    // Testing helpers: right-click the component header in Play mode
+    // Testing helpers
     [ContextMenu("Debug: Complete Next Activity")]
     private void DebugCompleteNext()
     {

@@ -9,6 +9,8 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
+//save the PDF evidence and send it to the user's email
+
 [Serializable]
 class EmailPayload
 {
@@ -20,6 +22,7 @@ class EmailPayload
 public class EvidenceSaver : MonoBehaviour
 {
     [SerializeField] private DetailedGeneratedUI detailsUI;
+    // the Google Apps Script endpoint that sends the email
     [SerializeField] private string endpointUrl = "https://script.google.com/macros/s/AKfycbwp9shHPhV8TO4uOS6zhnxT8ag06v_3_yPSBEf8888A-jWXZc03eikLGKf3NGHHCa3m/exec";
     [SerializeField] private string secret = "Evidence_Skill_Proof";
     [SerializeField] private Button saveButton;
@@ -30,7 +33,7 @@ public class EvidenceSaver : MonoBehaviour
     private const int PdfBrand = 0x0B3C5D;                  
     private bool busy;
 
-    // Hook to the "Save Evidence" button OnClick
+    // evidence button clicked: save the PDF and send it to the user's email
     public void OnSaveEvidenceClicked()
     {
         if (busy) return;

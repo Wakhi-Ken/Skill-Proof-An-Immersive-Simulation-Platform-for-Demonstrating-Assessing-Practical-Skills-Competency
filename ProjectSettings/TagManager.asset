@@ -37,6 +37,11 @@ TagManager:
   - Light P1
   - Light P2
   - Light P3
+  - PowerRed2
+  - Helmet
+  - Vest
+  - Gloves
+  - Cover
   layers:
   - Default
   - TransparentFX
