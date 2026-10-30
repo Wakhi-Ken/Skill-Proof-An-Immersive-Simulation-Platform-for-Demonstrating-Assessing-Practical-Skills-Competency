@@ -844,12 +844,6 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
-            "name": "Required by SpriteShape Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.spriteshape"
-          },
-          {
             "name": "Required by Subsystems Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1376,27 +1370,9 @@
         "name": "Physics2D",
         "dependencies": [
           {
-            "name": "Collider2D",
-            "scenes": [],
-            "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "EdgeCollider2D",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
-          },
-          {
             "name": "Physics2DSettings",
             "scenes": [],
             "dependencyType": 1,
-            "icon": null
-          },
-          {
-            "name": "PolygonCollider2D",
-            "scenes": [],
-            "dependencyType": 0,
             "icon": null
           }
         ]
@@ -1623,12 +1599,6 @@
             "icon": "package/com.unity.modules.runtimeinitializeonloadmanagerinitializer"
           },
           {
-            "name": "Required by SpriteShape Module",
-            "scenes": [],
-            "dependencyType": 2,
-            "icon": "package/com.unity.modules.spriteshape"
-          },
-          {
             "name": "Required by Subsystems Module",
             "scenes": [],
             "dependencyType": 2,
@@ -1741,17 +1711,6 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.xr"
-          }
-        ]
-      },
-      {
-        "name": "SpriteShape",
-        "dependencies": [
-          {
-            "name": "SpriteShapeRenderer",
-            "scenes": [],
-            "dependencyType": 0,
-            "icon": null
           }
         ]
       },

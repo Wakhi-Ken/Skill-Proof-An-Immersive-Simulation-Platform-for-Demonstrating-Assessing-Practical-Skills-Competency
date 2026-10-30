@@ -1143,7 +1143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveVideoToGalleryU3Ed__24_SetStateMa
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110343
+// Method Definition Index: 109765
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_Awake_m02A45AF8F9868BCF56A8434DF6FFBEDC5435A935 (NativeGalleryCallbackHelper_tD5E54D151D9C5951868BB211102ED6D091379386* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1162,7 +1162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_Awake_m02A45
 		return;
 	}
 }
-// Method Definition Index: 110344
+// Method Definition Index: 109766
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_Update_mC32A0780968746AC2BCBF9BAD666B2C098988253 (NativeGalleryCallbackHelper_tD5E54D151D9C5951868BB211102ED6D091379386* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1217,7 +1217,7 @@ IL_0028:
 		return;
 	}
 }
-// Method Definition Index: 110345
+// Method Definition Index: 109767
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_CallOnMainThread_mB7B5045CBC2C0EFB3B5144C314C0DE0A364F7F18 (NativeGalleryCallbackHelper_tD5E54D151D9C5951868BB211102ED6D091379386* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_function, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1228,7 +1228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_CallOnMainTh
 		return;
 	}
 }
-// Method Definition Index: 110346
+// Method Definition Index: 109768
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper__ctor_m6D81F158EE4CA2A4EDA5CC14F08F427FC9A81AD5 (NativeGalleryCallbackHelper_tD5E54D151D9C5951868BB211102ED6D091379386* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1245,7 +1245,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper__ctor_m6D81F
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110347
+// Method Definition Index: 109769
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PermissionCallbackAndroid_get_Result_m2212EA67878195143390223307F696F6AEDB1CE5 (PermissionCallbackAndroid_t7526F5AF23CB59ABD8014BDC536D229D870304DF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1254,7 +1254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PermissionCallbackAndroid_get_Result_
 		return L_0;
 	}
 }
-// Method Definition Index: 110348
+// Method Definition Index: 109770
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAndroid_set_Result_mAFBE3ECAAB89282B90BAB0CBFA8E25FB45B0DBA4 (PermissionCallbackAndroid_t7526F5AF23CB59ABD8014BDC536D229D870304DF* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1264,7 +1264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAndroid_set_Result_mAF
 		return;
 	}
 }
-// Method Definition Index: 110349
+// Method Definition Index: 109771
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAndroid__ctor_mA7801A3418A8DB1F28DA0339A805A353FAB37A0C (PermissionCallbackAndroid_t7526F5AF23CB59ABD8014BDC536D229D870304DF* __this, RuntimeObject* ___0_threadLock, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1286,7 +1286,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAndroid__ctor_mA7801A3
 		return;
 	}
 }
-// Method Definition Index: 110350
+// Method Definition Index: 109772
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAndroid_OnPermissionResult_m60D9415122A4EABFD077369107C5E08AE725E6FE (PermissionCallbackAndroid_t7526F5AF23CB59ABD8014BDC536D229D870304DF* __this, int32_t ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1354,7 +1354,7 @@ IL_002f:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110351
+// Method Definition Index: 109773
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAsyncAndroid__ctor_m43441C5C1091711EAE58AEDA9077C6D5C9E2AC29 (PermissionCallbackAsyncAndroid_tC05104DCC8DF48CB2B3EE68B694324E40F9FCBB7* __this, PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* ___0_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1385,7 +1385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAsyncAndroid__ctor_m43
 		return;
 	}
 }
-// Method Definition Index: 110352
+// Method Definition Index: 109774
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAsyncAndroid_OnPermissionResult_m2FB6DE8360F85CDDEA7BC4D22C613CA0E063206C (PermissionCallbackAsyncAndroid_tC05104DCC8DF48CB2B3EE68B694324E40F9FCBB7* __this, int32_t ___0_result, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1427,7 +1427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallbackAsyncAndroid_OnPermiss
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110353
+// Method Definition Index: 109775
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0__ctor_m14C01B1122C7699E9156D0BF3BFDB77756AD6503 (U3CU3Ec__DisplayClass3_0_t4AA6D12BAA22020123F1D90982F5790F4D02C85E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1436,7 +1436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0__ctor_m14C01B11
 		return;
 	}
 }
-// Method Definition Index: 110354
+// Method Definition Index: 109776
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0_U3COnPermissionResultU3Eb__0_m088D666F24619ABC5C1ECAD6996E0CFA3E396959 (U3CU3Ec__DisplayClass3_0_t4AA6D12BAA22020123F1D90982F5790F4D02C85E* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1458,7 +1458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass3_0_U3COnPermission
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110355
+// Method Definition Index: 109777
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* NativeGallery_get_AJC_mE8E856653D81A7B97433CF1EF6D370F231C5DA4B (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1490,7 +1490,7 @@ IL_0016:
 		return L_2;
 	}
 }
-// Method Definition Index: 110356
+// Method Definition Index: 109778
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* NativeGallery_get_Context_mD03D091C13BEFA41E6A00EAA5726B9C82E00DBBA (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1569,7 +1569,7 @@ IL_002e:
 		return L_6;
 	}
 }
-// Method Definition Index: 110357
+// Method Definition Index: 109779
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NativeGallery_get_SelectedMediaPath_m45CF9A6704EC3A2D9C44E0FBEF4C5F5A9FC5271E (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1612,7 +1612,7 @@ IL_0026:
 		return L_5;
 	}
 }
-// Method Definition Index: 110358
+// Method Definition Index: 109780
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeGallery_CheckPermission_m46E5CF2E031ED4E454FA566AF44BD89F097B50AD (int32_t ___0_permissionType, int32_t ___1_mediaTypes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1678,7 +1678,7 @@ IL_0046:
 		return L_15;
 	}
 }
-// Method Definition Index: 110359
+// Method Definition Index: 109781
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeGallery_RequestPermission_m106712B3F156C43ED7F55147FE529197EDA8A614 (int32_t ___0_permissionType, int32_t ___1_mediaTypes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1861,7 +1861,7 @@ IL_00b9:
 		return L_40;
 	}
 }
-// Method Definition Index: 110360
+// Method Definition Index: 109782
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGallery_RequestPermissionAsync_m1C9C98FB9ACB8604DC7D278B0EE9D9A3A9A2CE26 (PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* ___0_callback, int32_t ___1_permissionType, int32_t ___2_mediaTypes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1918,7 +1918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGallery_RequestPermissionAsync_m1C
 		return;
 	}
 }
-// Method Definition Index: 110361
+// Method Definition Index: 109783
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C80AA* NativeGallery_RequestPermissionAsync_mED954BD768EBED9255073450E3DDFDE8A82BFD81 (int32_t ___0_permissionType, int32_t ___1_mediaTypes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -1955,7 +1955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C8
 		return L_8;
 	}
 }
-// Method Definition Index: 110362
+// Method Definition Index: 109784
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NativeGallery_ProcessPermission_m30C4A6F86E82F43C0C9F8F5B3215DE66FE59C290 (int32_t ___0_permission, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -1976,7 +1976,7 @@ IL_0006:
 		return (int32_t)(1);
 	}
 }
-// Method Definition Index: 110363
+// Method Definition Index: 109785
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C80AA* NativeGallery_SaveVideoToGallery_m1DCA797D9B1D945D2CDEEADE7B09AAC20900B0AD (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_mediaBytes, String_t* ___1_album, String_t* ___2_filename, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___3_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2023,7 +2023,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C8
 		return L_7;
 	}
 }
-// Method Definition Index: 110364
+// Method Definition Index: 109786
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C80AA* NativeGallery_SaveVideoToGallery_mA462270F220C482A9601AC79DD0EA7ED82F89721 (String_t* ___0_existingMediaPath, String_t* ___1_album, String_t* ___2_filename, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___3_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2070,7 +2070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C8
 		return L_7;
 	}
 }
-// Method Definition Index: 110365
+// Method Definition Index: 109787
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C80AA* NativeGallery_SaveImageToGallery_m623992675B0987F8FB46B6B1A027A22C91739EB8 (String_t* ___0_existingMediaPath, String_t* ___1_album, String_t* ___2_filename, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___3_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2117,7 +2117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C8
 		return L_7;
 	}
 }
-// Method Definition Index: 110366
+// Method Definition Index: 109788
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NativeGallery_GetExternalStoragePublicDirectory_m00C5B8D850969DDFCF6E9B08D2241D76125B55D5 (const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2140,7 +2140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NativeGallery_GetExternalStoragePub
 		return L_2;
 	}
 }
-// Method Definition Index: 110367
+// Method Definition Index: 109789
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C80AA* NativeGallery_SaveToGallery_m1AEAEA3D7E56C4DE0F577BCB82FD3E10259385C6 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_mediaBytes, String_t* ___1_album, String_t* ___2_filename, int32_t ___3_mediaType, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___4_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2189,7 +2189,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C8
 		return L_8;
 	}
 }
-// Method Definition Index: 110368
+// Method Definition Index: 109790
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C80AA* NativeGallery_SaveToGallery_mC4A1201FD1D7308C2B6F6568618D9EF4C8EEA5CB (String_t* ___0_existingMediaPath, String_t* ___1_album, String_t* ___2_filename, int32_t ___3_mediaType, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___4_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2238,7 +2238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t01CB54C88ACB9BD6E2A32C230E2ED287E57C8
 		return L_8;
 	}
 }
-// Method Definition Index: 110369
+// Method Definition Index: 109791
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGallery_SaveToGalleryInternal_mDDD9597FC10744CCEF1FA1FDEEA2F1A9B122A0D7 (String_t* ___0_path, String_t* ___1_album, int32_t ___2_mediaType, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___3_callback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2282,7 +2282,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeGallery_SaveToGalleryInternal_mDDD
 		return;
 	}
 }
-// Method Definition Index: 110370
+// Method Definition Index: 109792
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NativeGallery_GetTemporarySavePath_mF880893854625A721BB49982CFF3222217289E8A (String_t* ___0_filename, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2367,7 +2367,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_PermissionCallback_t1D2BB2D47EBCDF6
 	il2cppPInvokeFunc(___0_permission);
 
 }
-// Method Definition Index: 110371
+// Method Definition Index: 109793
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallback__ctor_m97791B21237EEA78825F35DC30839588F82F64A8 (PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2402,14 +2402,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallback__ctor_m97791B21237EEA
 	}
 	__this->___extra_arg = (intptr_t)PermissionCallback_Invoke_mA2E9778BAE696AD8513D7EBBEA485B072F171CB8_Multicast;
 }
-// Method Definition Index: 110372
+// Method Definition Index: 109794
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallback_Invoke_mA2E9778BAE696AD8513D7EBBEA485B072F171CB8 (PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* __this, int32_t ___0_permission, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_permission, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 110373
+// Method Definition Index: 109795
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PermissionCallback_BeginInvoke_mB4D450846D6CF463DA8149EA2AABBC4C24E5728C (PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* __this, int32_t ___0_permission, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___1_callback, RuntimeObject* ___2_object, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2423,7 +2423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* PermissionCallback_BeginInvoke
 	__d_args[0] = Box(Permission_tA1F664DF530B016528318E30A1F248ED34954DAA_il2cpp_TypeInfo_var, &___0_permission);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___1_callback, (RuntimeObject*)___2_object);
 }
-// Method Definition Index: 110374
+// Method Definition Index: 109796
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionCallback_EndInvoke_m88039A95BFD449C04978670B28ACFA992C566CBE (PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2466,7 +2466,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_MediaSaveCallback_t441E4A0E2437FCE0
 	____1_path_marshaled = NULL;
 
 }
-// Method Definition Index: 110375
+// Method Definition Index: 109797
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaSaveCallback__ctor_m7134D55EF57CE64841E36E0579F770B39518B858 (MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2501,14 +2501,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaSaveCallback__ctor_m7134D55EF57CE64
 	}
 	__this->___extra_arg = (intptr_t)MediaSaveCallback_Invoke_m049DAD5168E048FE94CB37EB93C55C01DF0577AC_Multicast;
 }
-// Method Definition Index: 110376
+// Method Definition Index: 109798
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaSaveCallback_Invoke_m049DAD5168E048FE94CB37EB93C55C01DF0577AC (MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* __this, bool ___0_success, String_t* ___1_path, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	typedef void (*FunctionPointerType) (RuntimeObject*, bool, String_t*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_success, ___1_path, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 110377
+// Method Definition Index: 109799
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MediaSaveCallback_BeginInvoke_m5FA1AB66E31F321F373E4C00D48983C433193E81 (MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* __this, bool ___0_success, String_t* ___1_path, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___2_callback, RuntimeObject* ___3_object, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2517,7 +2517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MediaSaveCallback_BeginInvoke_
 	__d_args[1] = ___1_path;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___2_callback, (RuntimeObject*)___3_object);
 }
-// Method Definition Index: 110378
+// Method Definition Index: 109800
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaSaveCallback_EndInvoke_m139D94C987D6559D4DD8967B9FC4F8FC245A7235 (MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2566,7 +2566,7 @@ IL2CPP_EXTERN_C  void DelegatePInvokeWrapper_MediaPickCallback_t52B57504D927318E
 	____0_path_marshaled = NULL;
 
 }
-// Method Definition Index: 110379
+// Method Definition Index: 109801
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaPickCallback__ctor_m7B9A96F248BA516E2A499F76CD8E7D40DE38D0B4 (MediaPickCallback_t52B57504D927318E47E47027B41CEEC6CD723E44* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2609,14 +2609,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaPickCallback__ctor_m7B9A96F248BA516
 	}
 	__this->___extra_arg = (intptr_t)MediaPickCallback_Invoke_m7AE459034ED0C3D7936E321E1A9CC1D6F7795D72_Multicast;
 }
-// Method Definition Index: 110380
+// Method Definition Index: 109802
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaPickCallback_Invoke_m7AE459034ED0C3D7936E321E1A9CC1D6F7795D72 (MediaPickCallback_t52B57504D927318E47E47027B41CEEC6CD723E44* __this, String_t* ___0_path, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	typedef void (*FunctionPointerType) (RuntimeObject*, String_t*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_path, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 110381
+// Method Definition Index: 109803
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MediaPickCallback_BeginInvoke_mCCDF3C6B219F28690AFF39A86B50F5225AF6B71A (MediaPickCallback_t52B57504D927318E47E47027B41CEEC6CD723E44* __this, String_t* ___0_path, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___1_callback, RuntimeObject* ___2_object, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2624,7 +2624,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MediaPickCallback_BeginInvoke_
 	__d_args[0] = ___0_path;
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___1_callback, (RuntimeObject*)___2_object);
 }
-// Method Definition Index: 110382
+// Method Definition Index: 109804
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaPickCallback_EndInvoke_mF1504BEEFF9427F60863BEC956736337820F434F (MediaPickCallback_t52B57504D927318E47E47027B41CEEC6CD723E44* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2638,7 +2638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MediaPickCallback_EndInvoke_mF1504BEEFF9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110383
+// Method Definition Index: 109805
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveMediaCallback__ctor_mCA7B75D279620E2A26FF17B301762E27EE262846 (SaveMediaCallback_tC45BCB1B2600DEE1C493FEC853DF4384294211BD* __this, MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* ___0_mediaSaveCallback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2659,7 +2659,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveMediaCallback__ctor_mCA7B75D279620E2
 		return;
 	}
 }
-// Method Definition Index: 110384
+// Method Definition Index: 109806
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SaveMediaCallback_onMediaSaved_m32678076BFEB536E8AE120A6509FDC5116EBB75A (SaveMediaCallback_tC45BCB1B2600DEE1C493FEC853DF4384294211BD* __this, bool ___0_success, String_t* ___1_path, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2696,7 +2696,7 @@ IL_000b:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110385
+// Method Definition Index: 109807
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0__ctor_m1EA8F4EBCE7CA4362CB29E548FEA302F92374797 (U3CU3Ec__DisplayClass21_0_t958FAB2A2892B13D33437F36F7C326A96E1B1ECF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2705,7 +2705,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0__ctor_m1EA8F4E
 		return;
 	}
 }
-// Method Definition Index: 110386
+// Method Definition Index: 109808
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0_U3CRequestPermissionAsyncU3Eb__0_mA634AC654E2F590A2D862C0A49A991A7D6B3F3F6 (U3CU3Ec__DisplayClass21_0_t958FAB2A2892B13D33437F36F7C326A96E1B1ECF* __this, int32_t ___0_permission, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2725,7 +2725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass21_0_U3CRequestPerm
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110387
+// Method Definition Index: 109809
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0__ctor_m3BCADF9EB59AC3512D76EFF9DC53B1C7E989F4E3 (U3CU3Ec__DisplayClass28_0_t9C70371CF150581B3A51ED524AD0446EA138FD1C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2734,7 +2734,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0__ctor_m3BCADF9
 		return;
 	}
 }
-// Method Definition Index: 110388
+// Method Definition Index: 109810
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0_U3CSaveToGalleryU3Eb__0_m9ACB4F620BA05A3792DD1F2CF6ABFF1D0C89229F (U3CU3Ec__DisplayClass28_0_t9C70371CF150581B3A51ED524AD0446EA138FD1C* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -2753,7 +2753,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass28_0_U3CSaveToGalle
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110389
+// Method Definition Index: 109811
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveImageToGalleryU3Ed__25_MoveNext_m938CA0A047ED7E0B17234E35667AC0422AE4A268 (U3CSaveImageToGalleryU3Ed__25_tB25EB3704E494FA2958DB1D24347EF822AF67453* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2876,7 +2876,7 @@ IL2CPP_EXTERN_C  void U3CSaveImageToGalleryU3Ed__25_MoveNext_m938CA0A047ED7E0B17
 	_thisAdjusted = il2cpp_codegen_get_raw_data<U3CSaveImageToGalleryU3Ed__25_tB25EB3704E494FA2958DB1D24347EF822AF67453>(__this);
 	U3CSaveImageToGalleryU3Ed__25_MoveNext_m938CA0A047ED7E0B17234E35667AC0422AE4A268(_thisAdjusted, method);
 }
-// Method Definition Index: 110390
+// Method Definition Index: 109812
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveImageToGalleryU3Ed__25_SetStateMachine_m606268771CEF8057FEC04C9CA6588ECA1A97A824 (U3CSaveImageToGalleryU3Ed__25_tB25EB3704E494FA2958DB1D24347EF822AF67453* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -2909,7 +2909,7 @@ IL2CPP_EXTERN_C  void U3CSaveImageToGalleryU3Ed__25_SetStateMachine_m606268771CE
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110391
+// Method Definition Index: 109813
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveToGalleryU3Ed__27_MoveNext_mB8135BC7173FBE0645418EC8E1C75673DEF38F07 (U3CSaveToGalleryU3Ed__27_t3E4838079CF86E5B06C031A2251CB6A1414ACEFE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3281,7 +3281,7 @@ IL2CPP_EXTERN_C  void U3CSaveToGalleryU3Ed__27_MoveNext_mB8135BC7173FBE0645418EC
 	_thisAdjusted = il2cpp_codegen_get_raw_data<U3CSaveToGalleryU3Ed__27_t3E4838079CF86E5B06C031A2251CB6A1414ACEFE>(__this);
 	U3CSaveToGalleryU3Ed__27_MoveNext_mB8135BC7173FBE0645418EC8E1C75673DEF38F07(_thisAdjusted, method);
 }
-// Method Definition Index: 110392
+// Method Definition Index: 109814
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveToGalleryU3Ed__27_SetStateMachine_m082C4FAB7FA8F991A11D88F3B2C1C80FEAEC7D35 (U3CSaveToGalleryU3Ed__27_t3E4838079CF86E5B06C031A2251CB6A1414ACEFE* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3314,7 +3314,7 @@ IL2CPP_EXTERN_C  void U3CSaveToGalleryU3Ed__27_SetStateMachine_m082C4FAB7FA8F991
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110393
+// Method Definition Index: 109815
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveToGalleryU3Ed__28_MoveNext_mC2750F9925FFF201E7BF38DA4D00E9B39C1E4614 (U3CSaveToGalleryU3Ed__28_tD410CCBAD1D517982A55F38D8D4D7966029FBCB2* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3660,7 +3660,7 @@ IL2CPP_EXTERN_C  void U3CSaveToGalleryU3Ed__28_MoveNext_mC2750F9925FFF201E7BF38D
 	_thisAdjusted = il2cpp_codegen_get_raw_data<U3CSaveToGalleryU3Ed__28_tD410CCBAD1D517982A55F38D8D4D7966029FBCB2>(__this);
 	U3CSaveToGalleryU3Ed__28_MoveNext_mC2750F9925FFF201E7BF38DA4D00E9B39C1E4614(_thisAdjusted, method);
 }
-// Method Definition Index: 110394
+// Method Definition Index: 109816
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveToGalleryU3Ed__28_SetStateMachine_mD92228CAF1E9E7BC7DEDD28B287BE9506EB75BF7 (U3CSaveToGalleryU3Ed__28_tD410CCBAD1D517982A55F38D8D4D7966029FBCB2* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3693,7 +3693,7 @@ IL2CPP_EXTERN_C  void U3CSaveToGalleryU3Ed__28_SetStateMachine_mD92228CAF1E9E7BC
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110395
+// Method Definition Index: 109817
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveVideoToGalleryU3Ed__23_MoveNext_m6A9D0B4C7DAA384B0372D508B6D5F3DB43E84549 (U3CSaveVideoToGalleryU3Ed__23_tB63425671C9C181244D5FE0711D156ECB913BA73* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3816,7 +3816,7 @@ IL2CPP_EXTERN_C  void U3CSaveVideoToGalleryU3Ed__23_MoveNext_m6A9D0B4C7DAA384B03
 	_thisAdjusted = il2cpp_codegen_get_raw_data<U3CSaveVideoToGalleryU3Ed__23_tB63425671C9C181244D5FE0711D156ECB913BA73>(__this);
 	U3CSaveVideoToGalleryU3Ed__23_MoveNext_m6A9D0B4C7DAA384B0372D508B6D5F3DB43E84549(_thisAdjusted, method);
 }
-// Method Definition Index: 110396
+// Method Definition Index: 109818
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveVideoToGalleryU3Ed__23_SetStateMachine_mE5F24855D38559A572956E5238F7B1311B3B7036 (U3CSaveVideoToGalleryU3Ed__23_tB63425671C9C181244D5FE0711D156ECB913BA73* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3849,7 +3849,7 @@ IL2CPP_EXTERN_C  void U3CSaveVideoToGalleryU3Ed__23_SetStateMachine_mE5F24855D38
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 110397
+// Method Definition Index: 109819
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveVideoToGalleryU3Ed__24_MoveNext_m6D5AF3E31219A480CB343A743F8930A8938264DE (U3CSaveVideoToGalleryU3Ed__24_tF4653D6E0816DC6827B20894CE52A455EA520DE3* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -3972,7 +3972,7 @@ IL2CPP_EXTERN_C  void U3CSaveVideoToGalleryU3Ed__24_MoveNext_m6D5AF3E31219A480CB
 	_thisAdjusted = il2cpp_codegen_get_raw_data<U3CSaveVideoToGalleryU3Ed__24_tF4653D6E0816DC6827B20894CE52A455EA520DE3>(__this);
 	U3CSaveVideoToGalleryU3Ed__24_MoveNext_m6D5AF3E31219A480CB343A743F8930A8938264DE(_thisAdjusted, method);
 }
-// Method Definition Index: 110398
+// Method Definition Index: 109820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSaveVideoToGalleryU3Ed__24_SetStateMachine_m6DBC19C7491A8A69B5CDFC5BC19783559A4B5C25 (U3CSaveVideoToGalleryU3Ed__24_tF4653D6E0816DC6827B20894CE52A455EA520DE3* __this, RuntimeObject* ___0_stateMachine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -4007,7 +4007,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_Invoke_m7126A54DACA72
 	typedef void (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 110348
+// Method Definition Index: 109770
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PermissionCallbackAndroid_set_Result_mAFBE3ECAAB89282B90BAB0CBFA8E25FB45B0DBA4_inline (PermissionCallbackAndroid_t7526F5AF23CB59ABD8014BDC536D229D870304DF* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4017,7 +4017,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PermissionCallbackAndroid_se
 		return;
 	}
 }
-// Method Definition Index: 110345
+// Method Definition Index: 109767
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_CallOnMainThread_mB7B5045CBC2C0EFB3B5144C314C0DE0A364F7F18_inline (NativeGalleryCallbackHelper_tD5E54D151D9C5951868BB211102ED6D091379386* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___0_function, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4028,14 +4028,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void NativeGalleryCallbackHelper_
 		return;
 	}
 }
-// Method Definition Index: 110372
+// Method Definition Index: 109794
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void PermissionCallback_Invoke_mA2E9778BAE696AD8513D7EBBEA485B072F171CB8_inline (PermissionCallback_t1D2BB2D47EBCDF63811B5DC27EFF1E0C0A7E5D54* __this, int32_t ___0_permission, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
 	typedef void (*FunctionPointerType) (RuntimeObject*, int32_t, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, ___0_permission, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 110347
+// Method Definition Index: 109769
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PermissionCallbackAndroid_get_Result_m2212EA67878195143390223307F696F6AEDB1CE5_inline (PermissionCallbackAndroid_t7526F5AF23CB59ABD8014BDC536D229D870304DF* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -4044,7 +4044,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PermissionCallbackAndroid
 		return L_0;
 	}
 }
-// Method Definition Index: 110376
+// Method Definition Index: 109798
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MediaSaveCallback_Invoke_m049DAD5168E048FE94CB37EB93C55C01DF0577AC_inline (MediaSaveCallback_t441E4A0E2437FCE0E249A75E4AE1B8323737C5E8* __this, bool ___0_success, String_t* ___1_path, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>

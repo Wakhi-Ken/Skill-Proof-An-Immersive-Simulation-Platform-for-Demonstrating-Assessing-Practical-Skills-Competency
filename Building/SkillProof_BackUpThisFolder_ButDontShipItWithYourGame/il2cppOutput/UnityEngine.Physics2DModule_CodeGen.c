@@ -49,14 +49,7 @@ extern void RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B (vo
 extern void RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2 (void);
 extern void RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613 (void);
 extern void RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD (void);
-extern void Collider2D__ctor_mC4E4C5F6A2093B4902A09B312D1E832F12DE0B4B (void);
-extern void EdgeCollider2D_set_points_mFF49E39867F376E313D50F57531C28A1F715D02F (void);
-extern void EdgeCollider2D__ctor_mEFFC70C11EFA43456B9A41CEFFACD61A4D1B71DE (void);
-extern void EdgeCollider2D_set_points_Injected_m8509A8C035D9CA19B6A39C3A96505F93586940FC (void);
-extern void PolygonCollider2D_set_points_m74A433CEBC5A6A460EC2852CDEDEED2D4E261462 (void);
-extern void PolygonCollider2D__ctor_mC2255D56CD93945AD9E72E196BF5168F7A13A538 (void);
-extern void PolygonCollider2D_set_points_Injected_mF64FDD23CE5DE92F22C98F0367331266C662D99A (void);
-static Il2CppMethodPointer s_methodPointers[49] = 
+static Il2CppMethodPointer s_methodPointers[42] = 
 {
 	EmbeddedAttribute__ctor_mE32B5DE5092BC424BF999934C815A842F8797063,
 	RefSafetyRulesAttribute__ctor_mF7B7F3C7A1E03599B4AE35353B0456843421B10E,
@@ -100,13 +93,6 @@ static Il2CppMethodPointer s_methodPointers[49] =
 	RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2,
 	RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613,
 	RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD,
-	Collider2D__ctor_mC4E4C5F6A2093B4902A09B312D1E832F12DE0B4B,
-	EdgeCollider2D_set_points_mFF49E39867F376E313D50F57531C28A1F715D02F,
-	EdgeCollider2D__ctor_mEFFC70C11EFA43456B9A41CEFFACD61A4D1B71DE,
-	EdgeCollider2D_set_points_Injected_m8509A8C035D9CA19B6A39C3A96505F93586940FC,
-	PolygonCollider2D_set_points_m74A433CEBC5A6A460EC2852CDEDEED2D4E261462,
-	PolygonCollider2D__ctor_mC2255D56CD93945AD9E72E196BF5168F7A13A538,
-	PolygonCollider2D_set_points_Injected_mF64FDD23CE5DE92F22C98F0367331266C662D99A,
 };
 extern void PhysicsScene2D_ToString_mACA22EF575F7544176360B16D431F2BB1DEBB307_AdjustorThunk (void);
 extern void PhysicsScene2D_GetHashCode_mD45B3437D088C66A35AE20066AD632D1D0858B1E_AdjustorThunk (void);
@@ -123,7 +109,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenM
 const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule = 
 {
 	"UnityEngine.Physics2DModule.dll",
-	49,
+	42,
 	s_methodPointers,
 	4,
 	s_adjustorThunks,
