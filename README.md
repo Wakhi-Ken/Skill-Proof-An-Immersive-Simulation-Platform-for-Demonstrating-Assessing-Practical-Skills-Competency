@@ -32,7 +32,8 @@
 | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | GitHub repository | [Skill-Proof GitHub](https://github.com/Wakhi-Ken/Skill-Proof-An-Immersive-Simulation-Platform-for-Demonstrating-Assessing-Practical-Skills-Competency) |
 | Figma designs     | [Skill-Proof on Figma](https://www.figma.com/design/C4MHMWXMz2jBHC4t71BWcv/Skill-Proof?node-id=0-1&p=f&t=zkOPKaTbnOLc6Ktw-0)                            |
-| Demo video        | [Skill-Proof Demo](https://youtu.be/t-jPYAJS5Cg)                                                                                                        |
+| video             | [Skill-Proof Demo](https://youtu.be/t-jPYAJS5Cg)                                                                                                        |
+| technical report  |[Video](https://docs.google.com/document/d/16yxdEQPiFcYVSbSKMzx223FkHIutRtt-v4BorWgld8E/edit?tab=t.0  )                                                  |
 
 ## Setup: Environment and Project
 
