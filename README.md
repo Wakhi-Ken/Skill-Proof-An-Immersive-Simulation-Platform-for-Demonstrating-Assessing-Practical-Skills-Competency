@@ -223,10 +223,10 @@ The tutorial video in the start menu uses Unity's built-in **Video Player** on a
 
 | Asset                       | Type      | Purpose / Justification                              | Source            |
 | --------------------------- | --------- | ---------------------------------------------------- | ----------------- |
-| Virtual tools and equipment | 3D models | Used to create the practical simulation environments | Own / Free assets |
-| Electrical components       | 3D models | Used for the electrical wiring simulation            | Own / Free assets |
-| Solar panel components      | 3D models | Used for the solar installation simulation           | Own / Free assets |
-| UI icons                    | 2D        | Used for menus and interface elements                | Own / Free assets |
+| Virtual tools and equipment | 3D models | Used to create the practical simulation environments | Sketfab           |
+| Electrical components       | 3D models | Used for the electrical wiring simulation            |Sketchfab/ CGTRADER|
+| Solar panel components      | 3D models | Used for the solar installation simulation           |Sketchfab          |
+| UI icons                    | 2D        | Used for menus and interface elements                | OWn               |
 | Breaker colour key          | 2D image  | Shows which breaker colour belongs to which circuit  | Own               |
 | Sound effects and ambience  | Audio     | Pick up, drop, snap, switches, sparks, machines      | Free assets       |
 | Tutorial video              | Video     | Explains how to use the simulation in the start menu | Own               |
@@ -249,7 +249,6 @@ The tutorial video in the start menu uses Unity's built-in **Video Player** on a
 | Look around        | Head movement            | User views the virtual environment                |
 | Feel feedback      | Controller vibration     | Buzz on pick up and when sparks happen            |
 | Complete an action | Controller interaction   | System records the action                         |
-| Pause              | UI button                | Simulation is paused                              |
 
 ## Deployment Plan
 
