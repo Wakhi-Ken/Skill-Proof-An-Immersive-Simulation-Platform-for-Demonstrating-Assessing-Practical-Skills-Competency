@@ -132,14 +132,27 @@ flowchart LR
 ```
 
 ### App Screenshots
+<img width="1741" height="883" alt="image" src="https://github.com/user-attachments/assets/129f0a73-ddac-45df-9701-75a3f7ef2a46" />
+<img width="1586" height="819" alt="image" src="https://github.com/user-attachments/assets/d4d71151-474c-4870-a01a-284f6fc569e7" />
+<img width="1614" height="646" alt="image" src="https://github.com/user-attachments/assets/439ef77f-760e-486f-bd3b-c3e73a0e373d" />
+<img width="1816" height="854" alt="image" src="https://github.com/user-attachments/assets/a6017b53-1f47-41f4-a760-43b772481df5" />
+<img width="1671" height="635" alt="image" src="https://github.com/user-attachments/assets/170baa85-9b47-45aa-b77e-2337580fabff" />
+<img width="1642" height="706" alt="image" src="https://github.com/user-attachments/assets/bdc466ce-6be7-4c00-9ad4-ab51a04d48ab" />
+<img width="1849" height="891" alt="image" src="https://github.com/user-attachments/assets/acf0a892-4d23-4d78-815e-0fc6fc6744d2" />
+<img width="1801" height="931" alt="image" src="https://github.com/user-attachments/assets/8021e4ca-bada-49f0-9863-01fa5854d5e2" />
+<img width="1712" height="810" alt="image" src="https://github.com/user-attachments/assets/3b40edaa-d65f-4298-b98c-4aa7fe715852" />
+<img width="1785" height="857" alt="image" src="https://github.com/user-attachments/assets/30624822-6619-4d42-82e7-a1b570efa233" />
 
-<img width="1142" height="647" alt="Screenshot 2026-10-02 225710" src="https://github.com/user-attachments/assets/f5c996a0-7b09-4c79-9913-61d2ae5a99ef" />
-<img width="1113" height="655" alt="Screenshot 2026-10-02 225655" src="https://github.com/user-attachments/assets/f51de153-877e-4d40-bcf9-2b194fb42b3f" />
-<img width="1107" height="610" alt="Screenshot 2026-10-02 225534" src="https://github.com/user-attachments/assets/0d1ad96d-cd78-4185-a798-f0157ccf8e74" />
-<img width="1705" height="795" alt="Screenshot 2026-10-02 225453" src="https://github.com/user-attachments/assets/5aaca9db-6910-42a5-95d4-5bc567801eb9" />
-<img width="1027" height="635" alt="Screenshot 2026-10-03 001122" src="https://github.com/user-attachments/assets/1eae4198-c355-4410-ad30-1f8df5db5292" />
-<img width="1003" height="488" alt="Screenshot 2026-10-03 000939" src="https://github.com/user-attachments/assets/9a04aab3-e1b4-4551-8a2e-2f598c7957d0" />
-<img width="1128" height="645" alt="Screenshot 2026-10-02 230042" src="https://github.com/user-attachments/assets/290010fc-8991-4b60-b40e-47adf039cd9e" />
+
+
+
+
+
+
+
+
+
+
 
 ## How the simulation works
 
