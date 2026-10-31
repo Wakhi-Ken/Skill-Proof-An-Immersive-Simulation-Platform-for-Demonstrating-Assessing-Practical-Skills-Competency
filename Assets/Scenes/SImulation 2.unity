@@ -6358,78 +6358,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 311075793}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &313175171
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 313175172}
-  - component: {fileID: 313175174}
-  - component: {fileID: 313175173}
-  m_Layer: 0
-  m_Name: socket male correct
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &313175172
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313175171}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.70003104, y: -0.7000306, z: 0.09978396, w: 0.09978393}
-  m_LocalPosition: {x: 3.7895012, y: 1.3903999, z: -0.16699982}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 455862471}
-  m_LocalEulerAnglesHint: {x: 163.775, y: 0, z: 90}
---- !u!114 &313175173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313175171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
-  activityID: activity_5
-  requiredObject: {fileID: 0}
-  requiredTag: male
-  socket: {fileID: 0}
-  undoOnRemove: 1
-  disableDelay: 5
---- !u!65 &313175174
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 313175171}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.05037503, y: 0.079925455, z: 0.07392479}
-  m_Center: {x: 0.0223971, y: 0.0583379, z: -0.03703341}
 --- !u!1 &315156513
 GameObject:
   m_ObjectHideFlags: 0
@@ -6882,13 +6810,14 @@ GameObject:
   - component: {fileID: 407619090}
   - component: {fileID: 407619092}
   - component: {fileID: 407619091}
+  - component: {fileID: 407619093}
   m_Layer: 0
   m_Name: socket isolator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &407619090
 Transform:
   m_ObjectHideFlags: 0
@@ -6936,7 +6865,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 741373751}
+      - m_Target: {fileID: 407619093}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: Complete
         m_Mode: 1
@@ -6948,7 +6877,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 741373751}
+      - m_Target: {fileID: 407619093}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketEntered
         m_Mode: 1
@@ -6963,7 +6892,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 741373751}
+      - m_Target: {fileID: 407619093}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketExited
         m_Mode: 1
@@ -7007,8 +6936,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.09822361, y: 0.14715259, z: 0.026726916}
-  m_Center: {x: -0.2346444, y: -0.124157324, z: -0.06063257}
+  m_Size: {x: 0.1665241, y: 0.14715259, z: 0.02672698}
+  m_Center: {x: -0.26879472, y: -0.12415771, z: -0.060632486}
+--- !u!114 &407619093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407619089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredObject: {fileID: 2700757384708927944}
+  requiredTag: isoletor
+  socket: {fileID: 407619091}
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &408530711 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 454d35e155ff3304e8447e307dabfb25, type: 3}
@@ -7402,113 +7349,6 @@ MonoBehaviour:
   socket: {fileID: 0}
   undoOnRemove: 1
   disableDelay: 5
---- !u!1 &455862470
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 455862471}
-  m_Layer: 0
-  m_Name: Correct
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &455862471
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455862470}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 881703102}
-  - {fileID: 313175172}
-  - {fileID: 457611839}
-  - {fileID: 741373750}
-  m_Father: {fileID: 1520572779}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &457611838
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 457611839}
-  - component: {fileID: 457611841}
-  - component: {fileID: 457611840}
-  m_Layer: 0
-  m_Name: socket box Correct
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &457611839
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457611838}
-  serializedVersion: 2
-  m_LocalRotation: {x: -8.881784e-16, y: 1, z: -0.000000021855698, w: -0.000000059604645}
-  m_LocalPosition: {x: 3.508234, y: 1.5202103, z: -0.06641388}
-  m_LocalScale: {x: 1.3660516, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 455862471}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &457611840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457611838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
-  activityID: activity_5
-  requiredObject: {fileID: 0}
-  requiredTag: box
-  socket: {fileID: 0}
-  undoOnRemove: 1
-  disableDelay: 5
---- !u!65 &457611841
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457611838}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.08664476, y: 0.13748562, z: 0.07104857}
-  m_Center: {x: 0.0000019073486, y: 0.0014655963, z: 0.035119623}
 --- !u!1 &462299612
 GameObject:
   m_ObjectHideFlags: 0
@@ -10542,112 +10382,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 360ae8b94cf61424bbbecd83d683c905, type: 3}
   m_PrefabInstance: {fileID: 1371465327}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &741373749
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 741373750}
-  - component: {fileID: 741373752}
-  - component: {fileID: 741373751}
-  - component: {fileID: 741373754}
-  - component: {fileID: 741373753}
-  m_Layer: 0
-  m_Name: socket isolator Correct
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &741373750
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741373749}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.034384776, y: -0.98270184, z: -0.09706544, w: 0.15392557}
-  m_LocalPosition: {x: 3.8770561, y: 1.5304041, z: -0.07036972}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 455862471}
-  m_LocalEulerAnglesHint: {x: 190.381, y: 18.321, z: 174.314}
---- !u!114 &741373751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741373749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
-  activityID: activity_5
-  requiredObject: {fileID: 0}
-  requiredTag: isoletor
-  socket: {fileID: 0}
-  undoOnRemove: 1
-  disableDelay: 5
---- !u!65 &741373752
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741373749}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.09822361, y: 0.14715259, z: 0.026726916}
-  m_Center: {x: -0.2346444, y: -0.124157324, z: -0.06063257}
---- !u!114 &741373753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741373749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01276d3ae599ef549a19517983f94e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ErrorTrigger
-  relatedActivityID: activity_5
-  isSafetyViolation: 1
-  requiredTag: female
-  cooldown: 2
---- !u!114 &741373754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 741373749}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01276d3ae599ef549a19517983f94e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ErrorTrigger
-  relatedActivityID: activity_5
-  isSafetyViolation: 1
-  requiredTag: male
-  cooldown: 2
 --- !u!1 &748778634
 GameObject:
   m_ObjectHideFlags: 0
@@ -12558,78 +12292,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: 454d35e155ff3304e8447e307dabfb25, type: 3}
   m_PrefabInstance: {fileID: 877558840}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &881703101
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 881703102}
-  - component: {fileID: 881703104}
-  - component: {fileID: 881703103}
-  m_Layer: 0
-  m_Name: socket female correct
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &881703102
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881703101}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.69026953, y: -0.6902694, z: 0.1533887, w: 0.1533887}
-  m_LocalPosition: {x: 3.8394318, y: 1.3672848, z: -0.19700241}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 455862471}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &881703103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881703101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
-  activityID: activity_5
-  requiredObject: {fileID: 0}
-  requiredTag: female
-  socket: {fileID: 0}
-  undoOnRemove: 1
-  disableDelay: 5
---- !u!65 &881703104
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881703101}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.05037503, y: 0.07708359, z: 0.0755297}
-  m_Center: {x: 0.022397086, y: 0.2775751, z: -0.036230918}
 --- !u!1 &882671429
 GameObject:
   m_ObjectHideFlags: 0
@@ -12673,7 +12335,7 @@ MonoBehaviour:
   - activityId: activity_4
     title: Solar Light
     hint: 'Install the solar light on the front door roof, including all connections. Collect the solar panel and connection wires from the vannstall the solar light on the front door roof, including all connections. Collect the solar panel and connection wires from the van, switch OFF the breaker before installation and test using the switch next to the door. '
-  - activityId: activity_4
+  - activityId: activity_5
     title: Solar Inverter
     hint: 'Install the missing parts to the solar invertor in the back yard : parts found inside the box next to the inverter, switch OFF the breaker before installation and test using the red switch on the right side of inverter '
   beforeStartMessage: Press Start Simulation to begin.
@@ -16519,13 +16181,14 @@ GameObject:
   - component: {fileID: 1146700018}
   - component: {fileID: 1146700019}
   - component: {fileID: 1146700020}
+  - component: {fileID: 1146700021}
   m_Layer: 0
   m_Name: socket male
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1146700018
 Transform:
   m_ObjectHideFlags: 0
@@ -16535,7 +16198,7 @@ Transform:
   m_GameObject: {fileID: 1146700017}
   serializedVersion: 2
   m_LocalRotation: {x: 0.70003104, y: -0.7000306, z: 0.09978396, w: 0.09978393}
-  m_LocalPosition: {x: 3.7895012, y: 1.3903999, z: -0.15600204}
+  m_LocalPosition: {x: 3.794, y: 1.388, z: -0.161}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16560,8 +16223,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.05037503, y: 0.079925455, z: 0.07392479}
-  m_Center: {x: 0.0223971, y: 0.0583379, z: -0.03703341}
+  m_Size: {x: 0.07922608, y: 0.089588255, z: 0.07392479}
+  m_Center: {x: 0.036822684, y: 0.053506687, z: -0.03703341}
 --- !u!114 &1146700020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16594,7 +16257,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 313175173}
+      - m_Target: {fileID: 1146700021}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: Complete
         m_Mode: 1
@@ -16606,7 +16269,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 313175173}
+      - m_Target: {fileID: 1146700021}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketEntered
         m_Mode: 1
@@ -16621,7 +16284,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 313175173}
+      - m_Target: {fileID: 1146700021}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketExited
         m_Mode: 1
@@ -16646,6 +16309,24 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1146700021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146700017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredObject: {fileID: 9120258876919602665}
+  requiredTag: male
+  socket: {fileID: 1146700020}
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &1149010386
 GameObject:
   m_ObjectHideFlags: 0
@@ -22207,7 +21888,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 310890539}
-  - {fileID: 455862471}
   m_Father: {fileID: 1723520028}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531419913
@@ -23183,13 +22863,14 @@ GameObject:
   - component: {fileID: 1564344894}
   - component: {fileID: 1564344895}
   - component: {fileID: 1564344896}
+  - component: {fileID: 1564344897}
   m_Layer: 0
   m_Name: socket female
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1564344894
 Transform:
   m_ObjectHideFlags: 0
@@ -23199,7 +22880,7 @@ Transform:
   m_GameObject: {fileID: 1564344893}
   serializedVersion: 2
   m_LocalRotation: {x: 0.69026953, y: -0.6902694, z: 0.1533887, w: 0.1533887}
-  m_LocalPosition: {x: 3.8394318, y: 1.3672848, z: -0.18899918}
+  m_LocalPosition: {x: 3.845, y: 1.381, z: -0.159}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23224,8 +22905,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.05037503, y: 0.07708359, z: 0.0755297}
-  m_Center: {x: 0.022397086, y: 0.2775751, z: -0.036230918}
+  m_Size: {x: 0.08381032, y: 0.09927368, z: 0.07552971}
+  m_Center: {x: 0.039114725, y: 0.28867015, z: -0.036230914}
 --- !u!114 &1564344896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23258,7 +22939,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 881703103}
+      - m_Target: {fileID: 1564344897}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: Complete
         m_Mode: 1
@@ -23270,7 +22951,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 881703103}
+      - m_Target: {fileID: 1564344897}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketEntered
         m_Mode: 1
@@ -23285,7 +22966,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 881703103}
+      - m_Target: {fileID: 1564344897}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketExited
         m_Mode: 1
@@ -23310,6 +22991,24 @@ MonoBehaviour:
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
   m_TargetBoundsSize: {x: 1, y: 1, z: 1}
+--- !u!114 &1564344897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564344893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredObject: {fileID: 8180690777472311106}
+  requiredTag: female
+  socket: {fileID: 1564344896}
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!224 &1574557154 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3867836893093982344, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
@@ -31733,13 +31432,14 @@ GameObject:
   - component: {fileID: 2079567541}
   - component: {fileID: 2079567543}
   - component: {fileID: 2079567542}
+  - component: {fileID: 2079567544}
   m_Layer: 0
   m_Name: socket box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2079567541
 Transform:
   m_ObjectHideFlags: 0
@@ -31787,7 +31487,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 457611840}
+      - m_Target: {fileID: 2079567544}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: Complete
         m_Mode: 1
@@ -31799,7 +31499,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 457611840}
+      - m_Target: {fileID: 2079567544}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketEntered
         m_Mode: 1
@@ -31814,7 +31514,7 @@ MonoBehaviour:
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 457611840}
+      - m_Target: {fileID: 2079567544}
         m_TargetAssemblyTypeName: ActivityTrigger, Assembly-CSharp
         m_MethodName: OnSocketExited
         m_Mode: 1
@@ -31860,6 +31560,24 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.08664476, y: 0.13748562, z: 0.07104857}
   m_Center: {x: 0.0000019073486, y: 0.0014655963, z: 0.035119623}
+--- !u!114 &2079567544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079567540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3518192f6206a6841b19544183ecf0a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivityTrigger
+  activityID: activity_5
+  requiredObject: {fileID: 1150053231037870467}
+  requiredTag: box
+  socket: {fileID: 2079567542}
+  undoOnRemove: 1
+  disableDelay: 5
 --- !u!1 &2083527665
 GameObject:
   m_ObjectHideFlags: 0
@@ -32757,6 +32475,27 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1292601086214270004, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_text
+      value: 'Required Actions
+
+
+        Inspect the installation area
+
+        Wear safety gear and take the tools you need
+
+        Install Solar geyzer panels
+
+        Install Solar garden panels and cover wires
+
+        Install front door light and panel
+
+        Connect the panels, wiring and inverter in the correct order'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1292601086214270004, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_margin.z
+      value: -607.8324
+      objectReference: {fileID: 0}
     - target: {fileID: 1385897647105547532, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -32811,7 +32550,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1833630392311298423, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_text
-      value: "Activity Details:\n\nSimulation 2 Solar Panel Installetion\n\nActivities 5 \u2014 Preparation\n\nEst. Time10 minutes"
+      value: 'Activity Details
+
+
+        Simulation: Solar Panel Installation
+
+        Activities: 5
+
+        Estimated time: 15 min'
       objectReference: {fileID: 0}
     - target: {fileID: 2005420057130836222, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -32955,15 +32701,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3200792035627004132, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.157
+      value: 10.175
       objectReference: {fileID: 0}
     - target: {fileID: 3200792035627004132, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -686.0765
+      value: -686.00037
       objectReference: {fileID: 0}
     - target: {fileID: 3200792035627004132, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.63
+      value: 0.707
       objectReference: {fileID: 0}
     - target: {fileID: 3270786829466631083, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: gloveActivity
@@ -33139,7 +32885,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 695f1e622fe987b4ab1ae357209ba427, type: 3}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.55
+      value: -32.32
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33147,23 +32893,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -30.77
+      value: -30.54
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.74284273
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.669466
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -33171,7 +32917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -84.052
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 4755441891576844561, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -33550,7 +33296,7 @@ PrefabInstance:
       value: 'Objective
 
 
-        Complete the practical activities by following the required procedure and demonstrating safe and correct actions throughout the simulation.'
+        Complete all solar installation tasks in the correct order, safely and accurately.'
       objectReference: {fileID: 0}
     - target: {fileID: 6482117417816278304, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_AnchorMax.y
@@ -33583,6 +33329,21 @@ PrefabInstance:
     - target: {fileID: 6627837552087665036, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637546851256695384, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_text
+      value: 'Assessment Criteria
+
+
+        Correct actions performed in all activities
+
+        Wrong actions avoided
+
+        Errors counted
+
+        Safety rules followed (gear worn, breaker off before wiring)
+
+        Time taken recorded'
       objectReference: {fileID: 0}
     - target: {fileID: 6647529524599254449, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_IsActive
@@ -33715,6 +33476,10 @@ PrefabInstance:
     - target: {fileID: 7902779034783753940, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907285269845958625, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18.4
       objectReference: {fileID: 0}
     - target: {fileID: 7912645351859251592, guid: 0df7171ad4a1803478f459a745bf4c7a, type: 3}
       propertyPath: m_IsActive
@@ -34961,7 +34726,7 @@ GameObject:
   - component: {fileID: 8119945985075423250}
   - component: {fileID: 8119945985075423249}
   m_Layer: 0
-  m_Name: DC switch isolator
+  m_Name: Box
   m_TagString: box
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35876,7 +35641,7 @@ GameObject:
   - component: {fileID: 2700757384708927945}
   - component: {fileID: 2700757384708927947}
   m_Layer: 0
-  m_Name: Cable - AC
+  m_Name: Isoletor
   m_TagString: isoletor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39853,7 +39618,7 @@ GameObject:
   - component: {fileID: 4548263847695452973}
   - component: {fileID: 8180690777472311107}
   m_Layer: 0
-  m_Name: DC Cable Female
+  m_Name: Female
   m_TagString: female
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40660,7 +40425,7 @@ GameObject:
   - component: {fileID: 9120976055852414111}
   - component: {fileID: 9120976055852414113}
   m_Layer: 0
-  m_Name: DC Cable Male
+  m_Name: Male
   m_TagString: male
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

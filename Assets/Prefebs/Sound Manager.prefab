@@ -67,10 +67,10 @@ MonoBehaviour:
     loop: {fileID: 8300000, guid: 573f64cf95ce51b43afc5dfe79bd8923, type: 3}
   - type: 1
     start: {fileID: 8300000, guid: 6dc4bf13fecc2274090c327010fffcbc, type: 3}
-    loop: {fileID: 8300000, guid: 6dc4bf13fecc2274090c327010fffcbc, type: 3}
+    loop: {fileID: 0}
   - type: 4
     start: {fileID: 8300000, guid: e3c58262fc395304692af92cb6cecda2, type: 3}
-    loop: {fileID: 8300000, guid: e3c58262fc395304692af92cb6cecda2, type: 3}
+    loop: {fileID: 0}
   - type: 2
     start: {fileID: 8300000, guid: 4789a6278ee5c034f934e035d83bda1a, type: 3}
     loop: {fileID: 0}

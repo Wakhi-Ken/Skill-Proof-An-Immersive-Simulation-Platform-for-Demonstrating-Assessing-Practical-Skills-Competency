@@ -19335,7 +19335,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 13
   m_Type: 2
-  m_Color: {r: 0.8773585, g: 0.30210927, b: 0.30210927, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 0.18
   m_SpotAngle: 30
@@ -60767,7 +60767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRToggleSwitch
   kind: 1
-  startOn: 1
+  startOn: 0
   lever: {fileID: 776476566}
   offEuler: {x: -25, y: 0, z: 0}
   onEuler: {x: 25, y: 0, z: 0}
@@ -156451,7 +156451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::XRToggleSwitch
   kind: 1
-  startOn: 1
+  startOn: 0
   lever: {fileID: 0}
   offEuler: {x: -25, y: 0, z: 0}
   onEuler: {x: 25, y: 0, z: 0}
@@ -186396,6 +186396,17 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 671518399}
+    - target: {fileID: 151744741802027062, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_text
+      value: 'Activity Details
+
+
+        Simulation: Electrical Wiring
+
+        Activities: 5
+
+        Estimated time: 15 minutes'
+      objectReference: {fileID: 0}
     - target: {fileID: 253513843720942931, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -186403,6 +186414,21 @@ PrefabInstance:
     - target: {fileID: 455306231658235223, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 763777948919692661, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_text
+      value: 'Required Actions
+
+
+        Safety Clothing
+
+        Power Supply Circuit
+
+        Light Switch and Bulb
+
+        Stove Repair
+
+        Hazard Check'
       objectReference: {fileID: 0}
     - target: {fileID: 1810090248579282067, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
       propertyPath: m_IsActive
@@ -186460,6 +186486,41 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 671518399}
+    - target: {fileID: 4815187569416064344, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_text
+      value: 'Objective
+
+
+        Follow the correct steps
+
+        Work safely
+
+        Make as few mistakes as possible
+
+
+        The first one is the shortest and still covers procedure, safety and accuracy.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148753022420871961, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_text
+      value: 'Assessment Criteria
+
+
+        Correct actions performed in all 5 activities
+
+        Wrong actions avoided
+
+        Errors counted
+
+        Safety rules followed (gloves worn, breaker off before wiring)
+
+        Hazards found and fixed
+
+        Time taken recorded'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5148753022420871961, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_margin.z
+      value: -692.37384
+      objectReference: {fileID: 0}
     - target: {fileID: 5552788544049545483, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -186556,6 +186617,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 671518399}
+    - target: {fileID: 8246113031052176299, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246113031052176299, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -18.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8246113031052176299, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 4.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8423011814857640831, guid: 98b33990545ec5e4582c5b89f33fe9f0, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -213574,7 +213647,7 @@ MonoBehaviour:
   loopFadeIn: 0.5
   glowRenderers:
   - {fileID: 8418583789504907427}
-  glowColor: {r: 0.8679245, g: 0.35617658, b: 0.35617658, a: 1}
+  glowColor: {r: 1, g: 0, b: 0, a: 1}
   glowIntensity: 2
   glowLights:
   - {fileID: 229807753}

@@ -9,6 +9,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
     /// Utility class to help facilitate input field relationship with <see cref="XRKeyboard"/>.
     /// This version supports several input fields on one display. Whichever field is selected
     /// or touched receives the typing, and the other fields are left untouched.
+    /// Password fields are automatically masked (shown as asterisks) on any headset.
     /// </summary>
     public class MultiFieldKeyboardDisplay : MonoBehaviour
     {
@@ -51,6 +52,40 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
         /// The field that is currently receiving the keyboard text (null until one is selected).
         /// </summary>
         public TMP_InputField currentInputField => m_CurrentField;
+
+        // ---------- Password masking settings ----------
+
+        [SerializeField, Tooltip("If true, any field that is a password field is shown as asterisks. A field counts as a password field if its Content Type is Password, it is listed in Password Fields, or its GameObject name contains one of the keywords.")]
+        bool m_AutoMaskPasswordFields = true;
+
+        /// <summary>
+        /// If true, password fields are shown as asterisks. The real text is still kept in the field's text property.
+        /// </summary>
+        public bool autoMaskPasswordFields
+        {
+            get => m_AutoMaskPasswordFields;
+            set => m_AutoMaskPasswordFields = value;
+        }
+
+        [SerializeField, Tooltip("Fields that must always be masked (optional).")]
+        TMP_InputField[] m_PasswordFields;
+
+        [SerializeField, Tooltip("If a field's GameObject name contains any of these words (not case sensitive), it is masked.")]
+        string[] m_PasswordNameKeywords = { "password", "passcode", "pwd" };
+
+        // ---------- Keyboard settings ----------
+
+        [SerializeField, Tooltip("If true, the keyboard is switched on automatically when an input field is touched and the keyboard object is inactive in the scene (it also switches on any inactive parent objects).")]
+        bool m_AutoActivateKeyboard = true;
+
+        /// <summary>
+        /// If true, an inactive keyboard object is switched on when an input field is touched.
+        /// </summary>
+        public bool autoActivateKeyboard
+        {
+            get => m_AutoActivateKeyboard;
+            set => m_AutoActivateKeyboard = value;
+        }
 
         [SerializeField, Tooltip("Keyboard for this display to monitor and interact with. If empty this will default to the GlobalNonNativeKeyboard keyboard.")]
         XRKeyboard m_Keyboard;
@@ -232,6 +267,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
 
                 // shouldHideSoftKeyboard should be true so there is no conflict with the spatial keyboard and the system keyboard
                 field.shouldHideSoftKeyboard = true;
+
+                // Hide password text as soon as the scene loads
+                ApplyPasswordMasking(field);
             }
 
             if (m_AlwaysObserveKeyboard && m_ActiveKeyboard != null)
@@ -317,6 +355,9 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
         {
             foreach (TMP_InputField field in m_Fields)
             {
+                // Make sure password fields are masked every time the display is enabled
+                ApplyPasswordMasking(field);
+
                 if (m_SelectHandlers.ContainsKey(field))
                     continue;
 
@@ -356,13 +397,87 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
             m_SelectHandlers.Clear();
         }
 
+        // ---------- Password masking ----------
+
+        bool IsPasswordField(TMP_InputField field)
+        {
+            if (field.contentType == TMP_InputField.ContentType.Password ||
+                field.inputType == TMP_InputField.InputType.Password)
+                return true;
+
+            if (m_PasswordFields != null && System.Array.IndexOf(m_PasswordFields, field) >= 0)
+                return true;
+
+            if (m_PasswordNameKeywords != null)
+            {
+                string fieldName = field.gameObject.name.ToLowerInvariant();
+                foreach (string keyword in m_PasswordNameKeywords)
+                {
+                    if (!string.IsNullOrEmpty(keyword) && fieldName.Contains(keyword.ToLowerInvariant()))
+                        return true;
+                }
+            }
+
+            return false;
+        }
+
+        void ApplyPasswordMasking(TMP_InputField field)
+        {
+            if (!m_AutoMaskPasswordFields || field == null || !IsPasswordField(field))
+                return;
+
+            // Password content type hides the text on screen but keeps the real value in field.text,
+            // so your Firebase sign-up and login code still receives the actual password.
+            if (field.contentType != TMP_InputField.ContentType.Password)
+                field.contentType = TMP_InputField.ContentType.Password;
+
+            field.asteriskChar = '*';
+            field.ForceLabelUpdate();
+        }
+
+        // ---------- Keyboard activation ----------
+
+        // Finds a keyboard if one has not been set yet (global keyboard first, then any keyboard in the scene, including inactive ones)
+        XRKeyboard ResolveKeyboard()
+        {
+            if (m_ActiveKeyboard != null)
+                return m_ActiveKeyboard;
+
+            if (m_UseSceneKeyboard && m_Keyboard != null)
+                m_ActiveKeyboard = m_Keyboard;
+            else if (GlobalNonNativeKeyboard.instance != null)
+                m_ActiveKeyboard = GlobalNonNativeKeyboard.instance.keyboard;
+
+            if (m_ActiveKeyboard == null)
+                m_ActiveKeyboard = FindFirstObjectByType<XRKeyboard>(FindObjectsInactive.Include);
+
+            return m_ActiveKeyboard;
+        }
+
+        // Switches the keyboard on, and any inactive parents that are keeping it hidden
+        void EnsureKeyboardActive(XRKeyboard targetKeyboard)
+        {
+            if (!m_AutoActivateKeyboard || targetKeyboard == null || targetKeyboard.gameObject.activeInHierarchy)
+                return;
+
+            Transform current = targetKeyboard.transform;
+            while (current != null)
+            {
+                if (!current.gameObject.activeSelf)
+                    current.gameObject.SetActive(true);
+
+                current = current.parent;
+            }
+        }
+
         void OnFieldTouched(TMP_InputField field)
         {
             if (field == null)
                 return;
 
-            // Keyboard is already open for this field, nothing to do
-            if (m_ActiveKeyboard != null && m_ActiveKeyboard.isOpen && m_CurrentField == field)
+            // Keyboard is already open and visible for this field, nothing to do
+            if (m_ActiveKeyboard != null && m_ActiveKeyboard.gameObject.activeInHierarchy
+                && m_ActiveKeyboard.isOpen && m_CurrentField == field)
                 return;
 
             OnInputFieldGainedFocus(field);
@@ -428,8 +543,14 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
 
         void OnInputFieldGainedFocus(TMP_InputField field)
         {
-            if (field == null || m_ActiveKeyboard == null)
+            if (field == null)
                 return;
+
+            // Make sure there is a keyboard, and that it is switched on
+            if (ResolveKeyboard() == null)
+                return;
+
+            EnsureKeyboardActive(m_ActiveKeyboard);
 
             bool switchingField = m_CurrentField != field;
 
@@ -438,7 +559,7 @@ namespace UnityEngine.XR.Interaction.Toolkit.Samples.SpatialKeyboard
 
             // Same field selected again while already observing: sync, attempt to reposition, and early out.
             // Displays that are always observing keyboards call open to ensure they sync with the keyboard.
-            if (m_IsActivelyObservingKeyboard && !alwaysObserveKeyboard && !switchingField)
+            if (m_IsActivelyObservingKeyboard && !alwaysObserveKeyboard && !switchingField && m_ActiveKeyboard.isOpen)
             {
                 if (!m_UseSceneKeyboard || m_Keyboard == null)
                     GlobalNonNativeKeyboard.instance.RepositionKeyboardIfOutOfView();

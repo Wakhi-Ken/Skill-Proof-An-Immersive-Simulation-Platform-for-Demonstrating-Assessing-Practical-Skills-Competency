@@ -28,6 +28,11 @@ public class EvidenceSaver : MonoBehaviour
     [SerializeField] private Button saveButton;
     [SerializeField] private TMP_Text statusText;
 
+    [Header("Status message")]
+    [SerializeField] private float statusDuration = 3f;   // seconds the message stays on screen
+    private Coroutine statusRoutine;
+
+
     [Header("PDF look")]
     [SerializeField] private Texture2D logoTexture;          
     private const int PdfBrand = 0x0B3C5D;                  
@@ -177,5 +182,22 @@ public class EvidenceSaver : MonoBehaviour
         return jpg;
     }
 
-    private void SetStatus(string msg) { if (statusText) statusText.text = msg; }
+
+    private void SetStatus(string msg)
+    {
+        if (!statusText) return;
+
+        // a new message cancels the old timer so it is never cleared early
+        if (statusRoutine != null) StopCoroutine(statusRoutine);
+
+        statusText.text = msg;
+        statusRoutine = StartCoroutine(ClearStatusAfterDelay());
+    }
+
+    private IEnumerator ClearStatusAfterDelay()
+    {
+        yield return new WaitForSecondsRealtime(statusDuration);
+        statusText.text = "";
+        statusRoutine = null;
+    }
 }
