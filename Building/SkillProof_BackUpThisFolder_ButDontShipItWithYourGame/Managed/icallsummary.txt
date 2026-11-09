@@ -616,6 +616,7 @@ UnityEngine.Display::RequiresSrgbBlitToBackbufferImpl
 UnityEngine.Display::RelativeMouseAtImpl
 UnityEngine.Display::GetRenderingExtImpl
 UnityEngine.Display::GetSystemExtImpl
+UnityEngine.EdgeCollider2D::set_points_Injected
 UnityEngine.Event::PopEvent_Injected
 UnityEngine.Event::get_character_Injected
 UnityEngine.Event::GetDoubleClickTime
@@ -1231,6 +1232,7 @@ UnityEngine.PlayerPrefs::TrySetInt_Injected
 UnityEngine.PlayerPrefs::GetInt_Injected
 UnityEngine.PlayerPrefs::GetFloat_Injected
 UnityEngine.PlayerPrefs::Save
+UnityEngine.PolygonCollider2D::set_points_Injected
 UnityEngine.Profiling.Profiler::get_enabled
 UnityEngine.Profiling.Profiler::get_supported
 UnityEngine.Profiling.Profiler::GetRuntimeMemorySizeLong_Injected
@@ -1303,6 +1305,7 @@ UnityEngine.ReflectionProbe::set_size_Injected
 UnityEngine.ReflectionProbe::get_mode_Injected
 UnityEngine.ReflectionProbe::get_refreshMode_Injected
 UnityEngine.RenderBuffer::GetNativeRenderBufferPtr
+UnityEngine.Renderer::get_allowOcclusionWhenDynamic_Injected
 UnityEngine.Renderer::get_enabled_Injected
 UnityEngine.Renderer::get_isVisible_Injected
 UnityEngine.Renderer::GetMaterialCount_Injected
@@ -1321,7 +1324,10 @@ UnityEngine.Renderer::Internal_SetPropertyBlock_Injected
 UnityEngine.Renderer::SetMaterialArray_Injected
 UnityEngine.Renderer::SetMaterial_Injected
 UnityEngine.Renderer::get_bounds_Injected
+UnityEngine.Renderer::get_localBounds_Injected
 UnityEngine.Renderer::set_allowGPUDrivenRendering_Injected
+UnityEngine.Renderer::set_allowOcclusionWhenDynamic_Injected
+UnityEngine.Renderer::set_bounds_Injected
 UnityEngine.Renderer::set_enabled_Injected
 UnityEngine.Renderer::set_localBounds_Injected
 UnityEngine.Renderer::set_receiveShadows_Injected
@@ -1762,10 +1768,12 @@ UnityEngine.Sprite::CreateSpriteInternal_Injected
 UnityEngine.Sprite::get_associatedAlphaSplitTexture_Injected
 UnityEngine.Sprite::get_texture_Injected
 UnityEngine.Sprite::get_pixelsPerUnit_Injected
+UnityEngine.Sprite::get_spriteAtlasTextureScale_Injected
 UnityEngine.Sprite::get_triangles_Injected
 UnityEngine.Sprite::GetInnerUVs_Injected
 UnityEngine.Sprite::GetOuterUVs_Injected
 UnityEngine.Sprite::GetPadding_Injected
+UnityEngine.Sprite::GetTextureRect_Injected
 UnityEngine.Sprite::get_border_Injected
 UnityEngine.Sprite::get_bounds_Injected
 UnityEngine.Sprite::get_pivot_Injected
@@ -2141,6 +2149,13 @@ UnityEngine.U2D.SpriteRendererDataAccessExtensions::SetBatchDeformableBufferAndL
 UnityEngine.U2D.SpriteRendererDataAccessExtensions::SetDeformableBuffer_Injected
 UnityEngine.U2D.SpriteRendererDataAccessExtensions::SetLocalAABB_Injected
 UnityEngine.U2D.SpriteRendererDataAccessExtensions::SetupMaterialProperties_Injected
+UnityEngine.U2D.SpriteShapeRenderer::GetChannelInfo_Injected
+UnityEngine.U2D.SpriteShapeRenderer::GetDataInfo_Injected
+UnityEngine.U2D.SpriteShapeRenderer::Prepare_Injected
+UnityEngine.U2D.SpriteShapeRenderer::SetLocalAABB_Injected
+UnityEngine.U2D.SpriteShapeRenderer::SetMeshChannelInfo_Injected
+UnityEngine.U2D.SpriteShapeRenderer::SetMeshDataCount_Injected
+UnityEngine.U2D.SpriteShapeRenderer::SetSegmentCount_Injected
 UnityEngine.UIElements.ComputedStyleUtility::HasStaleAssetReference
 UnityEngine.UIElements.CustomPropertyList::ContainsKey
 UnityEngine.UIElements.CustomPropertyList::IsCreated
