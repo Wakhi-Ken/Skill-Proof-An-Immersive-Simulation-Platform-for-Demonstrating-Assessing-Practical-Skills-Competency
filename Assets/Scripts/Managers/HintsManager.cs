@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 // hints manager: shows the current hint for the current activity, or a message if all done or not started yet.
 // Also flashes an image of the activity's expected outcome for the first few seconds.
-// The image's position and size are whatever you set manually on the OutcomeImage object.
 public class HintsManager : MonoBehaviour
 {
     [Serializable]
@@ -19,7 +18,7 @@ public class HintsManager : MonoBehaviour
 
         [TextArea(3, 6)] public string hint;
 
-        [Tooltip("Picture of what this activity should look like when done. Leave empty for no image.")]
+        //image showing the expected outcome of the activity. Shown for a few seconds at the start of each hint.
         public Sprite outcomeImage;
     }
 
@@ -41,7 +40,7 @@ public class HintsManager : MonoBehaviour
 
     private SessionTracker tracker;
     private Coroutine imageRoutine;
-    private string lastShownActivityId;   // so repeated Refresh() calls don't restart the image
+    private string lastShownActivityId;  
 
     private void OnValidate()
     {
