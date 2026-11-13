@@ -265,7 +265,6 @@
             "name": "Cubemap",
             "scenes": [
               "Assets/Scenes/Main Menu.unity",
-              "Assets/Scenes/SImulation 1.unity",
               "Assets/Scenes/SImulation 2.unity",
               "Assets/Scenes/Simulation Menu.unity"
             ],
@@ -375,13 +374,17 @@
           },
           {
             "name": "LightProbes",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/SImulation 1.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "LightingSettings",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/SImulation 1.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },

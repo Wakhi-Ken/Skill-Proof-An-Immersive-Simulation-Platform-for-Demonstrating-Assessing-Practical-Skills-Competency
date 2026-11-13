@@ -13,10 +13,10 @@ public class MenuNavigation : MonoBehaviour
     [Header("Loading Screen")]
     public GameObject loadingCanvas;
 
-    [Tooltip("Optional loading progress bar")]
+    [Tooltip("loading progress bar")]
     public Slider progressBar;
 
-    [Tooltip("Optional loading percentage text")]
+    [Tooltip("loading percentage text")]
     public TMP_Text progressText;
 
     [Tooltip("Minimum time the loading screen stays visible")]
