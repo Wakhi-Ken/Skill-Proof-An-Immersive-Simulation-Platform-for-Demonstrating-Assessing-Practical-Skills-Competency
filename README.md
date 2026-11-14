@@ -109,7 +109,7 @@ flowchart TD
     A[Launch Application] --> B[Sign Up / Login]
     B --> C[Simulator Menu]
     C --> D[Select Simulation]
-    D --> E[Select Activity]
+    D --> E[Auto start activities]
     E --> F[View Instructions]
     F --> G[Perform Practical Task]
     G --> H[Track User Actions]
