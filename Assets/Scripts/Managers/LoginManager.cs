@@ -152,4 +152,29 @@ public class LoginManager : MonoBehaviour
                 return "Could not log in. Please try again.";
         }
     }
+
+    public void DeleteAccount()
+    {
+        if (!FirebaseManager.IsReady)
+        {
+            messageText.text = "Firebase is not ready.";
+            return;
+        }
+
+        FirebaseUser user = FirebaseManager.Auth.CurrentUser;
+        if (user == null) return;
+
+        user.DeleteAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted || task.IsCanceled)
+            {
+                Debug.LogError(task.Exception);
+                messageText.text = "Could not delete account. Please log in again and retry.";
+                return;
+            }
+
+            Logout();   // back to the login screen
+            messageText.text = "Your account has been deleted.";
+        });
+    }
 }

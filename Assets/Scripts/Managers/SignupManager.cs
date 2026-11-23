@@ -24,7 +24,7 @@ public class SignupManager : MonoBehaviour
 
     public void Start()
     {
-        auth = FirebaseAuth.DefaultInstance;
+        
 
         // Make sure the password fields show dots instead of the text
         passwordInput.contentType = TMP_InputField.ContentType.Password;
@@ -35,6 +35,13 @@ public class SignupManager : MonoBehaviour
 
     public void SignUp()
     {
+        if (!FirebaseManager.IsReady)
+        {
+            messageText.text = "Please wait, Firebase is starting...";
+            return;
+        }
+
+        FirebaseAuth auth = FirebaseManager.Auth;
         if (isBusy) return; // stops double-clicks creating two requests
 
         string name = nameInput.text.Trim();
@@ -151,7 +158,7 @@ public class SignupManager : MonoBehaviour
         isBusy = false;
 
         // Sign out the user after account creation to force them to log in
-        auth.SignOut();
+        FirebaseManager.Auth.SignOut();
 
         messageText.text = profileSaved
             ? "Account created! Please log in."

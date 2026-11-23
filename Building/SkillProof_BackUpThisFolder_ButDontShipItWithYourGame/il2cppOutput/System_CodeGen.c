@@ -9244,11 +9244,11 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[105] =
 };
 static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[7] = 
 {
-	{ 0x06000085, 237,  (void**)&UnityTlsContext_WriteCallback_m74F83CFEE7D8FB7EBD1A1021DCB8945E89382998_RuntimeMethod_var, 0 },
-	{ 0x06000087, 235,  (void**)&UnityTlsContext_ReadCallback_m068A7DC153B3D2C4F6922B46BC5957CF33AE3450_RuntimeMethod_var, 0 },
-	{ 0x06000089, 236,  (void**)&UnityTlsContext_VerifyCallback_mC7AE01FAD8A336A6BF11CF8A3EFAC60CF6167E6F_RuntimeMethod_var, 0 },
-	{ 0x0600008B, 234,  (void**)&UnityTlsContext_CertificateCallback_m8CC672A44A8CCFD2A3EB2D9B38A9A134F6EF706B_RuntimeMethod_var, 0 },
-	{ 0x0600009B, 238,  (void**)&UnityTlsProvider_x509verify_callback_mB2465D108005179B9873A37C418CD26A37194E3B_RuntimeMethod_var, 0 },
+	{ 0x06000085, 235,  (void**)&UnityTlsContext_WriteCallback_m74F83CFEE7D8FB7EBD1A1021DCB8945E89382998_RuntimeMethod_var, 0 },
+	{ 0x06000087, 233,  (void**)&UnityTlsContext_ReadCallback_m068A7DC153B3D2C4F6922B46BC5957CF33AE3450_RuntimeMethod_var, 0 },
+	{ 0x06000089, 234,  (void**)&UnityTlsContext_VerifyCallback_mC7AE01FAD8A336A6BF11CF8A3EFAC60CF6167E6F_RuntimeMethod_var, 0 },
+	{ 0x0600008B, 232,  (void**)&UnityTlsContext_CertificateCallback_m8CC672A44A8CCFD2A3EB2D9B38A9A134F6EF706B_RuntimeMethod_var, 0 },
+	{ 0x0600009B, 236,  (void**)&UnityTlsProvider_x509verify_callback_mB2465D108005179B9873A37C418CD26A37194E3B_RuntimeMethod_var, 0 },
 	{ 0x06000B44, 131,  (void**)&DeflateStreamNative_UnmanagedRead_m321A2621068F1C9509594A4D8F405F4F12C1CEB3_RuntimeMethod_var, 0 },
 	{ 0x06000B46, 132,  (void**)&DeflateStreamNative_UnmanagedWrite_mB0AD438266A9DD2813715E8BC90BF07DC7A02F52_RuntimeMethod_var, 0 },
 };

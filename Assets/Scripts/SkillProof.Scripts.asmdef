@@ -1,0 +1,20 @@
+{
+    "name": "SkillProof.Scripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+    "Unity.XR.Interaction.Toolkit",
+    "Unity.InputSystem",
+    "UnityEngine.UI",
+    "Unity.XR.Interaction.Toolkit.Samples.SpatialKeyboard"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
