@@ -43,7 +43,7 @@
 
 | Requirement          | Version / Notes          |
 | -------------------- | ------------------------ |
-| Game engine          | Unity 6                  |
+| Game engine          | Unity 6(6000.6.6f1)      |
 | Programming language | C#                       |
 | XR SDK               | XR Interaction Toolkit   |
 | VR headset           | Meta Quest 2             |
